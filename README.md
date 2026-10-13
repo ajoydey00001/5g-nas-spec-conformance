@@ -21,7 +21,8 @@ devices share; the spec reference can.
 
 ## Next: Thrust 2 and Thrust 3 (planned)
 
-The plan is the one in the PhD proposal (`proposal/Ajoy_Dey_PhD_Proposal.tex`). Thrust 1 already produces
+The plan comes from the PhD proposal (`proposal/Ajoy_Dey_PhD_Proposal.tex`). Step-by-step tasks, a worked
+example and "done when" criteria are in [`thrust1/PLAN.md`](thrust1/PLAN.md) §4–§5. Thrust 1 already produces
 the inputs both thrusts need.
 
 ### Thrust 2: an agent that triages discrepancies and builds exploits

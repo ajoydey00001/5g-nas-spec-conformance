@@ -228,6 +228,49 @@ The code names differ from the paper's Table 9 names; a confirmed mapping is nee
 - **Proposal fix 1:** their 36 hand-analyzed deviations are **not public**. Evaluate on regenerated deviations (T1.3, T1.6) with the 45 public properties and Tables 2/8 as truth. Update the Thrust 2 metrics sentence in the .tex accordingly.
 - **Proposal fix 2:** the .tex also lists DIKEUE's 17 issues as Thrust 2 ground truth. Those are 4G; with a 5G-only scope, drop them or move them to future work.
 
+### 4.2 Starting point from Thrust 1 (already built)
+
+| Thrust 2 needs | Already there | File |
+|---|---|---|
+| Discrepancy records (T2.1) | 23 deviation classes, each with its shortest witness word, every device's outputs, case and k/n | `results/T1.6_spec_vs_AB.json` |
+| `retrieve` tool | TS 24.501 v17.8.0 clause index (1,181 clauses), citable by clause ID | `extract/spec_clauses.py`, `extract/dump_clauses.py` |
+| `confidence` tool | Every spec cell carries a clause ID, a verbatim quote and a kind (SPEC / INFERRED / UNDERSPECIFIED) | `spec_fsm/spec_cells_v1.json` |
+| `replay` tool (offline) | Mealy simulation of any learned FSM | `symbols/fsm_tools.py` (`Mealy.run`) |
+| Confirmer for (a)/(d) | DevLyzer run on our deviations: 23/23 classified as property violations | `lab/devlyzer/deviant-queries*.json` |
+| Seed labels | (d): the I3, I4, I6 and I10 classes. (c): I19, I20 and the 5.5.1.2.4 vs 5.5.1.3.4 gap. (a): repairs R1 and R2 | `results/T1_RESULTS_v1.md`, `spec_fsm/REPAIRS.md` |
+
+So Thrust 2 starts by putting an agent loop around tools that already exist. It needs no new infrastructure.
+
+### 4.3 Worked example: one triage
+
+Input record (the I3 class from T1.6):
+```
+word:    enable_s1 auth_request_plain_text nas_sm_cmd id_request_plain_text
+spec:    S3 x id_request_plain_text -> discard (null_action)   clause 4.4.4.2, kind SPEC
+devices: FSM_A = id_response, FSM_B = id_response              case 2, k = 0/2, invisible to diff
+```
+1. `retrieve("4.4.4.2")` returns: "If any NAS signalling message is received as not integrity protected even
+   though the secure exchange of NAS messages has been established by the network, then the NAS shall
+   discard this message."
+2. `confidence(S3, id_request_plain_text)` returns kind SPEC with a verified verbatim quote, so (a) is unlikely.
+3. `replay` gives the same answer on every device and every run, so it is deterministic and (b) is unlikely.
+4. The agent proposes **(d)** and writes the claim as a DevLyzer-syntax property: after `nas_sm_complete`,
+   an `id_request_plain_text` input is never answered by `id_response`.
+5. DevLyzer/nuXmv checks the property on the per-trace model. A violation confirms it, and the label
+   becomes final.
+6. Exploit sketch (T2.7, simulation only): a fake base station sends a plain Identity Request after NAS
+   security is set up, and the UE answers with the requested identity in the clear.
+
+### 4.4 Done when
+
+- The agent labels the regenerated deviations of srsUE, OAI UE, FSM_A and FSM_B, and per-label precision and
+  recall are reported against §0.1 and DevLyzer.
+- Property recovery (T2.5) is reported. Target: at least 70% of the 45 expert properties recovered
+  verdict-equivalently.
+- Analyst time per deviation is measured and compared with 5GBaseChecker's ~2 min.
+- LLM access without a paid API: Qwen3 runs locally (Ollama), and DeepSeek or a free Gemini tier serves as
+  the second model for T2.5.
+
 ---
 
 ## 5. Thrust 3: trust in the triage agent
@@ -239,6 +282,35 @@ The code names differ from the paper's Table 9 names; a confirmed mapping is nee
 | T3.3 | Models: GPT-4o, DeepSeek-V3, Qwen3 (local, for reproducibility) |
 | T3.4 | Metrics: per-label accuracy and macro-F1; verbalized confidence → ECE (10 bins) and Brier; counterfactual pairs (swap vendor/device name, Rel-16 ↔ Rel-17) → label-flip rate with 95% bootstrap CI |
 | T3.5 | Size it at about 6 months (review note); the benchmark comes free from Thrust 2 |
+
+### 5.1 Benchmark record (one confirmed case)
+
+```json
+{"id": "FSM_A-I3-S3",
+ "word": ["enable_s1", "auth_request_plain_text", "nas_sm_cmd", "id_request_plain_text"],
+ "device_outputs": ["registration_request", "auth_response", "nas_sm_complete", "id_response"],
+ "spec_allowed": ["null_action"], "clause_id": "4.4.4.2", "clause_text": "If any NAS signalling message ...",
+ "truth_label": "d", "confirming_tool": "DevLyzer/nuXmv", "source": "Table 8 I3"}
+```
+Seed size today: the 23 classes on FSM_A and FSM_B. The srsUE classes are added when the run finishes, OAI UE
+after that, and Thrust 2 adds every case it confirms.
+
+### 5.2 Bias probes (counterfactual pairs)
+
+| Swap | Ground truth | What a flip means |
+|---|---|---|
+| Device name: srsUE ↔ OAI UE ↔ a commercial vendor name | unchanged | The label depends on vendor reputation |
+| Release: "Rel-17 (v17.8.0)" ↔ "Rel-16" in the clause header | unchanged for these clauses | The label depends on version cues, not on the text |
+| Order of the evidence clauses | unchanged | Position bias |
+
+### 5.3 Done when
+
+- Per-label accuracy, macro-F1, ECE and Brier score are reported for each model, in both modes: agent with
+  tools, and LLM alone.
+- Flip rates are reported with 95% bootstrap CIs.
+- The benchmark and the scoring scripts are released in this repo.
+- The main finding answers one question: do the evidence tools (the Thrust 2 design) reduce miscalibration
+  and label flips compared with an LLM alone?
 
 ---
 

@@ -53958,3 +53958,2899 @@ Connected with core.
 Connecting to srsgNB...
 Connected with srsgNB.
 Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_ueinfo_req_plain_text Context check passed
+Log executor: sending rrc_ueinfo_req_plain_text.
+Reading from rrc
+Log executor: received(raw)   null_action from rrc.
+Getting closest of   null_action
+####rrc_ueinfo_req_plain_text/null_action####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | rrc_ueinfo_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+---- Starting post ----
+Oct 13, 2026 6:31:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | rrc_ueinfo_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+Oct 13, 2026 6:31:53 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | rrc_ueinfo_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | rrc_ueinfo_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | rrc_ueinfo_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text registration_request auth_response nas_sm_complete registration_complete null_action
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_protected]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected|deregistration_req_protected
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_protected Context check passed
+Log executor: sending deregistration_req_protected.
+Reading from amf
+Timeout occured for deregistration_req_protected
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_protected / registration_request auth_response nas_sm_complete registration_complete | null_action]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_protected Context check passed
+Log executor: sending deregistration_req_protected.
+Reading from amf
+Timeout occured for deregistration_req_protected
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_protected / registration_request auth_response nas_sm_complete registration_complete | null_action]
+---- Starting post ----
+Oct 13, 2026 6:33:38 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_protected / registration_request auth_response nas_sm_complete registration_complete | null_action]
+Oct 13, 2026 6:33:38 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_protected / registration_request auth_response nas_sm_complete registration_complete | null_action]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_protected / registration_request auth_response nas_sm_complete registration_complete | null_action]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_protected / registration_request auth_response nas_sm_complete registration_complete | null_action]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected registration_request auth_response nas_sm_complete registration_complete null_action
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected|deregistration_req_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_plain_text Context check passed
+Log executor: sending deregistration_req_plain_text.
+Reading from amf
+Timeout occured for deregistration_req_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_plain_text Context check passed
+Log executor: sending deregistration_req_plain_text.
+Reading from amf
+Timeout occured for deregistration_req_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+---- Starting post ----
+Oct 13, 2026 6:35:23 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+Oct 13, 2026 6:35:23 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected | deregistration_req_plain_text / registration_request auth_response nas_sm_complete registration_complete | null_action]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text registration_request auth_response nas_sm_complete registration_complete null_action
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_plain_text Context check passed
+Log executor: sending deregistration_req_plain_text.
+Reading from amf
+Timeout occured for deregistration_req_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_plain_text Context check passed
+Log executor: sending deregistration_req_plain_text.
+Reading from amf
+Timeout occured for deregistration_req_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:37:09 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:37:09 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_plain_text id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_protected Context check passed
+Log executor: sending deregistration_req_protected.
+Reading from amf
+Timeout occured for deregistration_req_protected
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: deregistration_req_protected Context check passed
+Log executor: sending deregistration_req_protected.
+Reading from amf
+Timeout occured for deregistration_req_protected
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:38:55 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:38:55 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected deregistration_req_protected id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_ueinfo_req_plain_text Context check passed
+Log executor: sending rrc_ueinfo_req_plain_text.
+Reading from rrc
+Log executor: received(raw)   null_action from rrc.
+Getting closest of   null_action
+####rrc_ueinfo_req_plain_text/null_action####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_ueinfo_req_plain_text Context check passed
+Log executor: sending rrc_ueinfo_req_plain_text.
+Reading from rrc
+Log executor: received(raw)   null_action from rrc.
+Getting closest of   null_action
+####rrc_ueinfo_req_plain_text/null_action####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:40:39 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:40:39 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_plain_text id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_ueinfo_req_protected Context check passed
+Log executor: sending rrc_ueinfo_req_protected.
+Reading from rrc
+Log executor: received(raw)   null_action from rrc.
+Getting closest of   null_action
+####rrc_ueinfo_req_protected/null_action####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_ueinfo_req_protected Context check passed
+Log executor: sending rrc_ueinfo_req_protected.
+Reading from rrc
+Log executor: received(raw)   null_action from rrc.
+Getting closest of   null_action
+####rrc_ueinfo_req_protected/null_action####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:42:23 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:42:23 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_ueinfo_req_protected id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_countercheck_plain_text Context check passed
+Log executor: sending rrc_countercheck_plain_text.
+Reading from rrc
+Timeout occured for rrc_countercheck_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_countercheck_plain_text Context check passed
+Log executor: sending rrc_countercheck_plain_text.
+Reading from rrc
+Timeout occured for rrc_countercheck_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:44:09 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:44:09 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_plain_text id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_countercheck_protected Context check passed
+Log executor: sending rrc_countercheck_protected.
+Reading from rrc
+Timeout occured for rrc_countercheck_protected
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_countercheck_protected Context check passed
+Log executor: sending rrc_countercheck_protected.
+Reading from rrc
+Timeout occured for rrc_countercheck_protected
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:45:55 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:45:55 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_countercheck_protected id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_reconf_plain_text Context check passed
+Log executor: sending rrc_reconf_plain_text.
+Reading from rrc
+Log executor: received(raw)   rrc_reconf_complete from rrc.
+Getting closest of   rrc_reconf_complete
+####rrc_reconf_plain_text/rrc_reconf_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_reconf_plain_text Context check passed
+Log executor: sending rrc_reconf_plain_text.
+Reading from rrc
+Log executor: received(raw)   rrc_reconf_complete from rrc.
+Getting closest of   rrc_reconf_complete
+####rrc_reconf_plain_text/rrc_reconf_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+---- Starting post ----
+Oct 13, 2026 6:47:39 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+Oct 13, 2026 6:47:39 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_plain_text id_request_plain_text registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_reconf_replay Context check passed
+Log executor: sending rrc_reconf_replay.
+Reading from rrc
+Log executor: received(raw)   null_action from rrc.
+Getting closest of   null_action
+####rrc_reconf_replay/null_action####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_reconf_replay Context check passed
+Log executor: sending rrc_reconf_replay.
+Reading from rrc
+Log executor: received(raw)   null_action from rrc.
+Getting closest of   null_action
+####rrc_reconf_replay/null_action####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:49:23 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:49:23 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_replay id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_reconf_protected Context check passed
+Log executor: sending rrc_reconf_protected.
+Reading from rrc
+Log executor: received(raw)   rrc_reconf_complete from rrc.
+Getting closest of   rrc_reconf_complete
+####rrc_reconf_protected/rrc_reconf_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_reconf_protected Context check passed
+Log executor: sending rrc_reconf_protected.
+Reading from rrc
+Log executor: received(raw)   rrc_reconf_complete from rrc.
+Getting closest of   rrc_reconf_complete
+####rrc_reconf_protected/rrc_reconf_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+---- Starting post ----
+Oct 13, 2026 6:51:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+Oct 13, 2026 6:51:08 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_reconf_protected id_request_plain_text registration_request auth_response nas_sm_complete registration_complete rrc_reconf_complete id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: ue_cap_enquiry_plain_text Context check passed
+Log executor: sending ue_cap_enquiry_plaintext.
+Reading from rrc
+Log executor: received(raw)   rrc_ue_cap_info from rrc.
+Getting closest of   rrc_ue_cap_info
+####ue_cap_enquiry_plain_text/rrc_ue_cap_info####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: ue_cap_enquiry_plain_text Context check passed
+Log executor: sending ue_cap_enquiry_plaintext.
+Reading from rrc
+Log executor: received(raw)   rrc_ue_cap_info from rrc.
+Getting closest of   rrc_ue_cap_info
+####ue_cap_enquiry_plain_text/rrc_ue_cap_info####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+---- Starting post ----
+Oct 13, 2026 6:52:52 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+Oct 13, 2026 6:52:52 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_plain_text id_request_plain_text registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: ue_cap_enquiry_protected Context check passed
+Log executor: sending rrc_ue_cap_enquiry_protected.
+Reading from rrc
+Log executor: received(raw)   rrc_ue_cap_info from rrc.
+Getting closest of   rrc_ue_cap_info
+####ue_cap_enquiry_protected/rrc_ue_cap_info####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: ue_cap_enquiry_protected Context check passed
+Log executor: sending rrc_ue_cap_enquiry_protected.
+Reading from rrc
+Log executor: received(raw)   rrc_ue_cap_info from rrc.
+Getting closest of   rrc_ue_cap_info
+####ue_cap_enquiry_protected/rrc_ue_cap_info####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+---- Starting post ----
+Oct 13, 2026 6:54:36 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+Oct 13, 2026 6:54:36 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected ue_cap_enquiry_protected id_request_plain_text registration_request auth_response nas_sm_complete registration_complete rrc_ue_cap_info id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd_ns_plain_text Context check passed
+Log executor: sending rrc_sm_cmd.
+Reading from rrc
+Log executor: received(raw)   rrc_sm_complete from rrc.
+Getting closest of   rrc_sm_complete
+####rrc_sm_cmd_ns_plain_text/rrc_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd_ns_plain_text Context check passed
+Log executor: sending rrc_sm_cmd.
+Reading from rrc
+Log executor: received(raw)   rrc_sm_complete from rrc.
+Getting closest of   rrc_sm_complete
+####rrc_sm_cmd_ns_plain_text/rrc_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+---- Starting post ----
+Oct 13, 2026 6:56:20 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+Oct 13, 2026 6:56:20 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns_plain_text id_request_plain_text registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd_ns Context check passed
+Log executor: sending rrc_sm_cmd.
+Reading from rrc
+Log executor: received(raw)   rrc_sm_complete from rrc.
+Getting closest of   rrc_sm_complete
+####rrc_sm_cmd_ns/rrc_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd_ns Context check passed
+Log executor: sending rrc_sm_cmd.
+Reading from rrc
+Log executor: received(raw)   rrc_sm_complete from rrc.
+Getting closest of   rrc_sm_complete
+####rrc_sm_cmd_ns/rrc_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+---- Starting post ----
+Oct 13, 2026 6:58:04 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+Oct 13, 2026 6:58:04 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_ns id_request_plain_text registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd_replayContext check failed
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd_replayContext check failed
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+---- Starting post ----
+Oct 13, 2026 6:59:47 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+Oct 13, 2026 6:59:47 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete null_action | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd_replay id_request_plain_text registration_request auth_response nas_sm_complete registration_complete null_action id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd Context check passed
+Log executor: sending rrc_sm_cmd.
+Reading from rrc
+Log executor: received(raw)   rrc_sm_complete from rrc.
+Getting closest of   rrc_sm_complete
+####rrc_sm_cmd/rrc_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd id_request_plain_text *****
+QUERY # 1 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+Log executor: auth_request_plain_text Context check passed
+Log executor: sending auth_request_plain_text.
+Reading from amf
+Log executor: received(raw) auth_response from amf.
+Getting closest of auth_response
+####auth_request_plain_text/auth_response####
+***** Search Command = enable_s1 auth_request_plain_text *****
+Log executor: nas_sm_cmd Context check passed
+Log executor: sending nas_sm_cmd.
+Reading from amf
+Log executor: received(raw) nas_sm_complete from amf.
+Getting closest of nas_sm_complete
+####nas_sm_cmd/nas_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd *****
+Log executor: registration_accept_protected Context check passed
+Log executor: sending registration_accept_protected.
+Reading from amf
+Log executor: received(raw) registration_complete from amf.
+Getting closest of registration_complete
+####registration_accept_protected/registration_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected *****
+Log executor: rrc_sm_cmd Context check passed
+Log executor: sending rrc_sm_cmd.
+Reading from rrc
+Log executor: received(raw)   rrc_sm_complete from rrc.
+Getting closest of   rrc_sm_complete
+####rrc_sm_cmd/rrc_sm_complete####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd *****
+Log executor: id_request_plain_text Context check passed
+Log executor: sending id_request_plain_text.
+Reading from amf
+Log executor: received(raw) id_response from amf.
+Getting closest of id_response
+####id_request_plain_text/id_response####
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd id_request_plain_text *****
+QUERY # 2 / 3
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+---- Starting post ----
+Oct 13, 2026 7:01:31 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+Oct 13, 2026 7:01:31 AM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd | id_request_plain_text / registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete | id_response]
+In add!
+OUTPUT: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected rrc_sm_cmd id_request_plain_text registration_request auth_response nas_sm_complete registration_complete rrc_sm_complete id_response
+Added to DB! in Resumer
+Query processing: 
+[enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected config_update_cmd_replay | id_request_plain_text]
+In query resumer, looking for: enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected config_update_cmd_replay|id_request_plain_text
+***** Search Command = enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected config_update_cmd_replay id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.

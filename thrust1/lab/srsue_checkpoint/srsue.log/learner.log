@@ -73,3 +73,21 @@ Oct 13, 2026 5:47:56 AM org.slf4j.helpers.SubstituteLogger info
 INFO: Counter-example found: Query[?|enable_s1 auth_request_plain_text nas_sm_cmd rrc_sm_cmd registration_accept_protected registration_accept_protected / registration_request auth_response nas_sm_complete rrc_sm_complete registration_complete null_action]
 Oct 13, 2026 5:47:56 AM org.slf4j.helpers.SubstituteLogger info
 INFO: Starting round 4
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: +++++++++++++++++++++++++++++++++++++++++++++++++++
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 60165656, (60165.656 s)
+Searching for counter-example [ms]: 2297691, (2297.691 s)
+
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 4
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 537
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to cache [queries]: 537
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 20
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to cache [queries]: 20
+Oct 13, 2026 12:53:53 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in this hypothesis: 5

@@ -55,6 +55,7 @@ Tested so far: the healthy path, where it correctly does nothing. The crash path
 
 Commands:
 ```bash
+bash ~/thrust1-lab/learnrun/update.sh                # "what is the update?": health, speed, model size, what to do
 bash ~/thrust1-lab/learnrun/status.sh                # health check (once a day is enough)
 cat ~/thrust1-lab/learnrun/logs/auto_resume.log      # what auto-resume did (empty = never needed)
 bash ~/thrust1-lab/learnrun/resume_after_reboot.sh   # the same restart, by hand

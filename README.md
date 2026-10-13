@@ -21,6 +21,8 @@ devices share; the spec reference can.
 
 ## If something breaks
 
+**Progress of the srsUE run:** `bash ~/thrust1-lab/learnrun/update.sh` (copy in `thrust1/lab/learnrun/`).
+
 **Is Thrust 1 correct, and what if the run crashes: [`VERIFY_AND_RECOVER.md`](VERIFY_AND_RECOVER.md).**
 
 **What to do next, with every command: [`NEXT_STEPS.md`](NEXT_STEPS.md)** (finish Thrust 1 with `finish_thrust1.sh`, then Thrust 2 and 3 with `thrust2/triage.py` and `thrust3/score.py`).

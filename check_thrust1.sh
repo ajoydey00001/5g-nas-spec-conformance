@@ -3,8 +3,10 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 python3 -I - <<'PY'
-import collections, hashlib, json, pathlib, subprocess, sys, tempfile
+import hashlib, json, pathlib, subprocess, sys, tempfile
 root=pathlib.Path.cwd(); r=root/'thrust1/results'; failures=[]
+if not (root/'repro/clauses.jsonl').exists():
+    raise SystemExit('Missing cached specification: run bash reproduce.sh first.')
 def check(ok,msg):
     print(('PASS  ' if ok else 'FAIL  ')+msg)
     if not ok: failures.append(msg)
@@ -29,6 +31,6 @@ check(all(len({tuple(v) for v in c['device_outputs'].values()})==1 and c['n']==3
 base=pathlib.Path('thrust1/lab/devlyzer_srs'); counts={k:len(json.loads((base/('deviant-queries_'+k+'.json')).read_text())['traces']) for k in ('attack','benign','unresolved')}
 check(counts=={'attack':23,'benign':7,'unresolved':0},'DevLyzer: 23 attack / 7 benign / 0 unresolved records')
 check((r/'T1_RESULTS_v2.md').exists() and 'budget-limited' in pathlib.Path('thrust1/report/thrust1_report.tex').read_text(),'results v2 and report disclose model limitation')
-print('Scope: finalized Thrust 1 demonstration; independent validation and D4 experiments remain future work.')
+print('Scope: artifact consistency only. Full Thrust 1 plan remains incomplete; see thrust1/results/T1_AUDIT.md.')
 sys.exit(bool(failures))
 PY

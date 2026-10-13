@@ -16,21 +16,13 @@ Paste it the files named in each step, plus `REVIEW.md` if it needs context.
 
 ---
 
-## How do I know Thrust 1 is done and correct?
+## Current completion verdict
 
-```bash
-cd ~/5g-nas-spec-conformance && bash check_thrust1.sh
-```
-Thrust 1 is complete when **every line says PASS**. It checks:
-- the offline analysis reproduces from scratch (89 verbatim quotes, 23 classes);
-- the final srsUE model exists;
-- Table 8 recall is at least 6/7;
-- invisible Case 2 classes exist;
-- DevLyzer has 0 unresolved;
-- results v2 and the report are written;
-- everything is pushed.
-
-On 2026-10-13 23:05: 5 PASS. The 4 WAITs are the run still going, results v2, the report, and the push.
+The finalized demonstration is complete; the original research plan is not.
+Run `bash reproduce.sh` followed by `bash check_thrust1.sh` for artifact checks.
+See `thrust1/results/T1_AUDIT.md` for semantic validation, convergence, OAI
+coverage, and D4 experiments still needed. The Part A workflow below records
+the historical finalization procedure, already performed for hypothesis 5.
 
 ## If the run crashes or hangs while you are away (automatic)
 

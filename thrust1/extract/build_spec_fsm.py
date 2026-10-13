@@ -122,6 +122,8 @@ def main(cells_path, clauses_path, outdir):
     print('quotes: %d checked, %d not found verbatim' % (n_ev, len(bad)))
     for b in bad:
         print('  NOT FOUND', b)
+    if bad:
+        raise ValueError('spec evidence quote validation failed; no FSM artifacts written')
     os.makedirs(outdir, exist_ok=True)
     n = write_psm(doc, os.path.join(outdir, 'spec_v1.psm.json'))
     print('PSMBench JSON: %d states, %d transitions' % (len(doc['states']), n))

@@ -2,24 +2,33 @@
 
 Work prepared for Dr. Imtiaz Karim (SysNetS Lab, UT Dallas).
 
-**Thrust 1 idea:** extract a *specification* reference FSM for the 5G NAS UE from TS 24.501 (every transition
-tied to a clause ID and a verbatim quote), then compare learned UE FSMs against the spec instead of only against
+**Thrust 1 idea:** extract a *specification* reference FSM for the 5G NAS UE from TS 24.501 (protocol cells
+carry clause evidence; 30 no-connection cells encode a harness abstraction), then compare learned UE FSMs against the spec instead of only against
 each other. Device-vs-device differential testing (5GBaseChecker's DevScan) cannot see a deviation that all
 devices share; the spec reference can.
 
 ## Main results so far (details: [`thrust1/results/T1_RESULTS_v1.md`](thrust1/results/T1_RESULTS_v1.md))
 
-- Spec FSM: 6 states × 16 NAS inputs = 96 cells from TS 24.501 v17.8.0; **89/89 quotes verified verbatim**.
+- Spec FSM: 6 states × 16 NAS inputs = 96 cells from TS 24.501 v17.8.0; **89/89 evidence quotes matched after whitespace/punctuation normalization**.
 - Against the two learned UE FSMs shipped with 5GBaseChecker: **23 deviation classes**,
   of which **6 are invisible to differential testing** (both devices answer identically, both wrong):
   plain Identity/Authentication Request after security (I3, I4), replayed SMC (I6), null-integrity SMC (I10).
-- **All 23 confirmed** independently by the authors' DevLyzer (45 LTL properties).
+- DevLyzer finds property violations on all 23 witness records. This corroborates traces;
+  it does not confirm every final-cell interpretation independently.
 - Two spec-model repairs (R1, R2) found by feeding device/property evidence back to the spec text, plus a
   candidate spec gap (5.5.1.2.4 vs 5.5.1.3.4).
 - Finalized srsUE hypothesis 5: **6 states / 21 transitions**, Table 8 recall **7/7**, plus I6.
   Adding it preserves **23 classes and six invisible classes**; DevLyzer checks all 23 witness records.
   This is a **budget-limited hypothesis**, not a converged model. See
   [`results v2`](thrust1/results/T1_RESULTS_v2.md) and the updated report.
+
+## Completion status
+
+The proof-of-concept artifacts are finalized. **The full Thrust 1 plan is not complete:**
+independent semantic validation, extraction ensembles/reference evaluation, and D4 guided-learning
+experiments remain outstanding; OAI UE was not reproduced. The srsUE hypothesis is budget-limited.
+See [`Thrust 1 audit`](thrust1/results/T1_AUDIT.md) for verified findings and completion criteria.
+All PASS from `check_thrust1.sh` means artifact consistency, not research completion.
 
 ## If something breaks
 
@@ -80,7 +89,7 @@ After that: the number of new confirmed cases, and analyst time per deviation.
 
 **Already in place from Thrust 1:**
 - 23 deviation classes with witnesses
-- DevLyzer confirmation of all 23, i.e. step 3 already done for these noncompliance candidates
+- DevLyzer witness-level checks for all 23; proposed final-cell claims still require targeted confirmation
 - (c) candidates I19 and I20
 - the R1 and R2 repairs: two (a) model-extraction errors, found when device and property evidence sent the
   spec model back to the clause text

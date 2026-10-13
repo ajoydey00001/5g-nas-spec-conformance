@@ -3,7 +3,7 @@
 #   bash reproduce.sh            -> writes everything under ./repro/
 # Downloads: TS 24.501 v17.8.0 from 3GPP, and the two learned UE FSMs from 5GBaseChecker (AGPL-3.0),
 # both pinned to exact versions.
-set -e
+set -euo pipefail
 cd "$(dirname "$0")"
 OUT=repro; mkdir -p $OUT/dl
 UA="Mozilla/5.0 (X11; Linux x86_64)"   # 3GPP's server refuses requests with curl's default user agent
@@ -21,7 +21,7 @@ echo "== 3. spec cells -> spec FSM; every quote checked verbatim against the cla
 python3 -I thrust1/extract/author_spec_cells.py $OUT/spec_cells_v1.json
 cmp -s $OUT/spec_cells_v1.json thrust1/spec_fsm/spec_cells_v1.json \
   && echo "   spec_cells_v1.json identical to the committed one" \
-  || echo "   NOTE: regenerated spec_cells_v1.json differs from the committed one"
+  || { echo "   ERROR: regenerated spec_cells_v1.json differs from the committed one"; exit 1; }
 python3 -I thrust1/extract/build_spec_fsm.py thrust1/spec_fsm/spec_cells_v1.json $OUT/clauses.jsonl $OUT/spec_fsm
 
 echo "== 4. device FSMs: size and Table 8 issue probes"
@@ -37,6 +37,9 @@ python3 -I - $OUT/T1.6_spec_vs_AB.json thrust1/results/T1.6_spec_vs_AB.json <<'E
 import json, sys
 a, b = (json.load(open(p)) for p in sys.argv[1:3])
 key = lambda d: sorted((c['spec_state'], c['input'], c['case'], c['visible_to_diff']) for c in d['classes'])
-print('   classes match committed results:', key(a) == key(b), '(%d vs %d)' % (len(a['classes']), len(b['classes'])))
+matches = a == b
+print('   classes match committed results:', matches, '(%d vs %d)' % (len(a['classes']), len(b['classes'])))
+if not matches:
+    raise SystemExit('reproduced comparison differs from committed artifact')
 EOF
 echo "done -> $OUT/"

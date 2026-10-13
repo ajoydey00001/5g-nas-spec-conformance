@@ -1,5 +1,10 @@
 # Implementation plan: Thrust 1 → 2 → 3 (5G NAS only)
 
+Current status (2026-10-14): proof-of-concept finalized, full plan incomplete.
+See `results/T1_AUDIT.md`. D4, independent semantic/reference validation, extraction
+ensembles, and OAI reproduction are not completed. Artifact-check PASS is not a
+completion gate for this original plan.
+
 Last verified: 2026-10-12, against the repos and papers listed in §10.
 Proposal: `proposal/Ajoy_Dey_PhD_Proposal.tex`. Scope: 5G NAS (TS 24.501) only; no 4G.
 

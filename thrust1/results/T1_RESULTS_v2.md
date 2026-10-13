@@ -28,7 +28,7 @@ not independently prove each spec interpretation or exploit impact.
 
 Spec model: `spec_fsm/spec_cells_v1.json` — 6 states × 16 NAS inputs = 96 cells, extracted from TS 24.501 v17.8.0
 (53 SPEC, 8 INFERRED, 5 UNDERSPECIFIED, 30 NO_CONNECTION), protocol evidence is attached where applicable; the 30 NO_CONNECTION cells have no quotes;
-**89/89 quotes verified verbatim** against the spec text. Extractor: Claude in a Claude Code session, one sample
+**89/89 evidence quotes matched after whitespace/punctuation normalization** against the spec text. Extractor: Claude in a Claude Code session, one sample
 per cell (no API key; see limitations).
 
 ## D2 — the blind spot of device-vs-device differential testing
@@ -58,9 +58,12 @@ the whole witness):
 | nas_sm_cmd_protected (header type 2 SMC) after SMC | nas_sm_complete | nas_sm_complete | I19 (U1) — shared, so also invisible to diff |
 | config_update_cmd_protected, NITZ only, no ack requested | null_action | config_update_complete | I20 (U2) |
 
-Independent confirmation: all 23 deviation classes, fed to the authors' DevLyzer in its own
-`deviant-queries.json` format, are classified as property violations (0 unresolved). The spec model was not
-built from these properties, and the properties were not written for our spec model.
+Property corroboration: all 23 witness records have at least one violating device-output group
+in DevLyzer (0 unresolved). This does not establish that the final cell caused each violation.
+For example, class 23 (S4, repeated protected Registration Accept) has property 11 violations
+on B/srsUE from the earlier `nas_sm_cmd_ns` rejection; property 11 is not a check of the
+final Registration Accept. The properties are external expert artifacts, but repairs R1/R2
+used device/property evidence, so the final reference is not independent of those observations.
 
 ## The loop: device/property evidence repairs the spec model (`spec_fsm/REPAIRS.md`)
 
@@ -79,7 +82,7 @@ not ground truth.
 
 ## Limitations (say these out loud)
 
-- FSM_A/FSM_B device identities are not published; their ground truth is DevLyzer's verdict, not Table 8.
+- FSM_A/FSM_B device identities are not published; their corroborating evidence is DevLyzer's verdict, not device-specific Table 8 truth.
   Table 8 comparison applies to srsUE (7/7 here); OAI UE was not run.
 - One extraction sample per cell, by the same model that wrote the comparator; no ensemble, no API run yet.
   A scripted re-extraction (Gemini free tier / DeepSeek / Claude API) is needed before a paper.
@@ -90,3 +93,5 @@ not ground truth.
 - Quote matching establishes textual provenance, not semantic correctness.
 - Independent spec extraction/audit and guided-learning D4 cost experiments remain outstanding.
 - The srsUE result is budget-limited and uses NEA0; convergence and NEA2 behavior are not established.
+
+Completion verdict and remaining validity issues: see [T1_AUDIT.md](T1_AUDIT.md).

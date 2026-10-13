@@ -161,3 +161,13 @@ The learner stops at LogOracle's 30-equivalence-call System.exit(0), before
 the normal final writer. Repeated cached resumes do not establish convergence.
 Auto-resume was paused; archived model copies have identical hashes.
 Independent extraction validation and guided-learning D4 experiments remain future work.
+
+## Consistency audit — 2026-10-14
+
+See results/T1_AUDIT.md. Reproduction and artifact checks pass; four regression
+tests cover failed evidence validation, Case 2 visibility, and overlapping
+DevLyzer categories. Full-plan completion is not established. Corrected report
+claims about independence, final-cell corroboration, and Case 2 invisibility.
+Actual preserved model alphabet is 29 symbols (174 edges), not the 31-symbol
+description in earlier setup notes. Security and registration prefixes were
+checked explicitly. Independent semantics, OAI reproduction and D4 remain open.

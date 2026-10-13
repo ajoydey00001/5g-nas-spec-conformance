@@ -61,11 +61,11 @@ device shares: the devices agree, so nothing is reported. Thrust~1 of my proposa
 extracted from the specification (TS~24.501) and compares every device against it, so that shared flaws
 appear as a separate case. This report gives the first end-to-end results. I built a 96-cell specification
 FSM for the 16 NAS inputs of 5GBaseChecker, with clause evidence for protocol cells and explicit no-connection cells
-(30 cells without clause evidence) (89/89 quotes verified mechanically against the spec text). Comparing it with the two learned
+(30 cells without clause evidence) (89/89 evidence quotes matched after normalization). Comparing it with the two learned
 device FSMs released with 5GBaseChecker gives 23 deviation classes, of which \textbf{6 are invisible to
 device-vs-device comparison}; they correspond to the known issues I3, I4, I6 and I10 (I10 in three
-situations). All 23 are independently confirmed by the authors' own DevLyzer tool and its 45 expert LTL
-properties. The comparison also worked in the reverse direction: device and property evidence exposed two
+situations). All 23 witness records contain a property violation under the authors' DevLyzer tool and its
+45 expert LTL properties; this does not independently confirm every final-cell interpretation. The comparison also worked in the reverse direction: device and property evidence exposed two
 errors in my extracted model, which I repaired by re-reading the cited clauses. Along the way I reproduced
 the 5GBaseChecker offline pipeline exactly and brought up its live learning stack for srsUE on a laptop with
 a simulated radio. The round-5 srsUE hypothesis has 6 states and 21 non-self-loop transitions,
@@ -201,7 +201,7 @@ INFERRED & 8 & Follows from the quoted clause(s), not stated for exactly this ca
 UNDERSPECIFIED & 5 & The spec does not say what the UE does; reported as (c) candidates, never as deviations. \\
 NO\_CONNECTION & 30 & S0/S5: nothing can be received. \\
 \midrule
-Total & 96 & \textbf{89 quotes, all found verbatim in v17.8.0} by an automatic check. \\
+Total & 96 & \textbf{89 evidence quotes, all matched after normalization} by an automatic check. \\
 \bottomrule
 \end{tabular}
 \caption{Spec FSM cells. Clauses cited: 4.4.3.2, 4.4.4.2, 5.4.1.3.3, 5.4.2.2, 5.4.2.3, 5.4.2.5, 5.4.3.3,
@@ -240,7 +240,7 @@ violated spec cell becomes a deviation class with its shortest witness, which is
 Case & Devices vs spec & Meaning \\
 \midrule
 1 & all conform & nothing to report \\
-2 & none conform, devices agree & \textbf{shared flaw: invisible to device-vs-device comparison} \\
+2 & none eligible conform, final outputs agree & invisible only if complete witness outputs agree \\
 3 & some conform & devices split (DevScan can see it) \\
 4 & none conform, devices disagree & each device wrong in its own way \\
 \bottomrule
@@ -249,6 +249,8 @@ Case & Devices vs spec & Meaning \\
 \end{table}
 
 A class is \emph{visible to differential testing} if the devices' outputs differ anywhere along its witness.
+Case labels use only devices whose preceding outputs were allowed; Case~2 alone does not imply invisibility.
+There are eight visible Case~2 classes as well as six invisible ones.
 
 % ---------------------------------------------------------------------------
 \section{Results}
@@ -320,8 +322,11 @@ Cell & FSM\_A & FSM\_B & Note \\
 
 I converted all 23 deviation classes to DevLyzer's own input format (\sym{deviant-queries.json}) and ran the
 unmodified DevLyzer. It classifies all 23 as property violations, 0 unresolved, and each invisible Case 2 maps
-to the property one would expect (table above). The two sides are independent: the spec FSM was built only
-from TS~24.501 text, and the 45 properties were written by the 5GBaseChecker authors.
+to the property one would expect (table above). The properties were written externally by the
+5GBaseChecker authors. The repaired spec model uses device/property evidence, so this is not a
+fully independent semantic validation. A violation can concern a witness prefix: class~23
+violates property~11 through an earlier null-integrity SMC rejection, rather than its final
+protected Registration Accept.
 
 \subsection{The loop: evidence repaired the specification model}
 
@@ -389,8 +394,8 @@ jar has no main class in its manifest; the gNB's learner port lacks \sym{SO_REUS
 the SSB on a different frequency than this gNB transmits; with the core's ciphering setting (NEA2 first)
 srsUE fails to decode every ciphered NAS message, so srsUE runs with NEA0 (cause not yet known); the shipped
 \sym{CE_reverse_feeding/srsue.properties} names \sym{device = oai}; and in counterexample-feeding mode the
-learner stops after 30 equivalence queries, so Table~4's state and transition counts can be reproduced but
-not its query counts.
+learner stops after 30 equivalence queries, so exact Table~4 reproduction is not established: this hypothesis matches the six-state count
+but has 21 rather than 20 transitions, and its query counts are not directly comparable.
 
 % ---------------------------------------------------------------------------
 \section{Finalized srsUE Experiment}
@@ -429,7 +434,7 @@ Textual quote verification alone does not establish semantic correctness.
         available), one sample per cell, no ensemble vote. All 89 evidence quotes are checked for textual presence, but a scripted, repeated
         extraction with an API model is needed before publication.
   \item \textbf{Ground truth for FSM\_A/FSM\_B.} Their device identities are not published, so their ground
-        truth here is DevLyzer, not the paper's Table~8. Table~8 applies to srsUE (7/7 recovered here) and OAI UE (not run here).
+        evidence here is DevLyzer property verdicts, rather than device-specific Table~8 truth. Table~8 applies to srsUE (7/7 recovered here) and OAI UE (not run here).
   \item \textbf{Harness.} Where the core or learner may suppress a message, \sym{null_action} is always
         accepted, so a device that wrongly stays silent in exactly those situations is not flagged. Findings
         where a device answers when it must not (I3, I4, I6, I10) are unaffected.
@@ -467,7 +472,7 @@ Protocol State Machines from RFC Specifications. NeurIPS D\&B 2025.\\
 \appendix
 \section{Artifacts}
 
-All in the repository under \sym{implementation/}:
+All in the repository under \sym{thrust1/}:
 \begin{itemize}[itemsep=1pt]
   \item \sym{symbols/alignment.md}, \sym{symbols/fsm_tools.py} --- symbol table; FSM statistics, NAS projection,
         issue probes, NuSMV property check

@@ -11,7 +11,7 @@ echo "check queries   $(grep -c '^INFO: \[' $E 2>/dev/null)   (last: $(grep -h '
 echo "round           $(grep 'Starting round' $L/logs/srsue.log/learner.log 2>/dev/null | tail -1 | sed 's/INFO: //')"
 echo "hypotheses      $(ls $L/logs/srsue.log 2>/dev/null | grep -E 'hypothesis_[0-9]+\.dot$|learnedModel\.dot' | tr '\n' ' ')"
 echo "/dev/shm        $(docker exec t1-learn df -h /dev/shm 2>/dev/null | tail -1 | awk '{print $5" used"}')"
-echo "core running    $(docker exec t1-learn pgrep -c -f open5gs-amfd 2>/dev/null || echo 0)"
+echo "core running    $(docker exec t1-learn pgrep -c -f open5gs-amfd 2>/dev/null; true)   (0 between queries is normal: the core restarts for every query)"
 echo "sleep blocker   $(systemd-inhibit --list 2>/dev/null | grep -c thrust1) active"
 echo "github backup   $(pgrep -f checkpoint.sh >/dev/null && echo running || echo NOT running), last: $(git -C ~/5g-nas-spec-conformance log -1 --format='%s' 2>/dev/null)"
 echo "run times:"; sed 's/^/                /' $L/logs/run_table4_time.txt 2>/dev/null

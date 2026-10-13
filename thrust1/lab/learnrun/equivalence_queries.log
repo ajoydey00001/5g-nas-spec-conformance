@@ -1,0 +1,4 @@
+[? | enable_s1 id_request_plain_text enable_s1 / ? | registration_request id_response registration_request]
+[? | enable_s1 auth_request_plain_text enable_s1 / ? | registration_request auth_response registration_request]
+[? | enable_s1 enable_s1 / ? | registration_request registration_request]
+[? | enable_s1 auth_request_plain_text nas_sm_cmd rrc_sm_cmd enable_s1 / ? | registration_request auth_response nas_sm_complete rrc_sm_complete registration_request]

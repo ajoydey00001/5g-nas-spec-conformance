@@ -1,0 +1,23 @@
+# Env A (live learning): 5GBaseChecker StateSynth on Ubuntu 20.04 (the artifact's tested OS).
+# Sources are mounted from the host at /work, so builds persist outside the container.
+FROM ubuntu:20.04
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      build-essential git cmake ninja-build meson pkg-config flex bison curl gnupg ca-certificates \
+      sudo iproute2 iputils-ping procps psmisc lsof net-tools \
+      # Open5GS 2.4.9
+      libsctp-dev lksctp-tools libgnutls28-dev libgcrypt-dev libssl-dev libidn11-dev libmongoc-dev \
+      libbson-dev libyaml-dev libnghttp2-dev libmicrohttpd-dev libcurl4-gnutls-dev libtins-dev libtalloc-dev \
+      # srsRAN 22.x (modified gNB + srsUE)
+      libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libzmq3-dev \
+      # learner and helpers
+      openjdk-11-jre-headless python3 python3-pip graphviz \
+    && rm -rf /var/lib/apt/lists/*
+# MongoDB 4.4 (artifact requirement)
+RUN curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | gpg --dearmor -o /usr/share/keyrings/mongodb-4.4.gpg \
+    && echo "deb [ arch=amd64 signed-by=/usr/share/keyrings/mongodb-4.4.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" \
+       > /etc/apt/sources.list.d/mongodb-org-4.4.list \
+    && apt-get update && apt-get install -y --no-install-recommends mongodb-org \
+    && rm -rf /var/lib/apt/lists/*
+RUN python3 -m pip install pymongo pydot
+WORKDIR /work

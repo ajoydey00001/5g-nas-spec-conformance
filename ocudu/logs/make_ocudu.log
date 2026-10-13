@@ -1,0 +1,1449 @@
+[  0%] Building CXX object apps/helpers/network/CMakeFiles/ocudu_network_app_helpers.dir/sctp_cli11_schema.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/backend_pcap_writer.cpp.o
+[  0%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  0%] Building CXX object apps/helpers/config/CMakeFiles/ocudu_config_app_helpers.dir/config_yaml_schema.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/dlt_pcap_impl.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/mac_pcap_impl.cpp.o
+[  0%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  0%] Linking CXX static library libfmt.a
+[  0%] Built target fmt
+[  0%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_cu_up.dir/cu_up/f1u_bearer_impl.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/pcap_file_writer.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/rlc_pcap_impl.cpp.o
+[  0%] Building CXX object apps/helpers/network/CMakeFiles/ocudu_network_app_helpers.dir/dtls_cli11_schema.cpp.o
+[  0%] Linking CXX static library libocudu_config_app_helpers.a
+[  0%] Built target ocudu_config_app_helpers
+[  0%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_du.dir/du/f1u_bearer_impl.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/pcap_rlc_pdu_context.cpp.o
+[  0%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_cu_up.dir/cu_up/f1u_bearer_factory.cpp.o
+[  0%] Linking CXX static library libocudu_pcap.a
+[  0%] Built target ocudu_pcap
+[  0%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_split_connector.dir/split_connector/f1u_session_manager_impl.cpp.o
+[  0%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_du.dir/du/f1u_bearer_factory.cpp.o
+[  0%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_cu_up.dir/cu_up/f1u_metrics_aggregator.cpp.o
+[  0%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_split_connector.dir/split_connector/f1u_session_manager_factory.cpp.o
+[  0%] Linking CXX static library libocudu_f1u_du.a
+[  0%] Built target ocudu_f1u_du
+[  0%] Building CXX object apps/helpers/f1u/CMakeFiles/ocudu_f1u_app_helpers.dir/f1u_cli11_schema.cpp.o
+[  0%] Linking CXX static library libocudu_f1u_cu_up.a
+[  0%] Built target ocudu_f1u_cu_up
+[  0%] Building CXX object apps/helpers/hal/CMakeFiles/ocudu_hal_app_helpers.dir/hal_cli11_schema.cpp.o
+[  0%] Linking CXX static library libocudu_f1u_split_connector.a
+[  0%] Built target ocudu_f1u_split_connector
+[  1%] Building CXX object apps/helpers/logger/CMakeFiles/ocudu_logger_app_helpers.dir/logger_appconfig_cli11_schema.cpp.o
+[  1%] Building CXX object apps/helpers/network/CMakeFiles/ocudu_network_app_helpers.dir/sctp_config_yaml_writer.cpp.o
+[  1%] Building CXX object apps/helpers/network/CMakeFiles/ocudu_network_app_helpers.dir/udp_cli11_schema.cpp.o
+[  1%] Building CXX object apps/helpers/hal/CMakeFiles/ocudu_hal_app_helpers.dir/hal_appconfig_yaml_writer.cpp.o
+[  1%] Building CXX object apps/helpers/f1u/CMakeFiles/ocudu_f1u_app_helpers.dir/f1u_appconfig_validator.cpp.o
+[  1%] Building CXX object apps/helpers/logger/CMakeFiles/ocudu_logger_app_helpers.dir/logger_appconfig_validator.cpp.o
+[  1%] Linking CXX static library libocudu_hal_app_helpers.a
+[  1%] Built target ocudu_hal_app_helpers
+[  1%] Building CXX object apps/helpers/metrics/CMakeFiles/ocudu_metrics_app_helpers.dir/metrics_config_cli11_schema.cpp.o
+[  1%] Building CXX object apps/helpers/f1u/CMakeFiles/ocudu_f1u_app_helpers.dir/f1u_config_yaml_writer.cpp.o
+[  1%] Building CXX object apps/helpers/logger/CMakeFiles/ocudu_logger_app_helpers.dir/logger_appconfig_yaml_writer.cpp.o
+[  1%] Building CXX object apps/helpers/network/CMakeFiles/ocudu_network_app_helpers.dir/udp_config_yaml_writer.cpp.o
+[  1%] Linking CXX static library libocudu_f1u_app_helpers.a
+[  1%] Built target ocudu_f1u_app_helpers
+[  1%] Building CXX object apps/helpers/metrics/json_generators/ru/CMakeFiles/ocudu_ru_metrics_json_generators_helpers.dir/ofh.cpp.o
+[  1%] Linking CXX static library libocudu_logger_app_helpers.a
+[  1%] Built target ocudu_logger_app_helpers
+[  1%] Building CXX object apps/helpers/metrics/json_generators/cu_cp/CMakeFiles/ocudu_cu_cp_metrics_json_generators_helpers.dir/cu_cp_json_helper.cpp.o
+[  1%] Linking CXX static library libocudu_network_app_helpers.a
+[  1%] Built target ocudu_network_app_helpers
+[  1%] Building CXX object apps/helpers/metrics/json_generators/cu_up/CMakeFiles/ocudu_cu_up_metrics_json_generators_helpers.dir/f1u.cpp.o
+[  1%] Linking CXX static library libocudu_ru_metrics_json_generators_helpers.a
+[  1%] Built target ocudu_ru_metrics_json_generators_helpers
+[  1%] Building CXX object apps/helpers/metrics/json_generators/du_high/CMakeFiles/ocudu_du_high_metrics_json_generators_helpers.dir/mac.cpp.o
+[  1%] Building CXX object apps/helpers/metrics/json_generators/cu_up/CMakeFiles/ocudu_cu_up_metrics_json_generators_helpers.dir/pdcp.cpp.o
+[  1%] Building CXX object apps/helpers/metrics/CMakeFiles/ocudu_metrics_app_helpers.dir/metrics_config_yaml_writer.cpp.o
+[  1%] Building CXX object apps/helpers/metrics/json_generators/du_high/CMakeFiles/ocudu_du_high_metrics_json_generators_helpers.dir/rlc.cpp.o
+[  1%] Building CXX object apps/helpers/metrics/CMakeFiles/ocudu_metrics_app_helpers.dir/metrics_helpers.cpp.o
+[  1%] Linking CXX static library libocudu_cu_cp_metrics_json_generators_helpers.a
+[  1%] Built target ocudu_cu_cp_metrics_json_generators_helpers
+[  1%] Building CXX object apps/helpers/tracing/CMakeFiles/ocudu_tracing_app_helpers.dir/tracer_appconfig_cli11_schema.cpp.o
+[  1%] Linking CXX static library libocudu_metrics_app_helpers.a
+[  1%] Built target ocudu_metrics_app_helpers
+[  1%] Building CXX object apps/helpers/xnu/CMakeFiles/ocudu_xnu_app_helpers.dir/xnu_cli11_schema.cpp.o
+[  1%] Linking CXX static library libocudu_cu_up_metrics_json_generators_helpers.a
+[  1%] Built target ocudu_cu_up_metrics_json_generators_helpers
+[  1%] Building CXX object lib/support/CMakeFiles/ocudu_yaml_util.dir/config_yaml.cpp.o
+[  1%] Building CXX object apps/helpers/metrics/json_generators/du_high/CMakeFiles/ocudu_du_high_metrics_json_generators_helpers.dir/scheduler.cpp.o
+[  1%] Linking CXX static library libocudu_yaml_util.a
+[  1%] Built target ocudu_yaml_util
+[  1%] Building CXX object apps/services/buffer_pool/CMakeFiles/ocudu_buffer_pool_app_service.dir/buffer_pool_appconfig_cli11_schema.cpp.o
+[  1%] Linking CXX static library libocudu_du_high_metrics_json_generators_helpers.a
+[  1%] Built target ocudu_du_high_metrics_json_generators_helpers
+[  1%] Building CXX object apps/helpers/xnu/CMakeFiles/ocudu_xnu_app_helpers.dir/xnu_appconfig_validator.cpp.o
+[  1%] Building CXX object apps/helpers/tracing/CMakeFiles/ocudu_tracing_app_helpers.dir/tracer_appconfig_yaml_writer.cpp.o
+[  1%] Building CXX object apps/helpers/xnu/CMakeFiles/ocudu_xnu_app_helpers.dir/xnu_config_yaml_writer.cpp.o
+[  1%] Linking CXX static library libocudu_tracing_app_helpers.a
+[  1%] Built target ocudu_tracing_app_helpers
+[  1%] Building CXX object apps/services/cmdline/CMakeFiles/ocudu_cmdline_app_service.dir/cmdline_command_dispatcher.cpp.o
+[  1%] Building CXX object apps/services/cmdline/CMakeFiles/ocudu_cmdline_app_service.dir/stdout_metrics_command.cpp.o
+[  1%] Linking CXX static library libocudu_xnu_app_helpers.a
+[  1%] Built target ocudu_xnu_app_helpers
+[  1%] Building CXX object apps/services/metrics/CMakeFiles/ocudu_metrics_app_service.dir/metrics_config_cli11_schema.cpp.o
+[  1%] Building C object external/uWebSockets/uSockets/CMakeFiles/uSockets.dir/eventing/epoll_kqueue.c.o
+[  1%] Building C object external/uWebSockets/uSockets/CMakeFiles/uSockets.dir/bsd.c.o
+[  1%] Building C object external/uWebSockets/uSockets/CMakeFiles/uSockets.dir/context.c.o
+[  1%] Building C object external/uWebSockets/uSockets/CMakeFiles/uSockets.dir/loop.c.o
+[  1%] Linking CXX static library libocudu_cmdline_app_service.a
+[  1%] Built target ocudu_cmdline_app_service
+[  1%] Building CXX object apps/services/worker_manager/CMakeFiles/ocudu_cpu_affinities_helper.dir/cli11_cpu_affinities_parser_helper.cpp.o
+[  1%] Building C object external/uWebSockets/uSockets/CMakeFiles/uSockets.dir/socket.c.o
+[  1%] Building C object external/uWebSockets/uSockets/CMakeFiles/uSockets.dir/udp.c.o
+[  1%] Linking C static library libuSockets.a
+[  1%] Built target uSockets
+[  1%] Building CXX object lib/cu_cp/ue_location_manager/CMakeFiles/ocudu_ue_location_manager.dir/ue_location_manager.cpp.o
+[  1%] Linking CXX static library libocudu_cpu_affinities_helper.a
+[  1%] Built target ocudu_cpu_affinities_helper
+[  1%] Building CXX object lib/cu_cp/up_resource_manager/CMakeFiles/ocudu_up_resource_manager.dir/up_resource_manager_impl.cpp.o
+[  1%] Linking CXX static library libocudu_ue_location_manager.a
+[  1%] Built target ocudu_ue_location_manager
+[  1%] Building CXX object lib/cu_cp/ue_security_manager/CMakeFiles/ocudu_ue_security_manager.dir/ue_security_manager_impl.cpp.o
+[  1%] Building CXX object apps/services/buffer_pool/CMakeFiles/ocudu_buffer_pool_app_service.dir/buffer_pool_config_yaml_writer.cpp.o
+[  1%] Linking CXX static library libocudu_ue_security_manager.a
+[  1%] Built target ocudu_ue_security_manager
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/converters/reference_frame_converter.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/converters/ephemeris_info_converter.cpp.o
+[  1%] Building CXX object lib/cu_cp/up_resource_manager/CMakeFiles/ocudu_up_resource_manager.dir/up_resource_manager_helpers.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/converters/coordinate_converter.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/propagators/ordinary_differential_equation.cpp.o
+[  1%] Building CXX object apps/services/buffer_pool/CMakeFiles/ocudu_buffer_pool_app_service.dir/metrics/buffer_pool_metrics_builder.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/propagators/rk4_propagator.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/propagators/keplerian_propagator.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/orbit_ephemeris_info.cpp.o
+[  1%] Building CXX object apps/services/metrics/CMakeFiles/ocudu_metrics_app_service.dir/metrics_config_yaml_writer.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/ntn_math_helpers.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/ntn_sib19_helpers.cpp.o
+[  1%] Linking CXX static library libocudu_metrics_app_service.a
+[  1%] Built target ocudu_metrics_app_service
+[  1%] Building CXX object lib/rohc/CMakeFiles/ocudu_rohc.dir/rohc_factory.cpp.o
+[  1%] Building CXX object lib/rohc/CMakeFiles/ocudu_rohc.dir/rohc_support.cpp.o
+[  1%] Linking CXX static library libocudu_rohc.a
+[  1%] Built target ocudu_rohc
+[  1%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/security_engine_factory.cpp.o
+[  1%] Linking CXX static library libocudu_up_resource_manager.a
+[  1%] Built target ocudu_up_resource_manager
+[  1%] Building CXX object lib/sdap/CMakeFiles/ocudu_sdap.dir/sdap_factory.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/ntn_sat_switch_helpers.cpp.o
+[  1%] Linking CXX static library libocudu_buffer_pool_app_service.a
+[  1%] Built target ocudu_buffer_pool_app_service
+[  1%] Building CXX object lib/du/du_high/du_manager/cbs/CMakeFiles/ocudu_cbs_encoder.dir/cbs_encoder_impl.cpp.o
+[  1%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea1.cpp.o
+[  1%] Linking CXX static library libocudu_cbs_encoder.a
+[  1%] Built target ocudu_cbs_encoder
+[  1%] Building CXX object lib/scheduler/cell/CMakeFiles/sched_cell.dir/vrb_alloc.cpp.o
+[  1%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/ntn_orbital_compute_module.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea2.cpp.o
+[  2%] Building CXX object lib/scheduler/cell/CMakeFiles/sched_cell.dir/resource_block_group.cpp.o
+[  2%] Linking CXX static library libocudu_sdap.a
+[  2%] Built target ocudu_sdap
+[  2%] Building CXX object lib/scheduler/cell/CMakeFiles/sched_cell.dir/resource_grid.cpp.o
+[  2%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/ntn_configuration_manager_impl.cpp.o
+[  2%] Building CXX object lib/scheduler/cell/CMakeFiles/sched_cell.dir/scheduler_prb.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea2_psa.cpp.o
+[  2%] Building CXX object lib/scheduler/cell/CMakeFiles/sched_cell.dir/cell_harq_manager.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea3.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_generic.cpp.o
+[  2%] Building CXX object lib/ntn/CMakeFiles/ocudu_ntn_lib.dir/ntn_configuration_manager_factory.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_nia2_cmac.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_nia2_non_cmac.cpp.o
+[  2%] Built target sched_cell
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/ra_scheduler.cpp.o
+[  2%] Linking CXX static library libocudu_ntn_lib.a
+[  2%] Built target ocudu_ntn_lib
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/ue_cell_grid_allocator.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_nia2_psa.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/security.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/security_engine_impl.cpp.o
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/cell_group_event_manager.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/s3g.cpp.o
+[  2%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/zuc.cpp.o
+[  2%] Linking CXX static library libocudu_security.a
+[  2%] Built target ocudu_security
+[  2%] Building CXX object lib/phy/upper/CMakeFiles/ocudu_upper_phy_support.dir/rx_buffer_pool_impl.cpp.o
+[  2%] Linking CXX static library libocudu_upper_phy_support.a
+[  2%] Built target ocudu_upper_phy_support
+[  2%] Building CXX object lib/phy/generic_functions/precoding/CMakeFiles/ocudu_channel_precoder.dir/channel_precoder_impl.cpp.o
+[  2%] Building CXX object lib/phy/generic_functions/precoding/CMakeFiles/ocudu_channel_precoder.dir/channel_precoder_generic.cpp.o
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/ue_fallback_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/ra_ue_repository.cpp.o
+[  2%] Building CXX object lib/phy/generic_functions/precoding/CMakeFiles/ocudu_channel_precoder.dir/precoding_factories.cpp.o
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/ue_scheduler_impl.cpp.o
+[  2%] Building CXX object lib/phy/generic_functions/precoding/CMakeFiles/ocudu_channel_precoder.dir/channel_precoder_avx2.cpp.o
+[  2%] Building CXX object lib/phy/generic_functions/precoding/CMakeFiles/ocudu_channel_precoder.dir/channel_precoder_avx512.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/si_scheduler.cpp.o
+[  2%] Linking CXX static library libocudu_channel_precoder.a
+[  2%] Built target ocudu_channel_precoder
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/sib1_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/grant_params_selector.cpp.o
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/intra_slice_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/ssb_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/prach_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/pdcch_cce_budget_tracker.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/paging_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/csi_rs_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/ue_scheduling/CMakeFiles/ue_sched.dir/triggered_ul_grant_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/prs_scheduler.cpp.o
+[  2%] Building CXX object lib/scheduler/common_scheduling/CMakeFiles/common_sched.dir/si_message_scheduler.cpp.o
+[  2%] Building CXX object lib/phy/generic_functions/transform_precoding/CMakeFiles/ocudu_transform_precoding.dir/transform_precoder_dft_impl.cpp.o
+[  2%] Building CXX object lib/phy/generic_functions/transform_precoding/CMakeFiles/ocudu_transform_precoding.dir/transform_precoding_factories.cpp.o
+[  2%] Built target ue_sched
+[  2%] Building CXX object lib/phy/metrics/CMakeFiles/ocudu_phy_metrics.dir/phy_metrics_factories.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_coding/CMakeFiles/ocudu_crc_calculator.dir/crc_calculator_generic_impl.cpp.o
+[  2%] Linking CXX static library libocudu_transform_precoding.a
+[  2%] Built target ocudu_transform_precoding
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_processor.dir/factories.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_coding/CMakeFiles/ocudu_crc_calculator.dir/crc_calculator_lut_impl.cpp.o
+[  2%] Built target common_sched
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_detector.dir/factories.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_coding/CMakeFiles/ocudu_crc_calculator.dir/crc_calculator_clmul_impl.cpp.o
+[  2%] Linking CXX static library libocudu_crc_calculator.a
+[  2%] Built target ocudu_crc_calculator
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_demodulator.dir/factories.cpp.o
+[  2%] Linking CXX static library libocudu_phy_metrics.a
+[  2%] Built target ocudu_phy_metrics
+[  2%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_demodulator.dir/pusch_demodulator_impl.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_processor.dir/pucch_processor_impl.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_demodulator.dir/demodulator_factories.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_detector.dir/pucch_detector_format0.cpp.o
+[  2%] Linking CXX static library libocudu_pusch_demodulator.a
+[  2%] Built target ocudu_pusch_demodulator
+[  2%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_helper.dir/dmrs_helper.cpp.o
+[  2%] Linking CXX static library libocudu_pucch_processor.a
+[  2%] Built target ocudu_pucch_processor
+[  2%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pucch.dir/pucch/factories.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_demodulator.dir/pucch_demodulator_format2.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_detector.dir/pucch_detector_format1.cpp.o
+[  2%] Linking CXX static library libocudu_dmrs_helper.a
+[  2%] Built target ocudu_dmrs_helper
+[  2%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_ptrs_generator.dir/ptrs/ptrs_pdsch_generator_factory.cpp.o
+[  2%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pucch.dir/pucch/dmrs_pucch_estimator_format2.cpp.o
+[  2%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_ptrs_generator.dir/ptrs/ptrs_pdsch_generator_impl.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_demodulator.dir/pucch_demodulator_format3.cpp.o
+[  2%] Linking CXX static library libocudu_pucch_detector.a
+[  2%] Built target ocudu_pucch_detector
+[  2%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/doa_estimator_dummy.dir/srs/doa_estimator_dummy_factory.cpp.o
+[  2%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pucch.dir/pucch/dmrs_pucch_estimator_formats3_4.cpp.o
+[  2%] Linking CXX static library libdoa_estimator_dummy.a
+[  2%] Built target doa_estimator_dummy
+[  2%] Building CXX object lib/phy/lower/processors/adaptors/CMakeFiles/ocudu_lower_phy_adaptors.dir/processor_handler_adaptor.cpp.o
+[  2%] Building CXX object lib/phy/upper/channel_processors/pucch/CMakeFiles/ocudu_pucch_demodulator.dir/pucch_demodulator_format4.cpp.o
+[  2%] Linking CXX static library libocudu_ptrs_generator.a
+[  2%] Built target ocudu_ptrs_generator
+[  2%] Building CXX object apps/units/o_cu_cp/cu_cp/metrics/consumers/CMakeFiles/ocudu_cu_cp_unit_metrics_consumers.dir/ngap_metrics_consumers.cpp.o
+[  2%] Building CXX object lib/phy/lower/processors/adaptors/CMakeFiles/ocudu_lower_phy_adaptors.dir/processor_notifier_adaptor.cpp.o
+[  2%] Linking CXX static library libocudu_dmrs_pucch.a
+[  2%] Built target ocudu_dmrs_pucch
+[  2%] Building CXX object apps/units/o_cu_up/cu_up/metrics/CMakeFiles/ocudu_cu_up_unit_metrics_helpers.dir/cu_up_f1u_metrics_producer.cpp.o
+[  2%] Linking CXX static library libocudu_lower_phy_adaptors.a
+[  2%] Linking CXX static library libocudu_pucch_demodulator.a
+[  2%] Built target ocudu_lower_phy_adaptors
+-- Generating build information
+[  2%] Built target gen_build_info
+[  2%] Building CXX object apps/units/flexible_o_du/o_du_high/du_high/metrics/consumers/CMakeFiles/ocudu_du_high_unit_metrics_consumers.dir/du_procedure_metrics_consumers.cpp.o
+[  2%] Built target ocudu_pucch_demodulator
+[  2%] Building CXX object apps/units/flexible_o_du/o_du_high/fapi/CMakeFiles/ocudu_fapi_app_unit.dir/fapi_config_cli11_schema.cpp.o
+[  2%] Building CXX object apps/units/o_cu_cp/cu_cp/metrics/consumers/CMakeFiles/ocudu_cu_cp_unit_metrics_consumers.dir/rrc_metrics_consumers.cpp.o
+[  2%] Building CXX object apps/units/o_cu_up/cu_up/metrics/CMakeFiles/ocudu_cu_up_unit_metrics_helpers.dir/cu_up_f1u_metrics_consumers.cpp.o
+[  2%] Building CXX object apps/units/flexible_o_du/o_du_high/du_high/metrics/consumers/CMakeFiles/ocudu_du_high_unit_metrics_consumers.dir/mac_metrics_consumers.cpp.o
+[  2%] Building CXX object apps/units/flexible_o_du/o_du_high/du_high/metrics/consumers/CMakeFiles/ocudu_du_high_unit_metrics_consumers.dir/scheduler_metrics_consumers.cpp.o
+[  2%] Building CXX object apps/units/o_cu_up/cu_up/metrics/CMakeFiles/ocudu_cu_up_unit_metrics_helpers.dir/cu_up_pdcp_metrics_producer.cpp.o
+[  2%] Linking CXX static library libocudu_cu_cp_unit_metrics_consumers.a
+[  2%] Built target ocudu_cu_cp_unit_metrics_consumers
+[  2%] Building CXX object apps/units/flexible_o_du/split_6/o_du_low/CMakeFiles/ocudu_split6_o_du_low_plugin.dir/split6_o_du_low_plugin_dummy.cpp.o
+[  2%] Building CXX object apps/units/o_cu_up/cu_up/metrics/CMakeFiles/ocudu_cu_up_unit_metrics_helpers.dir/cu_up_pdcp_metrics_consumers.cpp.o
+[  2%] Linking CXX static library libocudu_du_high_unit_metrics_consumers.a
+[  2%] Built target ocudu_du_high_unit_metrics_consumers
+[  2%] Building CXX object apps/units/flexible_o_du/split_6/o_du_low/fapi_adaptor/CMakeFiles/ocudu_split6_flexible_o_du_low_unit_phy_fapi_p5_adaptor.dir/configuration_procedure.cpp.o
+[  2%] Linking CXX static library libocudu_split6_o_du_low_plugin.a
+[  2%] Built target ocudu_split6_o_du_low_plugin
+[  2%] Building CXX object apps/units/flexible_o_du/split_6/o_du_low/fapi_adaptor/CMakeFiles/ocudu_split6_flexible_o_du_low_unit_phy_fapi_p5_adaptor.dir/phy_fapi_p5_sector_operation_request_adaptor.cpp.o
+[  2%] Building CXX object lib/f1u/CMakeFiles/ocudu_f1u_connector.dir/local_connector/f1u_local_connector.cpp.o
+[  2%] Building CXX object apps/units/flexible_o_du/o_du_high/fapi/CMakeFiles/ocudu_fapi_app_unit.dir/fapi_config_yaml_writer.cpp.o
+[  2%] Linking CXX static library libocudu_split6_flexible_o_du_low_unit_phy_fapi_p5_adaptor.a
+[  2%] Built target ocudu_split6_flexible_o_du_low_unit_phy_fapi_p5_adaptor
+[  2%] Building CXX object tests/unittests/fapi/CMakeFiles/fapi_power_unit_test.dir/fapi_power_unit_test.cpp.o
+[  2%] Linking CXX static library libocudu_cu_up_unit_metrics_helpers.a
+[  2%] Built target ocudu_cu_up_unit_metrics_helpers
+[  2%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_translator_helpers.dir/helpers.cpp.o
+[  2%] Linking CXX static library libocudu_fapi_app_unit.a
+[  2%] Built target ocudu_fapi_app_unit
+[  2%] Building CXX object tests/unittests/fapi_adaptor/phy/p7/CMakeFiles/ocudu_fapi_message_builder_test_helpers.dir/message_builder_helpers.cpp.o
+[  2%] Linking CXX executable fapi_power_unit_test
+[  2%] Built target fapi_power_unit_test
+[  2%] Building CXX object tests/unittests/support/CMakeFiles/function_signature_test.dir/function_signature_test.cpp.o
+[  2%] Linking CXX executable function_signature_test
+[  2%] Built target function_signature_test
+[  2%] Building CXX object tests/integrationtests/rlc/CMakeFiles/rlc_stress_test_mac.dir/rlc_stress_test_mac.cpp.o
+[  2%] Linking CXX static library libocudu_f1u_connector.a
+[  2%] Built target ocudu_f1u_connector
+[  3%] Building CXX object tests/integrationtests/rlc/CMakeFiles/rlc_stress_test_traffic.dir/rlc_stress_test_traffic.cpp.o
+[  3%] Linking CXX static library libocudu_fapi_message_builder_test_helpers.a
+[  3%] Built target ocudu_fapi_message_builder_test_helpers
+[  3%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/backend_worker.cpp.o
+[  3%] Linking CXX static library librlc_stress_test_mac.a
+[  3%] Built target rlc_stress_test_mac
+[  3%] Building CXX object apps/helpers/e2/CMakeFiles/ocudu_e2_app_helpers.dir/e2_cli11_schema.cpp.o
+[  3%] Linking CXX static library librlc_stress_test_traffic.a
+[  3%] Built target rlc_stress_test_traffic
+[  3%] Building CXX object apps/helpers/metrics/json_generators/CMakeFiles/ocudu_metrics_json_generators.dir/executors.cpp.o
+[  3%] Linking CXX static library libocudu_mac_translator_helpers.a
+[  3%] Built target ocudu_mac_translator_helpers
+[  3%] Building CXX object apps/services/remote_control/CMakeFiles/ocudu_remote_control_app_service.dir/remote_control_appconfig_cli11_schema.cpp.o
+[  3%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/ocudulog.cpp.o
+[  3%] Building CXX object apps/helpers/metrics/json_generators/CMakeFiles/ocudu_metrics_json_generators.dir/o_du_high.cpp.o
+[  3%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/ocudulog_c.cpp.o
+[  3%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/event_trace.cpp.o
+[  3%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/formatters/json_formatter.cpp.o
+[  3%] Building CXX object apps/helpers/metrics/json_generators/CMakeFiles/ocudu_metrics_json_generators.dir/o_du_low.cpp.o
+[  3%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/formatters/text_formatter.cpp.o
+[  3%] Building CXX object apps/helpers/e2/CMakeFiles/ocudu_e2_app_helpers.dir/e2_config_yaml_writer.cpp.o
+[  3%] Building CXX object apps/services/remote_control/CMakeFiles/ocudu_remote_control_app_service.dir/remote_server.cpp.o
+[  3%] Linking CXX static library libocudu_e2_app_helpers.a
+[  3%] Built target ocudu_e2_app_helpers
+[  3%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pdcch.dir/pdcch/factories.cpp.o
+[  3%] Linking CXX static library libocudulog.a
+[  3%] Built target ocudulog
+[  3%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pdsch.dir/pdsch/factories.cpp.o
+[  3%] Building CXX object apps/helpers/metrics/json_generators/CMakeFiles/ocudu_metrics_json_generators.dir/resource_usage.cpp.o
+[  3%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pdcch.dir/pdcch/dmrs_pdcch_processor_impl.cpp.o
+[  3%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pdsch.dir/pdsch/dmrs_pdsch_processor_impl.cpp.o
+[  3%] Linking CXX static library libocudu_dmrs_pdcch.a
+[  3%] Built target ocudu_dmrs_pdcch
+[  3%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pusch.dir/pusch/factories.cpp.o
+[  3%] Linking CXX static library libocudu_dmrs_pdsch.a
+[  3%] Built target ocudu_dmrs_pdsch
+[  3%] Building CXX object lib/ofh/ecpri/CMakeFiles/ocudu_ofh_ecpri.dir/ecpri_factories.cpp.o
+[  3%] Linking CXX static library libocudu_metrics_json_generators.a
+[  3%] Building CXX object lib/ofh/ecpri/CMakeFiles/ocudu_ofh_ecpri.dir/ecpri_packet_builder_impl.cpp.o
+[  3%] Built target ocudu_metrics_json_generators
+[  3%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_cplane_message_builder_dynamic_compression_impl.cpp.o
+[  3%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_dmrs_pusch.dir/pusch/dmrs_pusch_estimator_impl.cpp.o
+[  3%] Building CXX object lib/ofh/ecpri/CMakeFiles/ocudu_ofh_ecpri.dir/ecpri_packet_decoder_impl.cpp.o
+[  3%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_cplane_message_builder_impl.cpp.o
+[  3%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_cplane_message_builder_static_compression_impl.cpp.o
+[  3%] Linking CXX static library libocudu_dmrs_pusch.a
+[  3%] Linking CXX static library libocudu_ofh_ecpri.a
+[  3%] Built target ocudu_dmrs_pusch
+[  3%] Building CXX object lib/ru/dummy/CMakeFiles/ocudu_ru_dummy.dir/ru_dummy_executor_mapper.cpp.o
+[  3%] Built target ocudu_ofh_ecpri
+[  4%] Building CXX object apps/units/o_cu_cp/cu_cp/metrics/CMakeFiles/ocudu_cu_cp_unit_metrics_helpers.dir/cu_cp_metrics_producer.cpp.o
+[  4%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_serdes_factories.cpp.o
+[  4%] Building CXX object lib/ru/dummy/CMakeFiles/ocudu_ru_dummy.dir/ru_dummy_factory.cpp.o
+[  4%] Linking CXX static library libocudu_remote_control_app_service.a
+[  4%] Built target ocudu_remote_control_app_service
+[  4%] Building CXX object apps/units/o_cu_cp/e2/CMakeFiles/ocudu_o_cu_cp_e2_app_unit.dir/o_cu_cp_e2_config_cli11_schema.cpp.o
+[  4%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_uplane_message_builder_impl.cpp.o
+[  5%] Building CXX object lib/ru/dummy/CMakeFiles/ocudu_ru_dummy.dir/ru_dummy_impl.cpp.o
+[  6%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_uplane_message_builder_dynamic_compression_impl.cpp.o
+[  6%] Building CXX object apps/units/o_cu_cp/cu_cp/metrics/CMakeFiles/ocudu_cu_cp_unit_metrics_helpers.dir/cu_cp_metrics_consumers.cpp.o
+[  6%] Building CXX object lib/ru/dummy/CMakeFiles/ocudu_ru_dummy.dir/ru_dummy_metrics_collector.cpp.o
+[  6%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_uplane_message_builder_static_compression_impl.cpp.o
+[  6%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_uplane_message_decoder_impl.cpp.o
+[  6%] Linking CXX static library libocudu_ru_dummy.a
+[  6%] Built target ocudu_ru_dummy
+[  6%] Building CXX object apps/units/o_cu_up/e2/CMakeFiles/ocudu_o_cu_up_app_unit_e2.dir/o_cu_up_e2_config_cli11_schema.cpp.o
+[  6%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_uplane_message_decoder_dynamic_compression_impl.cpp.o
+[  6%] Linking CXX static library libocudu_cu_cp_unit_metrics_helpers.a
+[  6%] Building CXX object lib/ofh/serdes/CMakeFiles/ocudu_ofh_message_serdes.dir/ofh_uplane_message_decoder_static_compression_impl.cpp.o
+[  6%] Built target ocudu_cu_cp_unit_metrics_helpers
+[  6%] Building CXX object lib/support/versioning/CMakeFiles/ocudu_versioning.dir/build_info.cpp.o
+[  6%] Building CXX object lib/support/versioning/CMakeFiles/ocudu_versioning.dir/version.cpp.o
+[  6%] Linking CXX static library libocudu_versioning.a
+[  6%] Built target ocudu_versioning
+[  6%] Building CXX object apps/units/flexible_o_du/o_du_high/du_high/metrics/CMakeFiles/ocudu_du_high_unit_metrics_helpers.dir/du_high_rlc_metrics_producer.cpp.o
+[  6%] Building CXX object apps/units/o_cu_cp/e2/CMakeFiles/ocudu_o_cu_cp_e2_app_unit.dir/o_cu_cp_e2_config_translators.cpp.o
+[  6%] Linking CXX static library libocudu_ofh_message_serdes.a
+[  6%] Built target ocudu_ofh_message_serdes
+[  7%] Building CXX object apps/units/flexible_o_du/o_du_high/e2/CMakeFiles/ocudu_o_du_high_app_unit_e2.dir/o_du_high_e2_config_cli11_schema.cpp.o
+[  7%] Building CXX object apps/units/flexible_o_du/o_du_high/du_high/metrics/CMakeFiles/ocudu_du_high_unit_metrics_helpers.dir/du_high_rlc_metrics_consumers.cpp.o
+[  7%] Building CXX object apps/units/o_cu_cp/e2/CMakeFiles/ocudu_o_cu_cp_e2_app_unit.dir/o_cu_cp_e2_config_yaml_writer.cpp.o
+[  7%] Building CXX object apps/units/flexible_o_du/o_du_high/du_high/metrics/CMakeFiles/ocudu_du_high_unit_metrics_helpers.dir/du_metrics_consumers.cpp.o
+[  7%] Building CXX object apps/units/o_cu_up/e2/CMakeFiles/ocudu_o_cu_up_app_unit_e2.dir/o_cu_up_e2_config_translators.cpp.o
+[  7%] Linking CXX static library libocudu_o_cu_cp_e2_app_unit.a
+[  7%] Built target ocudu_o_cu_cp_e2_app_unit
+[  7%] Building CXX object apps/units/flexible_o_du/split_helpers/metrics/consumers/CMakeFiles/ocudu_flexible_o_du_split_helpers_metrics_consumers.dir/o_du_low_metrics_consumers.cpp.o
+[  7%] Building CXX object apps/units/o_cu_up/e2/CMakeFiles/ocudu_o_cu_up_app_unit_e2.dir/o_cu_up_e2_config_yaml_writer.cpp.o
+[  8%] Building CXX object apps/units/flexible_o_du/o_du_high/du_high/metrics/CMakeFiles/ocudu_du_high_unit_metrics_helpers.dir/du_metrics_producer.cpp.o
+[  8%] Linking CXX static library libocudu_o_cu_up_app_unit_e2.a
+[  8%] Built target ocudu_o_cu_up_app_unit_e2
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/interval_test.dir/interval_test.cpp.o
+[  8%] Linking CXX static library libocudu_du_high_unit_metrics_helpers.a
+[  8%] Building CXX object apps/units/flexible_o_du/split_helpers/metrics/consumers/CMakeFiles/ocudu_flexible_o_du_split_helpers_metrics_consumers.dir/ru_metrics_consumers.cpp.o
+[  8%] Built target ocudu_du_high_unit_metrics_helpers
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/circular_map_test.dir/circular_map_test.cpp.o
+[  8%] Building CXX object apps/units/flexible_o_du/o_du_high/e2/CMakeFiles/ocudu_o_du_high_app_unit_e2.dir/o_du_high_e2_config_translators.cpp.o
+[  8%] Linking CXX executable interval_test
+[  8%] Built target interval_test
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/segmented_circular_map_test.dir/segmented_circular_map_test.cpp.o
+[  8%] Building CXX object apps/units/flexible_o_du/o_du_high/e2/CMakeFiles/ocudu_o_du_high_app_unit_e2.dir/o_du_high_e2_config_yaml_writer.cpp.o
+[  8%] Linking CXX static library libocudu_flexible_o_du_split_helpers_metrics_consumers.a
+[  8%] Built target ocudu_flexible_o_du_split_helpers_metrics_consumers
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/tiny_optional_test.dir/tiny_optional_test.cpp.o
+[  8%] Linking CXX static library libocudu_o_du_high_app_unit_e2.a
+[  8%] Built target ocudu_o_du_high_app_unit_e2
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/slotted_array_test.dir/slotted_array_test.cpp.o
+[  8%] Linking CXX executable circular_map_test
+[  8%] Built target circular_map_test
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/transform_view_test.dir/transform_view_test.cpp.o
+[  8%] Linking CXX executable tiny_optional_test
+[  8%] Built target tiny_optional_test
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/strong_type_test.dir/strong_type_test.cpp.o
+[  8%] Linking CXX executable transform_view_test
+[  8%] Built target transform_view_test
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/flat_map_test.dir/flat_map_test.cpp.o
+[  8%] Linking CXX executable strong_type_test
+[  8%] Built target strong_type_test
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/soa_table_test.dir/soa_table_test.cpp.o
+[  8%] Building CXX object tests/unittests/adt/CMakeFiles/soa_table_test.dir/stable_id_map_test.cpp.o
+[  8%] Linking CXX executable flat_map_test
+[  8%] Linking CXX executable slotted_array_test
+[  8%] Built target flat_map_test
+[  8%] Building CXX object tests/unittests/ofh/CMakeFiles/slot_symbol_point_test.dir/slot_symbol_point_test.cpp.o
+[  8%] Built target slotted_array_test
+[  8%] Building CXX object tests/unittests/phy/upper/CMakeFiles/channel_state_information_test.dir/channel_state_information_test.cpp.o
+[  8%] Linking CXX executable slot_symbol_point_test
+[  8%] Built target slot_symbol_point_test
+[  8%] Building CXX object tests/unittests/phy/support/CMakeFiles/precoding_configuration_test.dir/precoding_configuration_test.cpp.o
+[  8%] Linking CXX executable soa_table_test
+[  8%] Built target soa_table_test
+[  8%] Building CXX object tests/unittests/ocudulog/CMakeFiles/ocudulog_backend_throughput.dir/benchmarks/backend_throughput.cpp.o
+[  8%] Linking CXX executable segmented_circular_map_test
+[  8%] Built target segmented_circular_map_test
+[  8%] Building CXX object tests/unittests/ocudulog/CMakeFiles/ocudulog_frontend_latency.dir/benchmarks/frontend_latency.cpp.o
+[  8%] Linking CXX executable ocudulog_backend_throughput
+[  8%] Built target ocudulog_backend_throughput
+[  8%] Building CXX object tests/unittests/ocudulog/CMakeFiles/ocudulog_test.dir/ocudulog_test.cpp.o
+[  8%] Linking CXX executable precoding_configuration_test
+[  8%] Built target precoding_configuration_test
+[  8%] Building CXX object tests/unittests/ocudulog/CMakeFiles/log_channel_test.dir/log_channel_test.cpp.o
+[  8%] Linking CXX executable channel_state_information_test
+[  8%] Built target channel_state_information_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/log_backend_test.dir/log_backend_test.cpp.o
+[  9%] Linking CXX executable ocudulog_test
+[  9%] Linking CXX executable ocudulog_frontend_latency
+[  9%] Built target ocudulog_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/logger_test.dir/logger_test.cpp.o
+[  9%] Built target ocudulog_frontend_latency
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/any_test.dir/any_test.cpp.o
+[  9%] Linking CXX executable any_test
+[  9%] Built target any_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/file_sink_test.dir/file_sink_test.cpp.o
+[  9%] Linking CXX executable log_channel_test
+[  9%] Built target log_channel_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/syslog_sink_test.dir/syslog_sink_test.cpp.o
+[  9%] Linking CXX executable logger_test
+[  9%] Built target logger_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/file_utils_test.dir/file_utils_test.cpp.o
+[  9%] Linking CXX executable log_backend_test
+[  9%] Built target log_backend_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/tracer_test.dir/event_trace_test.cpp.o
+[  9%] Linking CXX executable file_sink_test
+[  9%] Built target file_sink_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/text_formatter_test.dir/text_formatter_test.cpp.o
+[  9%] Linking CXX executable syslog_sink_test
+[  9%] Built target syslog_sink_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/json_formatter_test.dir/json_formatter_test.cpp.o
+[  9%] Linking CXX executable file_utils_test
+[  9%] Linking CXX executable tracer_test
+[  9%] Built target file_utils_test
+[  9%] Building CXX object tests/unittests/ocudulog/CMakeFiles/context_test.dir/context_test.cpp.o
+[  9%] Built target tracer_test
+[  9%] Building CXX object tests/benchmarks/adt/CMakeFiles/bounded_bitset_count_benchmark.dir/bounded_bitset_count_benchmark.cpp.o
+[  9%] Linking CXX executable context_test
+[  9%] Built target context_test
+[  9%] Building CXX object tests/benchmarks/adt/CMakeFiles/bounded_bitset_range_benchmark.dir/bounded_bitset_range_benchmark.cpp.o
+[  9%] Linking CXX executable text_formatter_test
+[  9%] Built target text_formatter_test
+[  9%] Linking CXX executable bounded_bitset_count_benchmark
+[  9%] Building CXX object tests/benchmarks/phy/upper/precoding/CMakeFiles/channel_precoder_benchmark.dir/channel_precoder_benchmark.cpp.o
+[  9%] Built target bounded_bitset_count_benchmark
+[ 10%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/accumulate.cpp.o
+[ 10%] Linking CXX executable json_formatter_test
+[ 10%] Built target json_formatter_test
+[ 11%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/metrics/executor_metrics_backend.cpp.o
+[ 11%] Linking CXX executable bounded_bitset_range_benchmark
+[ 11%] Built target bounded_bitset_range_benchmark
+[ 11%] Building CXX object apps/services/app_execution_metrics/CMakeFiles/ocudu_exec_metrics_app_service.dir/executor_metrics_config_cli11_schema.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/add.cpp.o
+[ 11%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/metrics/executor_metrics_channel.cpp.o
+[ 11%] Linking CXX executable channel_precoder_benchmark
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/bit.cpp.o
+[ 11%] Built target channel_precoder_benchmark
+[ 11%] Building CXX object apps/services/app_resource_usage/CMakeFiles/ocudu_resource_usage_app_service.dir/app_resource_usage.cpp.o
+[ 11%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/priority_task_queue.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/byte_swap.cpp.o
+[ 11%] Building CXX object apps/services/app_resource_usage/CMakeFiles/ocudu_resource_usage_app_service.dir/app_resource_usage_config_cli11_schema.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/clip.cpp.o
+[ 11%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/priority_task_worker.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/compare.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/conversion.cpp.o
+[ 11%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/task_execution_manager.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/convolution.cpp.o
+[ 11%] Building CXX object apps/services/app_execution_metrics/CMakeFiles/ocudu_exec_metrics_app_service.dir/executor_metrics_config_yaml_writer.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/division.cpp.o
+[ 11%] Building CXX object apps/services/app_execution_metrics/CMakeFiles/ocudu_exec_metrics_app_service.dir/metrics/app_execution_metrics_builder.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/dot_prod.cpp.o
+[ 11%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/task_worker.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/modulus_square.cpp.o
+[ 11%] Building CXX object apps/services/app_resource_usage/CMakeFiles/ocudu_resource_usage_app_service.dir/app_resource_usage_config_yaml_writer.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/prod.cpp.o
+[ 11%] Building CXX object apps/services/app_resource_usage/CMakeFiles/ocudu_resource_usage_app_service.dir/metrics/app_resource_usage_metrics_consumer.cpp.o
+[ 11%] Linking CXX static library libocudu_exec_metrics_app_service.a
+[ 11%] Built target ocudu_exec_metrics_app_service
+[ 11%] Building CXX object lib/fapi_adaptor/phy/p7/CMakeFiles/ocudu_phy_to_fapi_p7_fastpath_translator.dir/phy_to_fapi_error_event_fastpath_translator.cpp.o
+[ 11%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/task_worker_pool.cpp.o
+[ 11%] Building CXX object lib/fapi_adaptor/phy/p7/CMakeFiles/ocudu_phy_to_fapi_p7_fastpath_translator.dir/phy_to_fapi_results_event_fastpath_translator.cpp.o
+[ 11%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/sc_prod.cpp.o
+[ 11%] Linking CXX static library libocudu_resource_usage_app_service.a
+[ 11%] Built target ocudu_resource_usage_app_service
+[ 12%] Building CXX object apps/units/flexible_o_du/split_helpers/metrics/CMakeFiles/ocudu_flexible_o_du_unit_metrics_helpers.dir/flexible_o_du_metrics_builder.cpp.o
+[ 12%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/subtract.cpp.o
+[ 12%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/unique_thread.cpp.o
+[ 12%] Building CXX object lib/fapi_adaptor/phy/p7/CMakeFiles/ocudu_phy_to_fapi_p7_fastpath_translator.dir/phy_to_fapi_time_event_fastpath_translator.cpp.o
+[ 12%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/unwrap.cpp.o
+[ 12%] Linking CXX static library libocuduvec.a
+[ 12%] Built target ocuduvec
+[ 12%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/execution_context_description.cpp.o
+[ 12%] Building CXX object apps/units/flexible_o_du/split_helpers/metrics/CMakeFiles/ocudu_flexible_o_du_unit_metrics_helpers.dir/flexible_o_du_metrics_consumers.cpp.o
+[ 12%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/executor_decoration_factory.cpp.o
+[ 12%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/io_broker_epoll.cpp.o
+[ 12%] Linking CXX static library libocudu_phy_to_fapi_p7_fastpath_translator.a
+[ 12%] Built target ocudu_phy_to_fapi_p7_fastpath_translator
+[ 12%] Building CXX object lib/support/math/CMakeFiles/ocudu_support_math.dir/math_utils.cpp.o
+[ 12%] Building CXX object apps/units/flexible_o_du/split_helpers/metrics/CMakeFiles/ocudu_flexible_o_du_unit_metrics_helpers.dir/flexible_o_du_metrics_producer.cpp.o
+[ 12%] Building CXX object lib/support/math/CMakeFiles/ocudu_support_math.dir/curve_fitting_find_max.cpp.o
+[ 12%] Linking CXX static library libocudu_support_math.a
+[ 12%] Built target ocudu_support_math
+[ 12%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/beamforming/beam_identifier_helpers.cpp.o
+[ 12%] Linking CXX static library libocudu_flexible_o_du_unit_metrics_helpers.a
+[ 12%] Built target ocudu_flexible_o_du_unit_metrics_helpers
+[ 13%] Building CXX object lib/phy/generic_functions/CMakeFiles/ocudu_dft.dir/dft_processor_generic_impl.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/beamforming/beam_weights_codebook_generator.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/io_broker_factory.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/cause/ngap_cause_converters.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/io_timer_source.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/cause/f1ap_cause_converters.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/cause/e1ap_cause_converters.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/sockets.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_config_helpers.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/transport_layer_address.cpp.o
+[ 13%] Building CXX object lib/phy/generic_functions/CMakeFiles/ocudu_dft.dir/generic_functions_factories.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/synchronization/futex_util.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/tracing/resource_usage.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/tracing/event_tracing.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/backtrace.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/bit_encoding.cpp.o
+[ 13%] Building CXX object lib/phy/generic_functions/CMakeFiles/ocudu_dft.dir/dft_processor_fftw_impl.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/byte_buffer.cpp.o
+[ 13%] Building CXX object lib/phy/generic_functions/CMakeFiles/ocudu_dft.dir/dft_processor_ci16_avx2.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/byte_buffer_chain.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/cpu_architecture_info.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/pool_memory_region.cpp.o
+[ 13%] Linking CXX static library libocudu_dft.a
+[ 13%] Built target ocudu_dft
+[ 13%] Building CXX object lib/phy/upper/CMakeFiles/log_likelihood_ratio.dir/log_likelihood_ratio.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_rs/csi_rs_pattern.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/energy_based_power_reader_impl.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_rs/csi_rs_config_helpers.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/hwmon_power_reader_impl.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_rs/frequency_allocation_type.cpp.o
+[ 13%] Linking CXX static library liblog_likelihood_ratio.a
+[ 13%] Built target log_likelihood_ratio
+[ 13%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_ssb_generators.dir/ssb/factories.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/cce_to_prb_mapping.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/perf_event_powercap_reader_impl.cpp.o
+[ 13%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_ssb_generators.dir/ssb/dmrs_pbch_processor_impl.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/coreset.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/dci_packing.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/pdcch_candidates.cpp.o
+[ 13%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_ssb_generators.dir/ssb/pss_processor_impl.cpp.o
+[ 13%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_ssb_generators.dir/ssb/sss_processor_impl.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/powercap_energy_reader_impl.cpp.o
+[ 13%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.o
+[ 13%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/rapl_msr_energy_reader_impl.cpp.o
+[ 13%] Linking CXX static library libocudu_ssb_generators.a
+[ 13%] Built target ocudu_ssb_generators
+[ 13%] Building CXX object lib/phy/upper/equalization/CMakeFiles/ocudu_channel_equalizer.dir/channel_equalizer_generic_impl.cpp.o
+[ 14%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/power_consumption.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.o
+[ 14%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/resource_usage_utils.cpp.o
+[ 14%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/rate_limiting/token_bucket.cpp.o
+[ 14%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/rate_limiting/lockfree_token_bucket.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/search_space.cpp.o
+[ 14%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/signal_handling.cpp.o
+[ 14%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/sysinfo.cpp.o
+[ 14%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/timers.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/dlsch_info.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/pdsch_dmrs_symbol_mask.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/pdsch_mcs.cpp.o
+[ 14%] Building CXX object lib/phy/upper/equalization/CMakeFiles/ocudu_channel_equalizer.dir/equalization_factories.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prs/prs.cpp.o
+[ 14%] Linking CXX static library libocudu_channel_equalizer.a
+[ 14%] Built target ocudu_channel_equalizer
+[ 14%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/beamforming_weights_compressor.cpp.o
+[ 14%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_configuration.cpp.o
+[ 14%] Linking CXX static library libocudu_support.a
+[ 14%] Built target ocudu_support
+[ 14%] Building CXX object tests/unittests/fapi_adaptor/phy/p7/CMakeFiles/phy_to_fapi_results_event_fastpath_translator_test.dir/phy_to_fapi_results_event_fastpath_translator_test.cpp.o
+[ 14%] Building CXX object tests/unittests/ntn/CMakeFiles/coordinate_converter_test.dir/coordinate_converter_test.cpp.o
+[ 14%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/compression_factory.cpp.o
+[ 14%] Linking CXX executable coordinate_converter_test
+[ 14%] Built target coordinate_converter_test
+[ 14%] Building CXX object tests/unittests/ntn/CMakeFiles/reference_frame_converter_test.dir/reference_frame_converter_test.cpp.o
+[ 14%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/compression_validator.cpp.o
+[ 15%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compression_bfp_impl.cpp.o
+[ 15%] Linking CXX executable phy_to_fapi_results_event_fastpath_translator_test
+[ 15%] Built target phy_to_fapi_results_event_fastpath_translator_test
+[ 15%] Building CXX object tests/unittests/ntn/CMakeFiles/ephemeris_info_converter_test.dir/ephemeris_info_converter_test.cpp.o
+[ 15%] Linking CXX executable reference_frame_converter_test
+[ 15%] Built target reference_frame_converter_test
+[ 16%] Building CXX object tests/unittests/ntn/CMakeFiles/rk4_propagator_test.dir/rk4_propagator_test.cpp.o
+[ 16%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compression_none_impl.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_cyclic_shifts.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_frequency_mapping.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_preamble_information.cpp.o
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compression_unsupported_impl.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_helper.cpp.o
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compressor_selector.cpp.o
+[ 17%] Linking CXX executable ephemeris_info_converter_test
+[ 17%] Built target ephemeris_info_converter_test
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_time_mapping.cpp.o
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_decompressor_selector.cpp.o
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/packing_utils_generic.cpp.o
+[ 17%] Linking CXX executable rk4_propagator_test
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compression_bfp_avx2.cpp.o
+[ 17%] Built target rk4_propagator_test
+[ 17%] Building CXX object tests/unittests/ntn/CMakeFiles/keplerian_propagator_test.dir/keplerian_propagator_test.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_occasion_mapping.cpp.o
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compression_bfp_avx512.cpp.o
+[ 17%] Linking CXX executable keplerian_propagator_test
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/ssb_to_ro_mapping.cpp.o
+[ 17%] Built target keplerian_propagator_test
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compression_none_avx512.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/precoding_codebook_configuration.cpp.o
+[ 17%] Building CXX object lib/ofh/compression/CMakeFiles/ocudu_ofh_compression.dir/iq_compression_none_avx2.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/precoding_codebooks.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/two_port/precoding_codebooks.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type1_sp/precoding_codebook_helpers.cpp.o
+[ 17%] Linking CXX static library libocudu_ofh_compression.a
+[ 17%] Built target ocudu_ofh_compression
+[ 17%] Building CXX object tests/unittests/ntn/CMakeFiles/ntn_math_helpers_test.dir/ntn_math_helpers_test.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type1_sp/precoding_codebooks.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type2/precoding_codebook_helpers.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type2/precoding_codebooks.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ptrs/ptrs_pattern.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pucch/pucch_info.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_antenna_port_mapping.cpp.o
+[ 17%] Linking CXX executable ntn_math_helpers_test
+[ 17%] Built target ntn_math_helpers_test
+[ 17%] Building CXX object tests/unittests/ntn/CMakeFiles/ntn_assistance_info_gen_test.dir/ntn_assistance_info_gen_test.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_dmrs_symbol_mask.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_mcs.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_tpmi_select.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_uci_beta_offset.cpp.o
+[ 17%] Building CXX object tests/unittests/ntn/CMakeFiles/ntn_sat_switch_apply_test.dir/ntn_sat_switch_apply_test.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/ulsch_info.cpp.o
+[ 17%] Linking CXX executable ntn_assistance_info_gen_test
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/qos/five_qi_qos_mapping.cpp.o
+[ 17%] Built target ntn_assistance_info_gen_test
+[ 17%] Building CXX object tests/unittests/ntn/CMakeFiles/ntn_configuration_manager_test.dir/ntn_configuration_manager_test.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/uci/uci_part2_size_calculator.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/band_helper.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/sch/tbs_calculator.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/resource_allocation/resource_allocation_frequency.cpp.o
+[ 17%] Linking CXX executable ntn_sat_switch_apply_test
+[ 17%] Built target ntn_sat_switch_apply_test
+[ 17%] Building CXX object tests/unittests/ofh/compression/CMakeFiles/ofh_beamforming_weights_compressor_test.dir/ofh_beamforming_weights_compressor_test.cpp.o
+[ 17%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/resource_allocation/vrb_to_prb.cpp.o
+[ 17%] Linking CXX executable ntn_configuration_manager_test
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/sch/sch_segmentation.cpp.o
+[ 18%] Built target ntn_configuration_manager_test
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/sib/sib_helper.cpp.o
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/srs/srs_bandwidth_configuration.cpp.o
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/srs/srs_configuration_helpers.cpp.o
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/srs/srs_information.cpp.o
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/pbch_mib_pack.cpp.o
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_freq_position_generator.cpp.o
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_gscn.cpp.o
+[ 18%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_helper.cpp.o
+[ 18%] Linking CXX executable ofh_beamforming_weights_compressor_test
+[ 18%] Built target ofh_beamforming_weights_compressor_test
+[ 19%] Building CXX object tests/unittests/ofh/compression/CMakeFiles/compression_validator_test.dir/compression_validator_test.cpp.o
+[ 19%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_mapping.cpp.o
+[ 19%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/tdd_ul_dl_config.cpp.o
+[ 19%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/drx_config.cpp.o
+[ 19%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ntn_location_mapping.cpp.o
+[ 19%] Linking CXX executable compression_validator_test
+[ 19%] Building CXX object tests/unittests/ofh/compression/CMakeFiles/ofh_iq_compression_bfp_test.dir/ofh_iq_compression_bfp_test.cpp.o
+[ 19%] Built target compression_validator_test
+[ 19%] Building CXX object tests/unittests/ofh/ecpri/CMakeFiles/ecpri_packet_builder_impl_test.dir/ecpri_packet_builder_test.cpp.o
+[ 19%] Building CXX object tests/unittests/ofh/ecpri/CMakeFiles/ecpri_packet_decoder_impl_test.dir/ecpri_packet_decoder_impl_test.cpp.o
+[ 19%] Linking CXX static library libocudu_ran.a
+[ 19%] Built target ocudu_ran
+[ 19%] Building CXX object tests/unittests/ofh/receiver/CMakeFiles/ofh_sequence_id_checker_test.dir/ofh_sequence_id_checker_impl_test.cpp.o
+[ 19%] Linking CXX executable ecpri_packet_builder_impl_test
+[ 19%] Built target ecpri_packet_builder_impl_test
+[ 19%] Building CXX object tests/unittests/ofh/serdes/CMakeFiles/ofh_cplane_packet_builder_dynamic_compression_impl_test.dir/ofh_cplane_packet_builder_dynamic_compression_impl_test.cpp.o
+[ 19%] Linking CXX executable ofh_iq_compression_bfp_test
+[ 19%] Built target ofh_iq_compression_bfp_test
+[ 19%] Building CXX object tests/unittests/ofh/serdes/CMakeFiles/ofh_cplane_packet_builder_impl_test.dir/ofh_cplane_packet_builder_impl_test.cpp.o
+[ 19%] Linking CXX executable ofh_sequence_id_checker_test
+[ 19%] Built target ofh_sequence_id_checker_test
+[ 19%] Building CXX object tests/unittests/ofh/serdes/CMakeFiles/ofh_cplane_packet_builder_static_compression_impl_test.dir/ofh_cplane_packet_builder_static_compression_impl_test.cpp.o
+[ 19%] Linking CXX executable ecpri_packet_decoder_impl_test
+[ 19%] Built target ecpri_packet_decoder_impl_test
+[ 19%] Building CXX object tests/unittests/ofh/serdes/CMakeFiles/ofh_uplane_packet_decoder_dynamic_impl.dir/ofh_uplane_packet_decoder_dynamic_impl_test.cpp.o
+[ 19%] Linking CXX executable ofh_cplane_packet_builder_dynamic_compression_impl_test
+[ 19%] Built target ofh_cplane_packet_builder_dynamic_compression_impl_test
+[ 19%] Building CXX object tests/unittests/ofh/serdes/CMakeFiles/ofh_uplane_packet_decoder_static_impl.dir/ofh_uplane_packet_decoder_static_impl_test.cpp.o
+[ 19%] Linking CXX executable ofh_cplane_packet_builder_impl_test
+[ 19%] Built target ofh_cplane_packet_builder_impl_test
+[ 19%] Building CXX object tests/unittests/ofh/support/CMakeFiles/context_repository_helpers_test.dir/context_repository_helpers_test.cpp.o
+[ 19%] Linking CXX executable ofh_cplane_packet_builder_static_compression_impl_test
+[ 19%] Built target ofh_cplane_packet_builder_static_compression_impl_test
+[ 19%] Building CXX object tests/unittests/ofh/support/CMakeFiles/uplink_notified_grid_symbol_repository_test.dir/uplink_notified_grid_symbol_repository_test.cpp.o
+[ 20%] Linking CXX executable ofh_uplane_packet_decoder_dynamic_impl
+[ 20%] Linking CXX executable ofh_uplane_packet_decoder_static_impl
+[ 20%] Built target ofh_uplane_packet_decoder_dynamic_impl
+[ 20%] Building CXX object tests/unittests/ofh/transmitter/CMakeFiles/sequence_identifier_generator_test.dir/sequence_identifier_generator_test.cpp.o
+[ 20%] Built target ofh_uplane_packet_decoder_static_impl
+[ 20%] Building CXX object tests/unittests/pcap/CMakeFiles/pcap_mac_test.dir/mac_pcap_test.cpp.o
+[ 20%] Linking CXX executable context_repository_helpers_test
+[ 20%] Built target context_repository_helpers_test
+[ 20%] Building CXX object tests/unittests/pcap/CMakeFiles/pcap_rlc_test.dir/rlc_pcap_test.cpp.o
+[ 20%] Linking CXX executable uplink_notified_grid_symbol_repository_test
+[ 20%] Built target uplink_notified_grid_symbol_repository_test
+[ 20%] Building CXX object tests/unittests/pcap/CMakeFiles/pcap_ngap_test.dir/ngap_pcap_test.cpp.o
+[ 20%] Linking CXX executable sequence_identifier_generator_test
+[ 20%] Built target sequence_identifier_generator_test
+[ 20%] Building CXX object tests/unittests/phy/generic_functions/CMakeFiles/dft_processor_test.dir/dft_processor_test.cpp.o
+[ 20%] Linking CXX executable pcap_mac_test
+[ 20%] Built target pcap_mac_test
+[ 20%] Building CXX object tests/unittests/phy/generic_functions/CMakeFiles/dft_processor_ci16_test.dir/dft_processor_ci16_test.cpp.o
+[ 20%] Linking CXX executable pcap_rlc_test
+[ 20%] Linking CXX executable pcap_ngap_test
+[ 20%] Built target pcap_rlc_test
+[ 20%] Building CXX object tests/unittests/phy/generic_functions/precoding/CMakeFiles/channel_precoder_test.dir/channel_precoder_test.cpp.o
+[ 20%] Built target pcap_ngap_test
+[ 20%] Building CXX object tests/unittests/phy/lower/processors/CMakeFiles/resource_request_pool_test.dir/resource_request_pool_test.cpp.o
+[ 20%] Linking CXX executable dft_processor_test
+[ 20%] Built target dft_processor_test
+[ 20%] Building CXX object tests/unittests/phy/upper/CMakeFiles/hard_decision_test.dir/hard_decision_test.cpp.o
+[ 20%] Linking CXX executable resource_request_pool_test
+[ 20%] Built target resource_request_pool_test
+[ 20%] Building CXX object tests/unittests/phy/upper/CMakeFiles/log_likelihood_ratio_test.dir/log_likelihood_ratio_test.cpp.o
+[ 20%] Linking CXX executable dft_processor_ci16_test
+[ 20%] Built target dft_processor_ci16_test
+[ 20%] Building CXX object tests/unittests/phy/upper/CMakeFiles/rx_buffer_pool_test.dir/rx_buffer_pool_test.cpp.o
+[ 20%] Linking CXX executable hard_decision_test
+[ 20%] Built target hard_decision_test
+[ 20%] Building CXX object tests/unittests/phy/upper/equalization/CMakeFiles/channel_equalizer_support_test.dir/channel_equalizer_support.cpp.o
+[ 20%] Linking CXX executable log_likelihood_ratio_test
+[ 20%] Built target log_likelihood_ratio_test
+[ 20%] Building CXX object tests/unittests/ran/CMakeFiles/du_test_suite.dir/ssb_coreset0_freq_pos_checker.cpp.o
+[ 20%] Linking CXX executable channel_precoder_test
+[ 20%] Built target channel_precoder_test
+[ 20%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_um_pdu_test.dir/rlc_um_pdu_test.cpp.o
+[ 20%] Linking CXX executable channel_equalizer_support_test
+[ 20%] Built target channel_equalizer_support_test
+[ 20%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_sdu_queue_lockfree_test.dir/rlc_sdu_queue_lockfree_test.cpp.o
+[ 20%] Linking CXX static library libdu_test_suite.a
+[ 20%] Built target du_test_suite
+[ 20%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_retx_queue_test.dir/rlc_retx_queue_test.cpp.o
+[ 20%] Linking CXX executable rx_buffer_pool_test
+[ 20%] Built target rx_buffer_pool_test
+[ 20%] Building CXX object tests/unittests/rohc/CMakeFiles/rohc_config_test.dir/rohc_config_test.cpp.o
+[ 20%] Linking CXX executable rlc_um_pdu_test
+[ 20%] Built target rlc_um_pdu_test
+[ 20%] Building CXX object tests/unittests/rohc/CMakeFiles/rohc_factory_test.dir/rohc_factory_test.cpp.o
+[ 20%] Linking CXX executable rohc_config_test
+[ 20%] Built target rohc_config_test
+[ 20%] Building CXX object tests/unittests/sdap/CMakeFiles/sdap_test.dir/sdap_test.cpp.o
+[ 20%] Linking CXX executable rlc_retx_queue_test
+[ 20%] Built target rlc_retx_queue_test
+[ 20%] Building CXX object tests/unittests/sdap/CMakeFiles/sdap_tx_test.dir/sdap_tx_test.cpp.o
+[ 20%] Linking CXX executable rlc_sdu_queue_lockfree_test
+[ 20%] Built target rlc_sdu_queue_lockfree_test
+[ 20%] Building CXX object tests/unittests/sdap/CMakeFiles/sdap_rx_test.dir/sdap_rx_test.cpp.o
+[ 20%] Linking CXX executable rohc_factory_test
+[ 20%] Built target rohc_factory_test
+[ 20%] Building CXX object tests/unittests/security/CMakeFiles/k_gnb_star_gen_helper.dir/k_gnb_star_gen_helper.cpp.o
+[ 20%] Linking CXX executable k_gnb_star_gen_helper
+[ 20%] Built target k_gnb_star_gen_helper
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_add_test.dir/ocuduvec_add_test.cpp.o
+[ 20%] Linking CXX executable sdap_tx_test
+[ 20%] Built target sdap_tx_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_bit_test.dir/ocuduvec_bit_test.cpp.o
+[ 20%] Linking CXX executable sdap_rx_test
+[ 20%] Built target sdap_rx_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_byte_swap_test.dir/ocuduvec_byte_swap_test.cpp.o
+[ 20%] Linking CXX executable sdap_test
+[ 20%] Built target sdap_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_compare_test.dir/ocuduvec_compare_test.cpp.o
+[ 20%] Linking CXX executable ocuduvec_add_test
+[ 20%] Built target ocuduvec_add_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_binary_test.dir/ocuduvec_binary_test.cpp.o
+[ 20%] Linking CXX executable ocuduvec_byte_swap_test
+[ 20%] Built target ocuduvec_byte_swap_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_convert_test.dir/ocuduvec_convert_test.cpp.o
+[ 20%] Linking CXX executable ocuduvec_bit_test
+[ 20%] Built target ocuduvec_bit_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_division_test.dir/ocuduvec_division_test.cpp.o
+[ 20%] Linking CXX executable ocuduvec_compare_test
+[ 20%] Built target ocuduvec_compare_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_dot_prod_test.dir/ocuduvec_dot_prod_test.cpp.o
+[ 20%] Linking CXX executable ocuduvec_binary_test
+[ 20%] Built target ocuduvec_binary_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_modulus_square_test.dir/ocuduvec_modulus_square_test.cpp.o
+[ 20%] Linking CXX executable ocuduvec_division_test
+[ 20%] Built target ocuduvec_division_test
+[ 20%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_prod_test.dir/ocuduvec_prod_test.cpp.o
+[ 21%] Linking CXX executable ocuduvec_convert_test
+[ 21%] Built target ocuduvec_convert_test
+[ 21%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_sc_prod_test.dir/ocuduvec_sc_prod_test.cpp.o
+[ 21%] Linking CXX executable ocuduvec_dot_prod_test
+[ 21%] Built target ocuduvec_dot_prod_test
+[ 21%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_clipping_test.dir/ocuduvec_clipping_test.cpp.o
+[ 21%] Linking CXX executable ocuduvec_modulus_square_test
+[ 21%] Built target ocuduvec_modulus_square_test
+[ 21%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_convolution_test.dir/ocuduvec_convolution_test.cpp.o
+[ 21%] Linking CXX executable ocuduvec_prod_test
+[ 21%] Built target ocuduvec_prod_test
+[ 21%] Building CXX object tests/unittests/ocuduvec/CMakeFiles/ocuduvec_unwrap_test.dir/ocuduvec_unwrap_test.cpp.o
+[ 21%] Linking CXX executable ocuduvec_clipping_test
+[ 21%] Built target ocuduvec_clipping_test
+[ 21%] Building CXX object tests/unittests/support/CMakeFiles/fifo_async_task_scheduler_test.dir/fifo_async_task_scheduler_test.cpp.o
+[ 21%] Linking CXX executable ocuduvec_convolution_test
+[ 21%] Built target ocuduvec_convolution_test
+[ 21%] Building CXX object tests/unittests/support/CMakeFiles/backtrace_test.dir/backtrace_test.cpp.o
+[ 21%] Linking CXX executable backtrace_test
+[ 21%] Built target backtrace_test
+[ 21%] Building CXX object tests/unittests/support/format/CMakeFiles/format_optional_test.dir/format_optional_test.cpp.o
+[ 21%] Linking CXX executable ocuduvec_sc_prod_test
+[ 21%] Built target ocuduvec_sc_prod_test
+[ 21%] Building CXX object tests/unittests/support/rate_limiting/CMakeFiles/token_bucket_test.dir/token_bucket_test.cpp.o
+[ 22%] Linking CXX executable fifo_async_task_scheduler_test
+[ 22%] Built target fifo_async_task_scheduler_test
+[ 22%] Building CXX object tests/unittests/support/rate_limiting/CMakeFiles/lockfree_token_bucket_test.dir/lockfree_token_bucket_test.cpp.o
+[ 22%] Linking CXX executable token_bucket_test
+[ 22%] Built target token_bucket_test
+[ 22%] Building CXX object tests/unittests/support/synchronization/CMakeFiles/synchronization_test.dir/stop_event_test.cpp.o
+[ 22%] Linking CXX executable ocuduvec_unwrap_test
+[ 22%] Built target ocuduvec_unwrap_test
+[ 23%] Building CXX object tests/benchmarks/phy/generic_functions/CMakeFiles/dft_processor_benchmark.dir/dft_processor_benchmark.cpp.o
+[ 23%] Linking CXX executable lockfree_token_bucket_test
+[ 23%] Built target lockfree_token_bucket_test
+[ 23%] Building CXX object tests/benchmarks/phy/upper/equalization/CMakeFiles/channel_equalizer_benchmark.dir/channel_equalizer_benchmark.cpp.o
+[ 23%] Linking CXX executable format_optional_test
+[ 23%] Built target format_optional_test
+[ 23%] Building CXX object tests/benchmarks/ofh/CMakeFiles/ofh_compression_benchmark.dir/ofh_compression_benchmark.cpp.o
+[ 23%] Linking CXX executable dft_processor_benchmark
+[ 23%] Built target dft_processor_benchmark
+[ 23%] Building CXX object tests/benchmarks/support/CMakeFiles/worker_pool_benchmark.dir/worker_pool_benchmark.cpp.o
+[ 23%] Building CXX object tests/unittests/support/synchronization/CMakeFiles/synchronization_test.dir/sync_event_test.cpp.o
+[ 23%] Linking CXX executable channel_equalizer_benchmark
+[ 23%] Built target channel_equalizer_benchmark
+[ 23%] Building CXX object lib/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cpp.o
+[ 23%] Linking CXX executable ofh_compression_benchmark
+[ 23%] Built target ofh_compression_benchmark
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_socket.cpp.o
+[ 23%] Linking CXX executable synchronization_test
+[ 23%] Built target synchronization_test
+[ 23%] Building CXX object lib/nru/CMakeFiles/ocudu_nru.dir/nru_packing.cpp.o
+[ 23%] Linking CXX executable worker_pool_benchmark
+[ 23%] Built target worker_pool_benchmark
+[ 24%] Building CXX object lib/psup/CMakeFiles/ocudu_psup.dir/psup_packing.cpp.o
+[ 24%] Linking CXX static library libocudu_nru.a
+[ 24%] Built target ocudu_nru
+[ 24%] Linking CXX static library libocudu_psup.a
+[ 24%] Building CXX object lib/cu_cp/cell_meas_manager/CMakeFiles/ocudu_cu_cp_cell_meas_manager.dir/cell_meas_manager_impl.cpp.o
+[ 24%] Built target ocudu_psup
+[ 24%] Building CXX object lib/cu_cp/mobility_manager/CMakeFiles/ocudu_cu_cp_mobility_manager.dir/mobility_manager_helpers.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_gateway_common_impl.cpp.o
+[ 24%] Linking CXX static library libasn1_utils.a
+[ 24%] Built target asn1_utils
+[ 24%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/critical_traces.cpp.o
+[ 24%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/du_traces.cpp.o
+[ 24%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/ru_traces.cpp.o
+[ 24%] Building CXX object lib/cu_cp/mobility_manager/CMakeFiles/ocudu_cu_cp_mobility_manager.dir/mobility_manager_impl.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_client_impl.cpp.o
+[ 24%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/up_traces.cpp.o
+[ 24%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/ofh_traces.cpp.o
+[ 24%] Linking CXX static library libocudu_instrumentation.a
+[ 24%] Built target ocudu_instrumentation
+[ 24%] Building CXX object lib/scheduler/config/CMakeFiles/sched_config_manager.dir/cell_bwp_res_config.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_server_impl.cpp.o
+[ 24%] Building CXX object lib/cu_cp/cell_meas_manager/CMakeFiles/ocudu_cu_cp_cell_meas_manager.dir/cell_meas_manager_helpers.cpp.o
+[ 24%] Building CXX object lib/scheduler/config/CMakeFiles/sched_config_manager.dir/cell_configuration.cpp.o
+[ 24%] Building CXX object lib/cu_cp/mobility_manager/CMakeFiles/ocudu_cu_cp_mobility_manager.dir/metrics/mobility_manager_metrics_aggregator.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_dtls.cpp.o
+[ 24%] Linking CXX static library libocudu_cu_cp_mobility_manager.a
+[ 24%] Built target ocudu_cu_cp_mobility_manager
+[ 24%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pdcch/pdcch_type0_helpers.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_dtls_ssl.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/udp_network_gateway_impl.cpp.o
+[ 24%] Building CXX object lib/scheduler/config/CMakeFiles/sched_config_manager.dir/pdcch_config_pool.cpp.o
+[ 24%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pdsch/pdsch_default_time_allocation.cpp.o
+[ 24%] Linking CXX static library libocudu_cu_cp_cell_meas_manager.a
+[ 24%] Built target ocudu_cu_cp_cell_meas_manager
+[ 24%] Building CXX object lib/mac/CMakeFiles/mac_configuration_helpers.dir/config/mac_cell_group_config_factory.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_client_factory.cpp.o
+[ 24%] Building CXX object lib/mac/CMakeFiles/mac_configuration_helpers.dir/config/mac_config_helpers.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_server_factory.cpp.o
+[ 24%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pdsch/pdsch_config_params.cpp.o
+[ 24%] Building CXX object lib/scheduler/config/CMakeFiles/sched_config_manager.dir/ue_configuration.cpp.o
+[ 24%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/udp_network_gateway_factory.cpp.o
+[ 24%] Linking CXX static library libmac_configuration_helpers.a
+[ 24%] Built target mac_configuration_helpers
+[ 24%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_am_pdu.cpp.o
+[ 24%] Linking CXX static library libocudu_gateway.a
+[ 24%] Built target ocudu_gateway
+[ 24%] Building CXX object lib/fapi_adaptor/CMakeFiles/ocudu_fapi_precoding_codebook_tools.dir/precoding_codebook_mapper.cpp.o
+[ 24%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_bearer_metrics_collector.cpp.o
+[ 24%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pucch/pucch_collision.cpp.o
+[ 24%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pusch/pusch_default_time_allocation.cpp.o
+[ 25%] Building CXX object lib/fapi_adaptor/CMakeFiles/ocudu_fapi_precoding_codebook_tools.dir/precoding_codebook_repository.cpp.o
+[ 25%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_factory.cpp.o
+[ 25%] Building CXX object lib/fapi_adaptor/CMakeFiles/ocudu_fapi_precoding_codebook_tools.dir/precoding_codebook_generator.cpp.o
+[ 25%] Building CXX object lib/scheduler/config/CMakeFiles/sched_config_manager.dir/sched_config_manager.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/paging_helpers.cpp.o
+[ 25%] Linking CXX static library libocudu_fapi_precoding_codebook_tools.a
+[ 25%] Built target ocudu_fapi_precoding_codebook_tools
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/mcs_tbs_calculator.cpp.o
+[ 25%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_window_seg_pool_factory.cpp.o
+[ 25%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_tx_am_entity.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/prbs_calculator.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/mcs_calculator.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pdcch_aggregation_level_calculator.cpp.o
+[ 25%] Building CXX object lib/scheduler/config/CMakeFiles/sched_config_manager.dir/du_cell_group_config_pool.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/sr_helper.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/dci_builder.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/sch_pdu_builder.cpp.o
+[ 25%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_tx_tm_entity.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/csi_report_helpers.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pusch_power_controller.cpp.o
+[ 25%] Building CXX object lib/scheduler/support/CMakeFiles/sched_support.dir/pucch_power_controller.cpp.o
+[ 25%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_tx_um_entity.cpp.o
+[ 25%] Built target sched_config_manager
+[ 25%] Building CXX object lib/fapi_adaptor/CMakeFiles/ocudu_fapi_uci_part2_tools.dir/uci_part2_correspondence_generator.cpp.o
+[ 26%] Building CXX object lib/fapi_adaptor/phy/p5/CMakeFiles/ocudu_phy_to_fapi_p5_sector_fastpath_adaptor.dir/p5_requests_handler.cpp.o
+[ 26%] Building CXX object lib/fapi_adaptor/CMakeFiles/ocudu_fapi_uci_part2_tools.dir/uci_part2_correspondence_mapper.cpp.o
+[ 26%] Building CXX object lib/fapi_adaptor/CMakeFiles/ocudu_fapi_uci_part2_tools.dir/uci_part2_correspondence_repository.cpp.o
+[ 26%] Building CXX object lib/fapi_adaptor/phy/p5/CMakeFiles/ocudu_phy_to_fapi_p5_sector_fastpath_adaptor.dir/phy_fapi_p5_sector_fastpath_adaptor_impl.cpp.o
+[ 27%] Linking CXX static library libsched_support.a
+[ 27%] Built target sched_support
+[ 27%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/interpolator/interpolator_linear_impl.cpp.o
+[ 27%] Linking CXX static library libocudu_fapi_uci_part2_tools.a
+[ 27%] Built target ocudu_fapi_uci_part2_tools
+[ 27%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_allocator_impl.cpp.o
+[ 27%] Linking CXX static library libocudu_phy_to_fapi_p5_sector_fastpath_adaptor.a
+[ 27%] Built target ocudu_phy_to_fapi_p5_sector_fastpath_adaptor
+[ 27%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_graph_impl.cpp.o
+[ 27%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_code_impl.cpp.o
+[ 28%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_rx_am_entity.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_luts_impl.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/time_alignment_estimator/time_alignment_estimator_dft_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_deallocator_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_encoder_impl.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/time_alignment_estimator/time_alignment_estimator_factories.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_decoder_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_encoder_generic.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/rb_allocation.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_encoder_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_decoder_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_interleaver_impl.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/re_pattern.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_rate_dematcher_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/polar/CMakeFiles/ocudu_polar.dir/polar_rate_matcher_impl.cpp.o
+[ 28%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_rx_tm_entity.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_decoder_generic.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/resource_grid_impl.cpp.o
+[ 28%] Linking CXX static library libocudu_polar.a
+[ 28%] Built target ocudu_polar
+[ 28%] Building CXX object lib/phy/upper/channel_coding/short/CMakeFiles/ocudu_short_block.dir/short_block_encoder_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_rate_matcher_impl.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/resource_grid_mapper_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/short/CMakeFiles/ocudu_short_block.dir/short_block_detector_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_rate_dematcher_impl.cpp.o
+[ 28%] Linking CXX static library libocudu_short_block.a
+[ 28%] Built target ocudu_short_block
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_segmenter_tx_impl.cpp.o
+[ 28%] Building CXX object lib/rlc/CMakeFiles/ocudu_rlc.dir/rlc_rx_um_entity.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_segmenter_rx_impl.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/resource_grid_pool_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_encoder_avx2.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_decoder_avx2.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/resource_grid_reader_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_decoder_avx512.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/resource_grid_writer_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_rate_dematcher_avx2_impl.cpp.o
+[ 28%] Linking CXX static library libocudu_rlc.a
+[ 28%] Built target ocudu_rlc
+[ 28%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/channel_modulation_factories.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_coding/ldpc/CMakeFiles/ocudu_ldpc.dir/ldpc_rate_dematcher_avx512_impl.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/support_factories.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/demodulation_mapper_impl.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/demodulation_mapper_qam16.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/prach_buffer_cuda_visible_factory_unavailable.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/demodulation_mapper_qam64.cpp.o
+[ 28%] Linking CXX static library libocudu_ldpc.a
+[ 28%] Built target ocudu_ldpc
+[ 28%] Building CXX object lib/phy/upper/channel_processors/pdcch/CMakeFiles/ocudu_pdcch_processor.dir/factories.cpp.o
+[ 28%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/demodulation_mapper_qam256.cpp.o
+[ 28%] Building CXX object lib/phy/support/CMakeFiles/ocudu_phy_support.dir/resource_grid_cuda_visible_factory_unavailable.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/demodulation_mapper_qpsk.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/evm_calculator_generic_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_phy_support.a
+[ 29%] Built target ocudu_phy_support
+[ 29%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/modulation_mapper_lut_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/prach/CMakeFiles/ocudu_prach_detector.dir/prach_detector_generic_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/modulation_mapper_avx512_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_modulation/CMakeFiles/ocudu_channel_modulation.dir/modulation_mapper_avx2_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/prach/CMakeFiles/ocudu_prach_detector.dir/prach_detector_generic_thresholds.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pdcch/CMakeFiles/ocudu_pdcch_processor.dir/pdcch_encoder_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pdcch/CMakeFiles/ocudu_pdcch_processor.dir/pdcch_modulator_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_channel_modulation.a
+[ 29%] Built target ocudu_channel_modulation
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/processor_factories.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pdcch/CMakeFiles/ocudu_pdcch_processor.dir/pdcch_processor_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/prach/CMakeFiles/ocudu_prach_detector.dir/prach_generator_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pdcch/CMakeFiles/ocudu_pdcch_processor.dir/pdcch_processor_validator_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/prach/CMakeFiles/ocudu_prach_detector.dir/prach_detector_phy_validator_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/prach/CMakeFiles/ocudu_prach_detector.dir/factories.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/prach/CMakeFiles/ocudu_prach_detector.dir/prach_detector_cuda_factory_unavailable.cpp.o
+[ 29%] Linking CXX static library libocudu_pdcch_processor.a
+[ 29%] Built target ocudu_pdcch_processor
+[ 29%] Building CXX object lib/phy/upper/sequence_generators/CMakeFiles/ocudu_sequence_generators.dir/low_papr_sequence_collection_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_channel_estimator.dir/channel_estimator/factories.cpp.o
+[ 29%] Building CXX object lib/phy/upper/sequence_generators/CMakeFiles/ocudu_sequence_generators.dir/low_papr_sequence_generator_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_prach_detector.a
+[ 29%] Built target ocudu_prach_detector
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_nzp_csi_rs_generator.dir/nzp_csi_rs/factories.cpp.o
+[ 29%] Building CXX object lib/phy/upper/sequence_generators/CMakeFiles/ocudu_sequence_generators.dir/pseudo_random_generator_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_channel_estimator.dir/channel_estimator/port_channel_estimator_average_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/sequence_generators/CMakeFiles/ocudu_sequence_generators.dir/sequence_generator_factories.cpp.o
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_channel_estimator.dir/channel_estimator/port_channel_estimator_helpers.cpp.o
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_nzp_csi_rs_generator.dir/nzp_csi_rs/nzp_csi_rs_generator_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_sequence_generators.a
+[ 29%] Built target ocudu_sequence_generators
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_prs_generator.dir/prs/factories.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/pusch_codeblock_decoder.cpp.o
+[ 29%] Linking CXX static library libocudu_nzp_csi_rs_generator.a
+[ 29%] Built target ocudu_nzp_csi_rs_generator
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_srs_estimator.dir/srs/srs_estimator_factory.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/pusch_decoder_empty_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_channel_estimator.a
+[ 29%] Built target ocudu_channel_estimator
+[ 29%] Building CXX object lib/phy/upper/metrics/CMakeFiles/ocudu_upper_phy_metrics.dir/upper_phy_ldpc_metrics_collector.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/pusch_decoder_hw_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_prs_generator.dir/prs/prs_generator_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/metrics/CMakeFiles/ocudu_upper_phy_metrics.dir/upper_phy_pdsch_metrics_collector.cpp.o
+[ 29%] Linking CXX static library libocudu_prs_generator.a
+[ 29%] Built target ocudu_prs_generator
+[ 29%] Building CXX object lib/ofh/ethernet/CMakeFiles/ocudu_ofh_ethernet.dir/ethernet_factories.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/pusch_decoder_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/metrics/CMakeFiles/ocudu_upper_phy_metrics.dir/upper_phy_pusch_metrics_collector.cpp.o
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_srs_estimator.dir/srs/srs_estimator_generic_impl.cpp.o
+[ 29%] Building CXX object lib/ofh/ethernet/CMakeFiles/ocudu_ofh_ethernet.dir/ethernet_frame_builder_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/metrics/CMakeFiles/ocudu_upper_phy_metrics.dir/upper_phy_metrics_collector_impl.cpp.o
+[ 29%] Building CXX object lib/ofh/ethernet/CMakeFiles/ocudu_ofh_ethernet.dir/ethernet_transmitter_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/signal_processors/CMakeFiles/ocudu_srs_estimator.dir/srs/srs_validator_generic_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/pusch_processor_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_upper_phy_metrics.a
+[ 29%] Built target ocudu_upper_phy_metrics
+[ 29%] Building CXX object lib/ofh/timing/CMakeFiles/ocudu_ofh_timing.dir/ofh_timing_manager_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_srs_estimator.a
+[ 29%] Building CXX object lib/ofh/ethernet/CMakeFiles/ocudu_ofh_ethernet.dir/ethernet_receiver_impl.cpp.o
+[ 29%] Built target ocudu_srs_estimator
+[ 29%] Building CXX object lib/ofh/ethernet/CMakeFiles/ocudu_ofh_ethernet.dir/ethernet_rx_buffer_impl.cpp.o
+[ 29%] Building CXX object lib/ofh/timing/CMakeFiles/ocudu_ofh_timing.dir/ofh_timing_metrics_collector_impl.cpp.o
+[ 29%] Building CXX object lib/ofh/timing/CMakeFiles/ocudu_ofh_timing.dir/realtime_timing_worker.cpp.o
+[ 29%] Building CXX object lib/ofh/ethernet/CMakeFiles/ocudu_ofh_ethernet.dir/vlan_ethernet_frame_builder_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/pusch_processor_validator_impl.cpp.o
+[ 29%] Building CXX object lib/ofh/ethernet/CMakeFiles/ocudu_ofh_ethernet.dir/vlan_ethernet_frame_decoder_impl.cpp.o
+[ 29%] Building CXX object lib/phy/upper/channel_processors/pusch/CMakeFiles/ocudu_pusch_processor.dir/ulsch_demultiplex_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_ofh_timing.a
+[ 29%] Built target ocudu_ofh_timing
+[ 29%] Building CXX object lib/ofh/support/CMakeFiles/ocudu_ofh_support.dir/beamforming_weights_repository.cpp.o
+[ 29%] Linking CXX static library libocudu_ofh_ethernet.a
+[ 29%] Built target ocudu_ofh_ethernet
+[ 29%] Building CXX object lib/phy/lower/modulation/CMakeFiles/ocudu_lower_phy_modulation.dir/modulation_factories.cpp.o
+[ 29%] Linking CXX static library libocudu_ofh_support.a
+[ 29%] Built target ocudu_ofh_support
+[ 29%] Building CXX object lib/phy/lower/processors/downlink/CMakeFiles/ocudu_lower_phy_downlink_processor.dir/downlink_processor_baseband_impl.cpp.o
+[ 29%] Building CXX object lib/radio/realtime_loopback/CMakeFiles/ocudu_radio_realtime_loopback.dir/loopback_buffer.cpp.o
+[ 29%] Linking CXX static library libocudu_pusch_processor.a
+[ 29%] Built target ocudu_pusch_processor
+[ 29%] Building CXX object lib/radio/zmq/CMakeFiles/ocudu_radio_zmq.dir/radio_config_zmq_validator.cpp.o
+[ 29%] Building CXX object lib/phy/lower/processors/downlink/CMakeFiles/ocudu_lower_phy_downlink_processor.dir/downlink_processor_factories.cpp.o
+[ 29%] Building CXX object lib/phy/lower/modulation/CMakeFiles/ocudu_lower_phy_modulation.dir/ofdm_modulator_impl.cpp.o
+[ 29%] Building CXX object lib/radio/realtime_loopback/CMakeFiles/ocudu_radio_realtime_loopback.dir/radio_config_realtime_loopback_validator.cpp.o
+[ 29%] Building CXX object lib/phy/lower/processors/downlink/CMakeFiles/ocudu_lower_phy_downlink_processor.dir/downlink_processor_impl.cpp.o
+[ 29%] Building CXX object lib/phy/lower/modulation/CMakeFiles/ocudu_lower_phy_modulation.dir/ofdm_demodulator_impl.cpp.o
+[ 29%] Building CXX object lib/radio/realtime_loopback/CMakeFiles/ocudu_radio_realtime_loopback.dir/radio_factory_realtime_loopback_impl.cpp.o
+[ 29%] Building CXX object lib/phy/lower/modulation/CMakeFiles/ocudu_lower_phy_modulation.dir/ofdm_prach_demodulator_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_lower_phy_downlink_processor.a
+[ 29%] Built target ocudu_lower_phy_downlink_processor
+[ 29%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_config_difi_validator.cpp.o
+[ 29%] Building CXX object lib/radio/zmq/CMakeFiles/ocudu_radio_zmq.dir/radio_factory_zmq_impl.cpp.o
+[ 29%] Building CXX object lib/radio/realtime_loopback/CMakeFiles/ocudu_radio_realtime_loopback.dir/radio_session_realtime_loopback_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_lower_phy_modulation.a
+[ 29%] Built target ocudu_lower_phy_modulation
+[ 29%] Building CXX object lib/fapi_adaptor/mac/p5/CMakeFiles/ocudu_mac_to_fapi_p5_sector_fastpath_adaptor.dir/mac_fapi_p5_fastpath_cell_operation_controller_impl.cpp.o
+[ 29%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_difi_context_packet.cpp.o
+[ 29%] Building CXX object lib/radio/zmq/CMakeFiles/ocudu_radio_zmq.dir/radio_session_zmq_impl.cpp.o
+[ 29%] Linking CXX static library libocudu_radio_realtime_loopback.a
+[ 29%] Built target ocudu_radio_realtime_loopback
+[ 29%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/csi_rs.cpp.o
+[ 29%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_difi_data_packet.cpp.o
+[ 29%] Building CXX object lib/fapi_adaptor/mac/p5/CMakeFiles/ocudu_mac_to_fapi_p5_sector_fastpath_adaptor.dir/mac_fapi_p5_sector_fastpath_adaptor_impl.cpp.o
+[ 29%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_difi_stream_config.cpp.o
+[ 29%] Building CXX object lib/radio/zmq/CMakeFiles/ocudu_radio_zmq.dir/radio_zmq_rx_channel.cpp.o
+[ 29%] Building CXX object lib/fapi_adaptor/mac/p5/CMakeFiles/ocudu_mac_to_fapi_p5_sector_fastpath_adaptor.dir/mac_fapi_p5_start_cell_procedure.cpp.o
+[ 29%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_difi_udp_socket.cpp.o
+[ 29%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/pdcch.cpp.o
+[ 30%] Building CXX object lib/radio/zmq/CMakeFiles/ocudu_radio_zmq.dir/radio_zmq_rx_stream.cpp.o
+[ 30%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_factory_difi_impl.cpp.o
+[ 30%] Building CXX object lib/fapi_adaptor/mac/p5/CMakeFiles/ocudu_mac_to_fapi_p5_sector_fastpath_adaptor.dir/mac_fapi_p5_stop_cell_procedure.cpp.o
+[ 30%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_session_difi_impl.cpp.o
+[ 30%] Building CXX object lib/radio/zmq/CMakeFiles/ocudu_radio_zmq.dir/radio_zmq_tx_channel.cpp.o
+[ 30%] Building CXX object lib/fapi_adaptor/mac/p5/CMakeFiles/ocudu_mac_to_fapi_p5_sector_fastpath_adaptor.dir/p5_responses_handler.cpp.o
+[ 30%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/pdsch.cpp.o
+[ 30%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_difi_rx_stream.cpp.o
+[ 31%] Linking CXX static library libocudu_mac_to_fapi_p5_sector_fastpath_adaptor.a
+[ 31%] Built target ocudu_mac_to_fapi_p5_sector_fastpath_adaptor
+[ 31%] Building CXX object lib/radio/difi/CMakeFiles/ocudu_radio_difi.dir/radio_difi_tx_stream.cpp.o
+[ 31%] Building CXX object lib/radio/zmq/CMakeFiles/ocudu_radio_zmq.dir/radio_zmq_tx_stream.cpp.o
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/prach.cpp.o
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/CMakeFiles/ocudu_fapi_to_mac_p7_fastpath_translator.dir/fapi_to_mac_error_indication_fastpath_translator.cpp.o
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/prs.cpp.o
+[ 31%] Linking CXX static library libocudu_radio_difi.a
+[ 31%] Built target ocudu_radio_difi
+[ 31%] Building CXX object tests/test_doubles/utils/CMakeFiles/test_rng.dir/test_rng.cpp.o
+[ 31%] Linking CXX static library libocudu_radio_zmq.a
+[ 31%] Built target ocudu_radio_zmq
+[ 31%] Building CXX object tests/test_doubles/pdcp/CMakeFiles/pdcp_test_doubles.dir/Unity/unity_0_cxx.cxx.o
+[ 31%] Linking CXX static library libtest_rng.a
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/CMakeFiles/ocudu_fapi_to_mac_p7_fastpath_translator.dir/fapi_to_mac_indications_fastpath_translator.cpp.o
+[ 31%] Built target test_rng
+[ 31%] Building CXX object tests/test_doubles/security/CMakeFiles/security_test_doubles.dir/security_test_keys.cpp.o
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/pucch.cpp.o
+[ 31%] Linking CXX static library libsecurity_test_doubles.a
+[ 31%] Built target security_test_doubles
+[ 31%] Building CXX object tests/unittests/adt/CMakeFiles/lockfree_triple_buffer_test.dir/lockfree_triple_buffer_test.cpp.o
+[ 31%] Linking CXX static library libpdcp_test_doubles.a
+[ 31%] Built target pdcp_test_doubles
+[ 31%] Building CXX object tests/unittests/adt/CMakeFiles/batched_dispatch_queue_test.dir/batched_dispatch_queue_test.cpp.o
+[ 31%] Linking CXX executable lockfree_triple_buffer_test
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/pusch.cpp.o
+[ 31%] Built target lockfree_triple_buffer_test
+[ 31%] Building CXX object tests/unittests/adt/CMakeFiles/type_list_buffer_test.dir/type_list_buffer_test.cpp.o
+[ 31%] Linking CXX executable batched_dispatch_queue_test
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/CMakeFiles/ocudu_fapi_to_mac_p7_fastpath_translator.dir/fapi_to_mac_slot_indication_fastpath_translator.cpp.o
+[ 31%] Built target batched_dispatch_queue_test
+[ 31%] Building CXX object tests/unittests/asn1/CMakeFiles/asn1_utils_test.dir/asn1_utils_test.cpp.o
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/srs.cpp.o
+[ 31%] Linking CXX static library libocudu_fapi_to_mac_p7_fastpath_translator.a
+[ 31%] Built target ocudu_fapi_to_mac_p7_fastpath_translator
+[ 31%] Building CXX object tests/unittests/rrc/CMakeFiles/rrc_ue_test_helpers.dir/rrc_ue_test_messages.cpp.o
+[ 31%] Building CXX object lib/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/ocudu_mac_fapi_adaptors.dir/ssb.cpp.o
+[ 31%] Building CXX object tests/unittests/adt/CMakeFiles/type_list_buffer_test.dir/segment_list_test.cpp.o
+[ 31%] Linking CXX static library libocudu_mac_fapi_adaptors.a
+[ 31%] Built target ocudu_mac_fapi_adaptors
+[ 31%] Building CXX object tests/unittests/cu_cp/cell_meas_manager/CMakeFiles/cell_meas_manager_helpers.dir/cell_meas_manager_test_helpers.cpp.o
+[ 31%] Linking CXX executable type_list_buffer_test
+[ 31%] Built target type_list_buffer_test
+[ 31%] Building CXX object tests/unittests/f1u/CMakeFiles/f1u_local_connector_test.dir/common/f1u_connector_test.cpp.o
+[ 31%] Linking CXX executable asn1_utils_test
+[ 31%] Built target asn1_utils_test
+[ 31%] Building CXX object tests/unittests/f1u/CMakeFiles/f1u_session_manager_test.dir/common/f1u_session_manager_test.cpp.o
+[ 31%] Linking CXX static library librrc_ue_test_helpers.a
+[ 31%] Built target rrc_ue_test_helpers
+[ 31%] Building CXX object tests/unittests/f1u/cu_up/CMakeFiles/f1u_cu_up_bearer_test.dir/f1u_cu_up_bearer_test.cpp.o
+[ 31%] Linking CXX executable f1u_local_connector_test
+[ 31%] Built target f1u_local_connector_test
+[ 31%] Building CXX object tests/unittests/f1u/cu_up/CMakeFiles/f1u_cu_up_tx_metrics_test.dir/f1u_cu_up_tx_metrics_test.cpp.o
+[ 31%] Linking CXX executable f1u_session_manager_test
+[ 31%] Built target f1u_session_manager_test
+[ 31%] Building CXX object tests/unittests/f1u/cu_up/CMakeFiles/f1u_cu_up_rx_metrics_test.dir/f1u_cu_up_rx_metrics_test.cpp.o
+[ 31%] Linking CXX executable f1u_cu_up_bearer_test
+[ 31%] Built target f1u_cu_up_bearer_test
+[ 31%] Building CXX object tests/unittests/f1u/du/CMakeFiles/f1u_du_bearer_test.dir/f1u_du_bearer_test.cpp.o
+[ 31%] Linking CXX executable f1u_cu_up_tx_metrics_test
+[ 31%] Built target f1u_cu_up_tx_metrics_test
+[ 31%] Building CXX object tests/unittests/fapi/common/builders/CMakeFiles/error_indication_builder_test.dir/error_indication_test.cpp.o
+[ 31%] Linking CXX executable f1u_cu_up_rx_metrics_test
+[ 31%] Built target f1u_cu_up_rx_metrics_test
+[ 31%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/crc_indication_builder_test.dir/crc_indication_test.cpp.o
+[ 31%] Linking CXX executable error_indication_builder_test
+[ 31%] Built target error_indication_builder_test
+[ 31%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/dl_csi_pdu_builder_test.dir/dl_csi_pdu_test.cpp.o
+[ 31%] Linking CXX executable crc_indication_builder_test
+[ 31%] Built target crc_indication_builder_test
+[ 31%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/dl_pdcch_builder_test.dir/dl_pdcch_pdu_test.cpp.o
+[ 31%] Linking CXX static library libcell_meas_manager_helpers.a
+[ 31%] Built target cell_meas_manager_helpers
+[ 31%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/dl_pdsch_builder_test.dir/dl_pdsch_pdu_test.cpp.o
+[ 31%] Linking CXX executable dl_csi_pdu_builder_test
+[ 31%] Built target dl_csi_pdu_builder_test
+[ 31%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/dl_prs_pdu_test.dir/dl_prs_pdu_test.cpp.o
+[ 32%] Linking CXX executable f1u_du_bearer_test
+[ 32%] Built target f1u_du_bearer_test
+[ 32%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/dl_ssb_builder_test.dir/dl_ssb_pdu_test.cpp.o
+[ 32%] Linking CXX executable dl_pdcch_builder_test
+[ 32%] Built target dl_pdcch_builder_test
+[ 32%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/dl_tti_request_test.dir/dl_tti_request_test.cpp.o
+[ 32%] Linking CXX executable dl_pdsch_builder_test
+[ 32%] Linking CXX executable dl_ssb_builder_test
+[ 32%] Built target dl_pdsch_builder_test
+[ 32%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/rach_indication_builder_test.dir/rach_indication_test.cpp.o
+[ 32%] Built target dl_ssb_builder_test
+[ 32%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/rx_data_indication_builder_test.dir/rx_data_indication_test.cpp.o
+[ 32%] Linking CXX executable dl_prs_pdu_test
+[ 32%] Built target dl_prs_pdu_test
+[ 32%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/slot_indication_builder_test.dir/slot_indication_test.cpp.o
+[ 32%] Linking CXX executable dl_tti_request_test
+[ 32%] Built target dl_tti_request_test
+[ 32%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/srs_indication_builder_test.dir/srs_indication_test.cpp.o
+[ 32%] Linking CXX executable rx_data_indication_builder_test
+[ 34%] Linking CXX executable rach_indication_builder_test
+[ 34%] Built target rx_data_indication_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/tx_data_request_builder_test.dir/tx_data_request_test.cpp.o
+[ 34%] Built target rach_indication_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/tx_precoding_and_beamforming_pdu_builder_test.dir/tx_precoding_and_beamforming_pdu_test.cpp.o
+[ 34%] Linking CXX executable slot_indication_builder_test
+[ 34%] Built target slot_indication_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/uci_indication_builder_test.dir/uci_indication_test.cpp.o
+[ 34%] Linking CXX executable tx_data_request_builder_test
+[ 34%] Built target tx_data_request_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/ul_dci_request_builder_test.dir/ul_dci_request_test.cpp.o
+[ 34%] Linking CXX executable srs_indication_builder_test
+[ 34%] Linking CXX executable tx_precoding_and_beamforming_pdu_builder_test
+[ 34%] Built target srs_indication_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/ul_prach_builder_test.dir/ul_prach_pdu_test.cpp.o
+[ 34%] Built target tx_precoding_and_beamforming_pdu_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/ul_pucch_builder_test.dir/ul_pucch_pdu_test.cpp.o
+[ 34%] Linking CXX executable uci_indication_builder_test
+[ 34%] Built target uci_indication_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/ul_pusch_builder_test.dir/ul_pusch_pdu_test.cpp.o
+[ 34%] Linking CXX executable ul_prach_builder_test
+[ 34%] Built target ul_prach_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/ul_srs_builder_test.dir/ul_srs_pdu_test.cpp.o
+[ 34%] Linking CXX executable ul_dci_request_builder_test
+[ 34%] Built target ul_dci_request_builder_test
+[ 34%] Building CXX object tests/unittests/fapi/p7/builders/CMakeFiles/ul_tti_request_builder_test.dir/ul_tti_request_test.cpp.o
+[ 34%] Linking CXX executable ul_pucch_builder_test
+[ 34%] Built target ul_pucch_builder_test
+[ 34%] Building CXX object tests/unittests/fapi_adaptor/CMakeFiles/precoding_codebook_generator_test.dir/precoding_codebook_generator_test.cpp.o
+[ 34%] Linking CXX executable ul_srs_builder_test
+[ 34%] Built target ul_srs_builder_test
+[ 34%] Building CXX object tests/unittests/fapi_adaptor/CMakeFiles/uci_part2_correspondence_test.dir/uci_part2_correspondence_test.cpp.o
+[ 34%] Linking CXX executable ul_pusch_builder_test
+[ 34%] Built target ul_pusch_builder_test
+[ 34%] Building CXX object tests/unittests/fapi_adaptor/mac/p5/CMakeFiles/mac_fapi_p5_start_cell_procedure_test.dir/mac_fapi_p5_start_cell_procedure_test.cpp.o
+[ 34%] Linking CXX executable ul_tti_request_builder_test
+[ 34%] Built target ul_tti_request_builder_test
+[ 34%] Building CXX object tests/unittests/fapi_adaptor/mac/p5/CMakeFiles/mac_fapi_p5_stop_cell_procedure_test.dir/mac_fapi_p5_stop_cell_procedure_test.cpp.o
+[ 34%] Linking CXX executable precoding_codebook_generator_test
+[ 34%] Built target precoding_codebook_generator_test
+[ 34%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/CMakeFiles/fapi_to_mac_indications_fastpath_translator_test.dir/fapi_to_mac_indications_fastpath_translator_test.cpp.o
+[ 34%] Linking CXX executable mac_fapi_p5_start_cell_procedure_test
+[ 34%] Built target mac_fapi_p5_start_cell_procedure_test
+[ 34%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_pdcch_adaptor_test.dir/dl_pdcch_pdu_test.cpp.o
+[ 34%] Linking CXX executable uci_part2_correspondence_test
+[ 34%] Built target uci_part2_correspondence_test
+[ 34%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_pdsch_adaptor_test.dir/dl_pdsch_pdu_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_p5_stop_cell_procedure_test
+[ 35%] Built target mac_fapi_p5_stop_cell_procedure_test
+[ 35%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_ssb_adaptor_test.dir/dl_ssb_pdu_test.cpp.o
+[ 35%] Linking CXX executable fapi_to_mac_indications_fastpath_translator_test
+[ 35%] Built target fapi_to_mac_indications_fastpath_translator_test
+[ 35%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_prs_adaptor_test.dir/dl_prs_pdu_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_pdcch_adaptor_test
+[ 35%] Built target mac_fapi_pdcch_adaptor_test
+[ 35%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_prach_adaptor_test.dir/ul_prach_pdu_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_ssb_adaptor_test
+[ 35%] Built target mac_fapi_ssb_adaptor_test
+[ 35%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_pucch_adaptor_test.dir/ul_pucch_pdu_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_pdsch_adaptor_test
+[ 35%] Built target mac_fapi_pdsch_adaptor_test
+[ 35%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_pusch_adaptor_test.dir/ul_pusch_pdu_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_prs_adaptor_test
+[ 35%] Built target mac_fapi_prs_adaptor_test
+[ 35%] Building CXX object tests/unittests/fapi_adaptor/mac/p7/pdu_translators/CMakeFiles/mac_fapi_srs_adaptor_test.dir/ul_srs_pdu_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_prach_adaptor_test
+[ 35%] Built target mac_fapi_prach_adaptor_test
+[ 35%] Building CXX object tests/unittests/gateways/CMakeFiles/sctp_socket_test.dir/sctp_socket_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_pucch_adaptor_test
+[ 35%] Built target mac_fapi_pucch_adaptor_test
+[ 35%] Building CXX object tests/unittests/gateways/CMakeFiles/sctp_network_gateway_test.dir/sctp_network_server_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_pusch_adaptor_test
+[ 35%] Built target mac_fapi_pusch_adaptor_test
+[ 35%] Building CXX object tests/unittests/gateways/CMakeFiles/udp_network_gateway_test.dir/udp_network_gateway_test.cpp.o
+[ 35%] Linking CXX executable mac_fapi_srs_adaptor_test
+[ 35%] Built target mac_fapi_srs_adaptor_test
+[ 35%] Building CXX object tests/unittests/gateways/CMakeFiles/udp_network_gateway_pool_depletion_test.dir/udp_network_gateway_pool_depletion_test.cpp.o
+[ 35%] Linking CXX executable sctp_socket_test
+[ 35%] Built target sctp_socket_test
+[ 35%] Building CXX object tests/unittests/nru/CMakeFiles/nru_packing_test.dir/nru_packing_test.cpp.o
+[ 35%] Linking CXX executable udp_network_gateway_test
+[ 35%] Built target udp_network_gateway_test
+[ 35%] Building CXX object tests/unittests/ofh/ethernet/CMakeFiles/vlan_ethernet_frame_builder_test.dir/vlan_ethernet_frame_builder_test.cpp.o
+[ 35%] Building CXX object tests/unittests/gateways/CMakeFiles/sctp_network_gateway_test.dir/sctp_network_server_peer_test.cpp.o
+[ 35%] Linking CXX executable udp_network_gateway_pool_depletion_test
+[ 35%] Built target udp_network_gateway_pool_depletion_test
+[ 35%] Building CXX object tests/unittests/gateways/CMakeFiles/sctp_network_gateway_test.dir/sctp_network_client_test.cpp.o
+[ 35%] Linking CXX executable vlan_ethernet_frame_builder_test
+[ 35%] Built target vlan_ethernet_frame_builder_test
+[ 35%] Building CXX object tests/unittests/ofh/ethernet/CMakeFiles/vlan_ethernet_frame_decoder_test.dir/vlan_ethernet_frame_decoder_test.cpp.o
+[ 35%] Linking CXX executable nru_packing_test
+[ 35%] Built target nru_packing_test
+[ 35%] Building CXX object tests/unittests/gateways/CMakeFiles/sctp_network_gateway_test.dir/sctp_network_link_test.cpp.o
+[ 35%] Linking CXX executable vlan_ethernet_frame_decoder_test
+[ 35%] Built target vlan_ethernet_frame_decoder_test
+[ 35%] Building CXX object tests/unittests/phy/lower/modulation/CMakeFiles/ofdm_modulator_unittest.dir/ofdm_modulator_unittest.cpp.o
+[ 35%] Building CXX object tests/unittests/phy/lower/processors/downlink/CMakeFiles/lower_phy_downlink_processor_test.dir/lower_phy_downlink_processor_test.cpp.o
+[ 35%] Building CXX object tests/unittests/phy/upper/channel_modulation/CMakeFiles/evm_calculator_test.dir/evm_calculator_test.cpp.o
+[ 35%] Linking CXX executable sctp_network_gateway_test
+[ 35%] Built target sctp_network_gateway_test
+[ 35%] Building CXX object tests/unittests/phy/upper/sequence_generators/CMakeFiles/pseudo_random_test.dir/pseudo_random_generator_test.cpp.o
+[ 35%] Linking CXX executable ofdm_modulator_unittest
+[ 35%] Built target ofdm_modulator_unittest
+[ 35%] Building CXX object tests/unittests/phy/upper/signal_processors/CMakeFiles/prs_generator_validator_test.dir/prs/prs_generator_validator_test.cpp.o
+[ 35%] Linking CXX executable evm_calculator_test
+[ 35%] Built target evm_calculator_test
+[ 35%] Building CXX object tests/unittests/phy/support/CMakeFiles/resource_grid_test.dir/resource_grid_test.cpp.o
+[ 35%] Linking CXX executable pseudo_random_test
+[ 35%] Built target pseudo_random_test
+[ 35%] Building CXX object tests/unittests/phy/support/CMakeFiles/interpolator_test.dir/interpolator_test.cpp.o
+[ 35%] Linking CXX executable lower_phy_downlink_processor_test
+[ 35%] Built target lower_phy_downlink_processor_test
+[ 35%] Building CXX object tests/unittests/phy/support/CMakeFiles/resource_grid_mapper_test.dir/resource_grid_mapper_test.cpp.o
+[ 35%] Linking CXX executable interpolator_test
+[ 35%] Built target interpolator_test
+[ 35%] Building CXX object tests/unittests/radio/difi/CMakeFiles/radio_difi_validator_test.dir/radio_difi_validator_test.cpp.o
+[ 35%] Linking CXX executable resource_grid_test
+[ 35%] Built target resource_grid_test
+[ 35%] Building CXX object tests/unittests/radio/difi/CMakeFiles/radio_difi_udp_socket_test.dir/radio_difi_udp_socket_test.cpp.o
+[ 35%] Linking CXX executable prs_generator_validator_test
+[ 35%] Built target prs_generator_validator_test
+[ 35%] Building CXX object tests/unittests/radio/difi/CMakeFiles/radio_difi_context_packet_test.dir/radio_difi_context_packet_test.cpp.o
+[ 35%] Linking CXX executable resource_grid_mapper_test
+[ 35%] Built target resource_grid_mapper_test
+[ 35%] Building CXX object tests/unittests/radio/difi/CMakeFiles/radio_difi_data_packet_test.dir/radio_difi_data_packet_test.cpp.o
+[ 35%] Linking CXX executable radio_difi_validator_test
+[ 35%] Built target radio_difi_validator_test
+[ 35%] Building CXX object tests/unittests/radio/difi/CMakeFiles/radio_difi_tx_stream_loopback_test.dir/radio_difi_tx_stream_loopback_test.cpp.o
+[ 35%] Linking CXX executable radio_difi_udp_socket_test
+[ 35%] Built target radio_difi_udp_socket_test
+[ 35%] Building CXX object tests/unittests/radio/difi/CMakeFiles/radio_difi_rx_stream_loopback_test.dir/radio_difi_rx_stream_loopback_test.cpp.o
+[ 35%] Linking CXX executable radio_difi_context_packet_test
+[ 35%] Built target radio_difi_context_packet_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_rx_am_test.dir/rlc_rx_am_test.cpp.o
+[ 35%] Linking CXX executable radio_difi_data_packet_test
+[ 35%] Built target radio_difi_data_packet_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_tx_am_test.dir/rlc_tx_am_test.cpp.o
+[ 35%] Linking CXX executable radio_difi_tx_stream_loopback_test
+[ 35%] Built target radio_difi_tx_stream_loopback_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_rx_tm_test.dir/rlc_rx_tm_test.cpp.o
+[ 35%] Linking CXX executable radio_difi_rx_stream_loopback_test
+[ 35%] Built target radio_difi_rx_stream_loopback_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_tx_tm_test.dir/rlc_tx_tm_test.cpp.o
+[ 35%] Linking CXX executable rlc_rx_tm_test
+[ 35%] Built target rlc_rx_tm_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_um_test.dir/rlc_um_test.cpp.o
+[ 35%] Linking CXX executable rlc_tx_tm_test
+[ 35%] Built target rlc_tx_tm_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_am_pdu_test.dir/rlc_am_pdu_test.cpp.o
+[ 35%] Linking CXX executable rlc_rx_am_test
+[ 35%] Built target rlc_rx_am_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_pdu_recycler_test.dir/rlc_pdu_recycler_test.cpp.o
+[ 35%] Linking CXX executable rlc_pdu_recycler_test
+[ 35%] Built target rlc_pdu_recycler_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_bearer_metrics_collector_test.dir/rlc_bearer_metrics_collector_test.cpp.o
+[ 35%] Linking CXX executable rlc_tx_am_test
+[ 35%] Built target rlc_tx_am_test
+[ 35%] Building CXX object tests/unittests/rlc/CMakeFiles/rlc_tx_metrics_test.dir/rlc_tx_metrics_test.cpp.o
+[ 35%] Linking CXX executable rlc_bearer_metrics_collector_test
+[ 35%] Built target rlc_bearer_metrics_collector_test
+[ 35%] Building CXX object tests/unittests/security/CMakeFiles/security_test.dir/security_test.cpp.o
+[ 35%] Linking CXX executable rlc_tx_metrics_test
+[ 35%] Built target rlc_tx_metrics_test
+[ 35%] Building CXX object tests/unittests/security/CMakeFiles/integrity_engine_test.dir/integrity_engine_test.cpp.o
+[ 35%] Linking CXX executable rlc_um_test
+[ 35%] Built target rlc_um_test
+[ 36%] Building CXX object tests/unittests/security/CMakeFiles/ciphering_engine_test.dir/ciphering_engine_test.cpp.o
+[ 36%] Linking CXX executable rlc_am_pdu_test
+[ 36%] Built target rlc_am_pdu_test
+[ 36%] Building CXX object tests/benchmarks/gateways/CMakeFiles/udp_network_gateway_benchmark.dir/udp_network_gateway_benchmark.cpp.o
+[ 36%] Linking CXX executable security_test
+[ 36%] Linking CXX executable integrity_engine_test
+[ 36%] Built target security_test
+[ 36%] Built target integrity_engine_test
+[ 36%] Building CXX object tests/benchmarks/gateways/CMakeFiles/udp_network_gateway_tx_benchmark.dir/udp_network_gateway_tx_benchmark.cpp.o
+[ 36%] Linking CXX executable udp_network_gateway_benchmark
+[ 36%] Building CXX object tests/benchmarks/gateways/CMakeFiles/udp_network_gateway_rx_benchmark.dir/udp_network_gateway_rx_benchmark.cpp.o
+[ 36%] Built target udp_network_gateway_benchmark
+[ 36%] Building CXX object tests/benchmarks/phy/lower/CMakeFiles/pdxch_modulator_benchmark.dir/pdxch_modulator_benchmark.cpp.o
+[ 36%] Linking CXX executable ciphering_engine_test
+[ 36%] Built target ciphering_engine_test
+[ 36%] Building CXX object tests/benchmarks/phy/upper/channel_modulation/CMakeFiles/modulation_chain_benchmark.dir/modulation_chain_benchmark.cpp.o
+[ 36%] Linking CXX executable udp_network_gateway_tx_benchmark
+[ 36%] Built target udp_network_gateway_tx_benchmark
+[ 36%] Linking CXX executable udp_network_gateway_rx_benchmark
+[ 36%] Building CXX object tests/benchmarks/phy/upper/channel_processors/CMakeFiles/prach_detector_benchmark.dir/prach_detector_benchmark.cpp.o
+[ 36%] Built target udp_network_gateway_rx_benchmark
+[ 36%] Building CXX object tests/benchmarks/phy/upper/signal_processors/CMakeFiles/dmrs_pdsch_processor_benchmark.dir/dmrs_pdsch_processor_benchmark.cpp.o
+[ 36%] Linking CXX executable modulation_chain_benchmark
+[ 36%] Built target modulation_chain_benchmark
+[ 36%] Building CXX object tests/benchmarks/phy/upper/signal_processors/CMakeFiles/srs_estimator_benchmark.dir/srs_estimator_benchmark.cpp.o
+[ 36%] Linking CXX executable pdxch_modulator_benchmark
+[ 36%] Built target pdxch_modulator_benchmark
+[ 36%] Building CXX object tests/benchmarks/rlc/CMakeFiles/rlc_handle_status_report.dir/rlc_handle_status_report.cpp.o
+[ 36%] Linking CXX executable prach_detector_benchmark
+[ 36%] Built target prach_detector_benchmark
+[ 36%] Building CXX object tests/benchmarks/rlc/CMakeFiles/rlc_am_rx_benchmark.dir/rlc_am_rx_benchmark.cpp.o
+[ 36%] Linking CXX executable dmrs_pdsch_processor_benchmark
+[ 36%] Built target dmrs_pdsch_processor_benchmark
+[ 36%] Building CXX object tests/benchmarks/rlc/CMakeFiles/rlc_am_tx_benchmark.dir/rlc_am_tx_benchmark.cpp.o
+[ 36%] Linking CXX executable srs_estimator_benchmark
+[ 36%] Built target srs_estimator_benchmark
+[ 36%] Building CXX object tests/benchmarks/rlc/CMakeFiles/rlc_memory_measurement.dir/rlc_memory_measurement.cpp.o
+[ 36%] Linking CXX executable rlc_handle_status_report
+[ 36%] Built target rlc_handle_status_report
+[ 36%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/common.cpp.o
+[ 36%] Linking CXX executable rlc_am_rx_benchmark
+[ 36%] Built target rlc_am_rx_benchmark
+[ 36%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_ies.cpp.o
+[ 37%] Building CXX object lib/gtpu/extension_header/CMakeFiles/ocudu_gtpu_extension_header.dir/long_pdcp_pdu_number_packing.cpp.o
+[ 37%] Linking CXX executable rlc_am_tx_benchmark
+[ 37%] Built target rlc_am_tx_benchmark
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e1ap_asn1.dir/e1ap/e1ap.cpp.o
+[ 37%] Building CXX object lib/gtpu/extension_header/CMakeFiles/ocudu_gtpu_extension_header.dir/pdcp_pdu_number_packing.cpp.o
+[ 37%] Linking CXX executable rlc_memory_measurement
+[ 37%] Built target rlc_memory_measurement
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e1ap_asn1.dir/e1ap/e1ap_ies.cpp.o
+[ 37%] Linking CXX static library libocudu_gtpu_extension_header.a
+[ 37%] Built target ocudu_gtpu_extension_header
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e1ap_asn1.dir/e1ap/e1ap_pdu_contents.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_pdu_items.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2ap/e2ap.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_pdu_contents_ue.cpp.o
+[ 37%] Linking CXX static library libe1ap_asn1.a
+[ 37%] Built target e1ap_asn1
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_common_ies.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_pdu_contents.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_kpm_ies.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_rc_ies.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/ngap_asn1.dir/ngap/common.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_ccc.cpp.o
+[ 37%] Building CXX object lib/asn1/CMakeFiles/ngap_asn1.dir/ngap/ngap_ies.cpp.o
+                                                                                                                                                                                                                                                    

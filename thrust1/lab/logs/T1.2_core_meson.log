@@ -1,0 +1,310 @@
+The Meson build system
+Version: 0.53.2
+Source dir: /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core
+Build dir: /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core/build
+Build type: native build
+Project name: open5gs
+Project version: 2.4.9
+C compiler for the host machine: cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0")
+C linker for the host machine: cc ld.bfd 2.34
+C++ compiler for the host machine: c++ (gcc 9.4.0 "c++ (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0")
+C++ linker for the host machine: c++ ld.bfd 2.34
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program git found: YES (/usr/bin/git)
+Program python3 found: YES (/usr/bin/python3)
+Program cppcheck found: NO
+Program run-clang-tidy found: NO
+Program clang-tidy found: NO
+Program /usr/bin/python3 found: YES (/usr/bin/python3)
+Compiler for C supports arguments -Wextra: YES 
+Compiler for C supports arguments -Wlogical-op: YES 
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Compiler for C supports arguments -Werror=init-self: YES 
+Compiler for C supports arguments -Wfloat-equal: YES 
+Compiler for C supports arguments -Wsuggest-attribute=noreturn: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Werror=missing-declarations: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=return-type: YES 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Compiler for C supports arguments -Werror=format=2: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Compiler for C supports arguments -Wimplicit-fallthrough=5: YES 
+Compiler for C supports arguments -Wendif-labels: YES 
+Compiler for C supports arguments -Wstrict-aliasing=3: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Werror=overflow: YES 
+Compiler for C supports arguments -Werror=shift-count-overflow: YES 
+Compiler for C supports arguments -Werror=shift-overflow=2: YES 
+Compiler for C supports arguments -Wdate-time: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Wduplicated-branches: YES 
+Compiler for C supports arguments -Wmisleading-indentation: YES 
+Compiler for C supports arguments -Wno-sign-compare -Wsign-compare: YES 
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES 
+Compiler for C supports arguments -ffast-math: YES 
+Compiler for C supports arguments -fdiagnostics-show-option: YES 
+Compiler for C supports arguments -fstack-protector: YES 
+Compiler for C supports arguments -fstack-protector-strong: YES 
+Compiler for C supports arguments --param=ssp-buffer-size=4: YES 
+meson.build:114: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
+Configuring sample.yaml using configuration
+Configuring 310014.yaml using configuration
+Configuring csfb.yaml using configuration
+Configuring volte.yaml using configuration
+Configuring vonr.yaml using configuration
+Configuring slice.yaml using configuration
+Configuring srslte.yaml using configuration
+Configuring non3gpp.yaml using configuration
+Program /usr/bin/python3 found: YES (/usr/bin/python3)
+Configuring mme.yaml using configuration
+Configuring sgwc.yaml using configuration
+Configuring sgwu.yaml using configuration
+Configuring smf.yaml using configuration
+Configuring amf.yaml using configuration
+Configuring upf.yaml using configuration
+Configuring hss.yaml using configuration
+Configuring pcrf.yaml using configuration
+Configuring nrf.yaml using configuration
+Configuring scp.yaml using configuration
+Configuring ausf.yaml using configuration
+Configuring udm.yaml using configuration
+Configuring udr.yaml using configuration
+Configuring pcf.yaml using configuration
+Configuring nssf.yaml using configuration
+Configuring bsf.yaml using configuration
+Program /usr/bin/python3 found: YES (/usr/bin/python3)
+Configuring mme.conf using configuration
+Configuring hss.conf using configuration
+Configuring smf.conf using configuration
+Configuring pcrf.conf using configuration
+Configuring cacert.pem using configuration
+Configuring mme.cert.pem using configuration
+Configuring mme.key.pem using configuration
+Configuring hss.cert.pem using configuration
+Configuring hss.key.pem using configuration
+Configuring smf.cert.pem using configuration
+Configuring smf.key.pem using configuration
+Configuring pcrf.cert.pem using configuration
+Configuring pcrf.key.pem using configuration
+Configuring open5gs-mmed.service using configuration
+Configuring open5gs-sgwcd.service using configuration
+Configuring open5gs-smfd.service using configuration
+Configuring open5gs-amfd.service using configuration
+Configuring open5gs-sgwud.service using configuration
+Configuring open5gs-upfd.service using configuration
+Configuring open5gs-hssd.service using configuration
+Configuring open5gs-pcrfd.service using configuration
+Configuring open5gs-nrfd.service using configuration
+Configuring open5gs-ausfd.service using configuration
+Configuring open5gs-udmd.service using configuration
+Configuring open5gs-pcfd.service using configuration
+Configuring open5gs-nssfd.service using configuration
+Configuring open5gs-bsfd.service using configuration
+Configuring open5gs-udrd.service using configuration
+Configuring 99-open5gs.netdev using configuration
+Configuring 99-open5gs.network using configuration
+Configuring open5gs using configuration
+Configuring open5gs.conf using configuration
+Has header "arpa/inet.h" : YES 
+Has header "ctype.h" : YES 
+Has header "errno.h" : YES 
+Has header "execinfo.h" : YES 
+Has header "fcntl.h" : YES 
+Has header "ifaddrs.h" : YES 
+Has header "netdb.h" : YES 
+Has header "pthread.h" : YES 
+Has header "signal.h" : YES 
+Has header "stdarg.h" : YES 
+Has header "stddef.h" : YES 
+Has header "stdio.h" : YES 
+Has header "stdint.h" : YES 
+Has header "stdbool.h" : YES 
+Has header "stdlib.h" : YES 
+Has header "string.h" : YES 
+Has header "strings.h" : YES 
+Has header "time.h" : YES 
+Has header "sys/time.h" : YES 
+Has header "unistd.h" : YES 
+Has header "net/if.h" : YES 
+Has header "netinet/in.h" : YES 
+Has header "netinet/in_systm.h" : YES 
+Has header "netinet/udp.h" : YES 
+Has header "netinet/tcp.h" : YES 
+Has header "sys/ioctl.h" : YES 
+Has header "sys/param.h" : YES 
+Has header "sys/random.h" : YES 
+Has header "sys/socket.h" : YES 
+Has header "sys/stat.h" : YES 
+Has header "limits.h" : YES 
+Has header "sys/syslimits.h" : NO 
+Has header "sys/types.h" : YES 
+Has header "sys/wait.h" : YES 
+Has header "sys/uio.h" : YES 
+Checking for function "arc4random" : NO 
+Checking for function "arc4random_buf" : NO 
+Checking for function "getrandom" : YES 
+Checking for function "localtime_r" : YES 
+Checking for function "getifaddrs" : YES 
+Checking for function "getenv" : YES 
+Checking for function "putenv" : YES 
+Checking for function "setenv" : YES 
+Checking for function "unsetenv" : YES 
+Checking for function "strerror_r" : YES 
+Checking for function "sigaction" : YES 
+Checking for function "sigwait" : YES 
+Checking for function "sigsuspend" : YES 
+Checking for function "eventfd" : YES 
+Checking for function "kqueue" : NO 
+Checking for function "epoll_ctl" : YES 
+Run-time dependency threads found: YES
+Header <pthread.h> has symbol "pthread_barrier_wait" : YES 
+Header <signal.h> has symbol "sys_siglist" : YES 
+Checking if "strerror_r() returns char *" compiles: YES 
+Library execinfo found: NO
+Checking for function "backtrace" : YES 
+Checking if "clock_gettime()" links: YES 
+Checking if "eventfd(2) system call" links: YES 
+Library socket found: NO
+Checking if "socket()" links: YES 
+Configuring core-config-private.h using configuration
+Configuring core-config.h using configuration
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Run-time dependency talloc found: YES 2.3.3
+Compiler for C supports arguments -Wno-shift-negative-value -Wshift-negative-value: YES 
+Cloning into 'freeDiameter'...
+Switched to a new branch 'r1.5.0'
+Branch 'r1.5.0' set up to track remote branch 'r1.5.0' from 'origin'.
+Compiler for C supports arguments -Wno-unused-but-set-variable -Wunused-but-set-variable: YES 
+Compiler for C supports arguments -Wno-unknown-warning-option -Wunknown-warning-option: NO 
+Compiler for C supports arguments -Wno-missing-prototypes -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wno-missing-declarations -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wno-discarded-qualifiers -Wdiscarded-qualifiers: YES 
+Compiler for C supports arguments -Wno-redundant-decls -Wredundant-decls: YES 
+Compiler for C supports arguments -Wno-shift-overflow -Wshift-overflow: YES 
+Compiler for C supports arguments -Wno-float-equal -Wfloat-equal: YES 
+Compiler for C supports arguments -Wno-implicit-fallthrough -Wimplicit-fallthrough: YES 
+Compiler for C supports arguments -Wno-incompatible-pointer-types-discards-qualifiers -Wincompatible-pointer-types-discards-qualifiers: NO 
+Compiler for C supports arguments -Wno-format-nonliteral -Wformat-nonliteral: YES 
+Compiler for C supports arguments -Wno-cpp -Wcpp: YES 
+Run-time dependency yaml-0.1 found: YES 0.2.2
+Has header "netinet/sctp.h" : YES 
+Library sctp found: YES
+Configuring sctp-config.h using configuration
+Run-time dependency libmongoc-1.0 found: YES 1.16.1
+
+|Executing subproject freeDiameter method meson 
+|
+|Project name: freediameter
+|Project version: 1.5.0
+|C compiler for the host machine: cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0")
+|C linker for the host machine: cc ld.bfd 2.34
+|Program flex found: YES (/usr/bin/flex)
+|Program bison found: YES (/usr/bin/bison)
+|Compiler for C supports arguments -Werror: YES 
+|Compiler for C supports arguments -Wno-unused-variable -Wunused-variable: YES 
+|Compiler for C supports arguments -Wno-unused-but-set-variable -Wunused-but-set-variable: YES 
+|Compiler for C supports arguments -Wno-maybe-uninitialized -Wmaybe-uninitialized: YES 
+|Compiler for C supports arguments -Wno-format-truncation -Wformat-truncation: YES 
+|Compiler for C supports arguments -Wno-stringop-truncation -Wstringop-truncation: YES 
+|Has header "malloc.h" : YES 
+|Has header "signalent.h" : NO 
+|Checking for function "strndup" : YES 
+|Checking for function "getopt_long" : YES 
+|Checking for function "getifaddrs" : YES (cached)
+|Header <netinet/in.h> has symbol "ntohll" : NO 
+|Header <netdb.h> has symbol "AI_ADDRCONFIG" : YES 
+|Dependency threads found: YES unknown (cached)
+|Header <pthread.h> has symbol "pthread_barrier_wait" : YES (cached)
+|Checking if "clock_gettime()" links: YES (cached)
+|Checking if "dlopen() and dlsym() in system libraries" links: NO 
+|Checking if "dlopen() and dlsym() in libdl" links: YES 
+|Library dl found: YES
+|Library gcrypt found: YES
+|Library idn found: YES
+|Library gnutls found: YES
+|Checking for function "gnutls_hash" : YES 
+|Checking for function "gnutls_transport_set_vec_push_function" : YES 
+|Checking for function "gnutls_x509_trust_list_verify_crt" : YES 
+|Checking for function "gnutls_handshake_set_timeout" : YES 
+|Library sctp found: YES
+|Checking if "sctp_connectx() accepts 4 arguments" compiles: YES 
+|Configuring freeDiameter-host.h using configuration
+|Configuring version.h using configuration
+|Header <regex.h> has symbol "REG_STARTEND" : YES 
+|Configuring rt_default-host.h using configuration
+|Build targets in project: 21
+|Subproject freeDiameter finished.
+
+Compiler for C supports arguments -Wno-missing-prototypes -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wno-missing-declarations -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wno-discarded-qualifiers -Wdiscarded-qualifiers: YES 
+Compiler for C supports arguments -Wno-incompatible-pointer-types -Wincompatible-pointer-types: YES 
+Compiler for C supports arguments -Wno-strict-prototypes -Wstrict-prototypes: YES 
+Compiler for C supports arguments -w: YES 
+Compiler for C supports arguments -std=gnu99: YES 
+Has header "netinet/ip.h" : YES 
+Has header "netinet/ip6.h" : YES 
+Has header "netinet/udp.h" : YES (cached)
+Has header "netinet/tcp.h" : YES (cached)
+Configuring pfcp-config.h using configuration
+Compiler for C supports arguments -Wno-strict-prototypes -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wno-missing-prototypes -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wno-missing-declarations -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wno-unused-variable -Wunused-variable: YES 
+Compiler for C supports arguments -Wno-unused-label -Wunused-label: YES 
+Compiler for C supports arguments -Wno-float-equal -Wfloat-equal: YES 
+Library gnutls found: YES
+Run-time dependency libnghttp2 found: YES 1.40.0
+Run-time dependency libmicrohttpd found: YES 0.9.66
+Run-time dependency libcurl found: YES 7.68.0
+Configuring version.h using configuration
+Has header "ifaddrs.h" : YES (cached)
+Has header "net/ethernet.h" : YES 
+Has header "net/if.h" : YES (cached)
+Has header "net/if_dl.h" : NO 
+Has header "netinet/in.h" : YES (cached)
+Has header "netinet/ip.h" : YES (cached)
+Has header "netinet/ip6.h" : YES (cached)
+Has header "netinet/ip_icmp.h" : YES 
+Has header "netinet/icmp6.h" : YES 
+Has header "sys/ioctl.h" : YES (cached)
+Has header "sys/socket.h" : YES (cached)
+Configuring upf-config.h using configuration
+Run-time dependency libtins found: YES 4.0
+Has header "net/if.h" : YES (cached)
+Has header "netinet/ip.h" : YES (cached)
+Has header "netinet/ip6.h" : YES (cached)
+Has header "netinet/ip_icmp.h" : YES (cached)
+Has header "netinet/icmp6.h" : YES (cached)
+Configuring smf-config.h using configuration
+Configuring open5gs-dbctl using configuration
+Compiler for C supports arguments -Wno-missing-prototypes -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wno-missing-declarations -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wno-discarded-qualifiers -Wdiscarded-qualifiers: YES 
+Compiler for C supports arguments -Wno-incompatible-pointer-types -Wincompatible-pointer-types: YES 
+Compiler for C supports arguments -Wno-unused-variable -Wunused-variable: YES 
+Compiler for C supports arguments -Wno-deprecated-declarations -Wdeprecated-declarations: YES 
+Configuring test-config-private.h using configuration
+Message: 
+        prefix:                       /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core/install
+        libdir:                       /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core/install/lib/x86_64-linux-gnu
+        bindir:                       /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core/install/bin
+        sysconfdir:                   /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core/install/etc
+        localstatedir:                /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core/install/var
+        source code location:         /work/5GBaseChecker/StateSynth/modified_cellular_stack/5GBaseChecker_Core
+        compiler:                     gcc
+        debugging support:            debug
+
+Build targets in project: 96
+
+open5gs 2.4.9
+
+  Subprojects
+    freeDiameter: YES
+
+Found ninja-1.10.0 at /usr/bin/ninja

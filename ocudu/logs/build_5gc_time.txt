@@ -1,0 +1,2 @@
+5gc build start Tue Oct 13 12:05:46 AM +06 2026
+5GC_EXIT=0 Tue Oct 13 12:10:33 AM +06 2026

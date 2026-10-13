@@ -1,0 +1,6 @@
+INFO: [?|enable_s1/?|registration_request]
+INFO: [?|id_request_plain_text/?|null_action]
+INFO: [?|auth_request_plain_text/?|null_action]
+INFO: [?|nas_sm_cmd/?|null_action]
+INFO: [?|nas_sm_cmd_protected/?|null_action]
+INFO: [?|nas_sm_cmd_replay/?|null_action]

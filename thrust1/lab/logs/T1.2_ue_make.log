@@ -1,0 +1,501 @@
+Scanning dependencies of target gen_build_info
+Scanning dependencies of target support
+Scanning dependencies of target srsran_asn1
+[  0%] Building CXX object lib/src/asn1/CMakeFiles/srsran_asn1.dir/liblte_common.cc.o
+[  0%] Building CXX object lib/src/support/CMakeFiles/support.dir/emergency_handlers.cc.o
+-- Generating build_info.h
+[  0%] Built target gen_build_info
+Scanning dependencies of target srsran_cfr
+[  0%] Building C object lib/src/phy/cfr/CMakeFiles/srsran_cfr.dir/cfr.c.o
+[  0%] Building CXX object lib/src/asn1/CMakeFiles/srsran_asn1.dir/liblte_mme.cc.o
+[  0%] Built target srsran_cfr
+Scanning dependencies of target srsran_agc
+[  0%] Building C object lib/src/phy/agc/CMakeFiles/srsran_agc.dir/agc.c.o
+[  0%] Built target srsran_agc
+Scanning dependencies of target srsran_ch_estimation
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_common.c.o
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_dl.c.o
+[  0%] Building CXX object lib/src/support/CMakeFiles/support.dir/signal_handler.cc.o
+[  0%] Linking CXX static library libsupport.a
+[  0%] Built target support
+Scanning dependencies of target srsran_phy_common
+[  0%] Building C object lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/phy_common.c.o
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_dl_nbiot.c.o
+[  0%] Building C object lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/phy_common_sl.c.o
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_sl.c.o
+[  0%] Building C object lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/phy_common_nr.c.o
+[  0%] Building C object lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/sequence.c.o
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/chest_ul.c.o
+[  0%] Building C object lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/timestamp.c.o
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/csi_rs.c.o
+[  0%] Building C object lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/zc_sequence.c.o
+[  0%] Building C object lib/src/phy/common/CMakeFiles/srsran_phy_common.dir/sliv.c.o
+[  0%] Built target srsran_phy_common
+Scanning dependencies of target srsran_fec
+[  0%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/cbsegm.c.o
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/dmrs_pbch.c.o
+[  0%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/crc.c.o
+[  0%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/dmrs_pdcch.c.o
+[  0%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/softbuffer.c.o
+[  0%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/block/block.c.o
+[  2%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/dmrs_pucch.c.o
+[  2%] Building CXX object lib/src/asn1/CMakeFiles/srsran_asn1.dir/gtpc.cc.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/convcoder.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/parity.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi.c.o
+[  5%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/dmrs_sch.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi37_avx2.c.o
+[  5%] Linking CXX static library libsrsran_asn1.a
+[  5%] Built target srsran_asn1
+Scanning dependencies of target srsran_mimo
+[  5%] Building C object lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/layermap.c.o
+[  5%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/refsignal_dl.c.o
+[  5%] Building C object lib/src/phy/mimo/CMakeFiles/srsran_mimo.dir/precoding.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi37_avx2_16bit.c.o
+[  5%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/refsignal_dl_nbiot.c.o
+[  5%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/refsignal_ul.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi37_neon.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi37_port.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/convolutional/viterbi37_sse.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_c_avx2.c.o
+[  5%] Building C object lib/src/phy/ch_estimation/CMakeFiles/srsran_ch_estimation.dir/wiener_dl.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_c_avx2long.c.o
+[  5%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_c_avx2_flood.c.o
+[  5%] Built target srsran_ch_estimation
+Scanning dependencies of target srsran_phch
+[  5%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/cqi.c.o
+[  8%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_c_avx2long_flood.c.o
+[  8%] Built target srsran_mimo
+Scanning dependencies of target srsran_sync
+[  8%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/cfo.c.o
+[  8%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/csi.c.o
+[  8%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/cp.c.o
+[  8%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/find_sss.c.o
+[ 10%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/dci.c.o
+[ 10%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_enc_avx2.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/gen_sss.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/npss.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_enc_avx2long.c.o
+[ 13%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/dci_nbiot.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/nsss.c.o
+[ 13%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/dci_nr.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/pss.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/base_graph.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_f.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/pss_nr.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_s.c.o
+[ 13%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/harq_ack.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/psss.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_c.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/refsignal_dl_sync.c.o
+[ 13%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/mib_sl.c.o
+[ 13%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/npbch.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_dec_c_flood.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_decoder.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/sfo.c.o
+[ 13%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/npdcch.c.o
+[ 13%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/ssb.c.o
+[ 13%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_enc_c.c.o
+[ 13%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/npdsch.c.o
+[ 16%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_encoder.c.o
+[ 16%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/ldpc/ldpc_rm.c.o
+[ 16%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/sss.c.o
+[ 16%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pbch.c.o
+[ 18%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/sss_nr.c.o
+[ 18%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/ssss.c.o
+[ 18%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_encoder_avx2.c.o
+[ 18%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pbch_msg_nr.c.o
+[ 18%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pbch_nr.c.o
+[ 18%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder_ssc_c_avx2.c.o
+[ 18%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/sync.c.o
+[ 18%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder_vector_avx2.c.o
+[ 21%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pcfich.c.o
+[ 21%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_chanalloc.c.o
+[ 21%] Building C object lib/src/phy/sync/CMakeFiles/srsran_sync.dir/sync_nbiot.c.o
+[ 21%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pdcch.c.o
+[ 21%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_code.c.o
+[ 21%] Built target srsran_sync
+Scanning dependencies of target srsran_utils
+[ 21%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_encoder.c.o
+[ 21%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/bit.c.o
+[ 21%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_encoder_pipelined.c.o
+[ 21%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pdcch_nr.c.o
+[ 21%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder.c.o
+[ 21%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder_ssc_all.c.o
+[ 24%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder_ssc_f.c.o
+[ 24%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pdsch.c.o
+[ 24%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder_ssc_s.c.o
+[ 24%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/cexptab.c.o
+[ 24%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/convolution.c.o
+[ 24%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder_ssc_c.c.o
+[ 24%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_decoder_vector.c.o
+[ 24%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/debug.c.o
+[ 24%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/filter.c.o
+[ 27%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/mat.c.o
+[ 27%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_interleaver.c.o
+[ 27%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/polar/polar_rm.c.o
+[ 27%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pdsch_nr.c.o
+[ 27%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/rm_conv.c.o
+[ 27%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/phch_cfg_nr.c.o
+[ 27%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/rm_turbo.c.o
+[ 27%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/phich.c.o
+[ 27%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/phy_logger.c.o
+[ 27%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/primes.c.o
+[ 27%] Building CXX object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/random.cpp.o
+[ 27%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pmch.c.o
+[ 27%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/prach.c.o
+[ 27%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/tc_interl_lte.c.o
+[ 27%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/re_pattern.c.o
+[ 27%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/tc_interl_umts.c.o
+[ 27%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/ringbuffer.c.o
+[ 27%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/turbocoder.c.o
+[ 27%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/prb_dl.c.o
+[ 27%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/vector.c.o
+[ 27%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/psbch.c.o
+[ 29%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/turbodecoder.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pscch.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pssch.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pucch.c.o
+[ 32%] Building C object lib/src/phy/utils/CMakeFiles/srsran_utils.dir/vector_simd.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pucch_cfg_nr.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pucch_nr.c.o
+[ 32%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/turbodecoder_gen.c.o
+[ 32%] Building C object lib/src/phy/fec/CMakeFiles/srsran_fec.dir/turbo/turbodecoder_sse.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pucch_proc.c.o
+[ 32%] Built target srsran_fec
+Scanning dependencies of target srsran_channel
+[ 32%] Building C object lib/src/phy/channel/CMakeFiles/srsran_channel.dir/ch_awgn.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pusch.c.o
+[ 32%] Building CXX object lib/src/phy/channel/CMakeFiles/srsran_channel.dir/channel.cc.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/pusch_nr.c.o
+[ 32%] Built target srsran_utils
+Scanning dependencies of target srsran_dft
+[ 32%] Building C object lib/src/phy/dft/CMakeFiles/srsran_dft.dir/dft_fftw.c.o
+[ 32%] Building C object lib/src/phy/dft/CMakeFiles/srsran_dft.dir/dft_precoding.c.o
+[ 32%] Building C object lib/src/phy/dft/CMakeFiles/srsran_dft.dir/ofdm.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra_dl.c.o
+[ 32%] Built target srsran_dft
+Scanning dependencies of target srsran_io
+[ 32%] Building C object lib/src/phy/io/CMakeFiles/srsran_io.dir/binsource.c.o
+[ 32%] Building C object lib/src/phy/io/CMakeFiles/srsran_io.dir/filesink.c.o
+[ 32%] Building C object lib/src/phy/channel/CMakeFiles/srsran_channel.dir/delay.c.o
+[ 32%] Building C object lib/src/phy/io/CMakeFiles/srsran_io.dir/filesource.c.o
+[ 32%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra_dl_nr.c.o
+[ 32%] Building C object lib/src/phy/io/CMakeFiles/srsran_io.dir/netsink.c.o
+[ 32%] Building C object lib/src/phy/channel/CMakeFiles/srsran_channel.dir/fading.c.o
+[ 35%] Building C object lib/src/phy/io/CMakeFiles/srsran_io.dir/netsource.c.o
+[ 37%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra_nbiot.c.o
+[ 37%] Built target srsran_io
+Scanning dependencies of target srsran_modem
+[ 37%] Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_hard.c.o
+[ 37%] Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/demod_soft.c.o
+[ 37%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra_nr.c.o
+[ 37%] Building C object lib/src/phy/channel/CMakeFiles/srsran_channel.dir/gauss.c.o
+[ 40%] Building C object lib/src/phy/channel/CMakeFiles/srsran_channel.dir/hst.c.o
+[ 40%] Building C object lib/src/phy/channel/CMakeFiles/srsran_channel.dir/rlf.c.o
+[ 40%] Built target srsran_channel
+Scanning dependencies of target srsran_resampling
+[ 40%] Building C object lib/src/phy/resampling/CMakeFiles/srsran_resampling.dir/decim.c.o
+[ 40%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra_sl.c.o
+[ 40%] Building C object lib/src/phy/resampling/CMakeFiles/srsran_resampling.dir/interp.c.o
+[ 40%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra_ul.c.o
+[ 40%] Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/hard_demod_lte.c.o
+[ 40%] Building C object lib/src/phy/resampling/CMakeFiles/srsran_resampling.dir/resample_arb.c.o
+[ 40%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/ra_ul_nr.c.o
+[ 43%] Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/lte_tables.c.o
+[ 43%] Building C object lib/src/phy/resampling/CMakeFiles/srsran_resampling.dir/resampler.c.o
+[ 43%] Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/mod.c.o
+[ 43%] Built target srsran_resampling
+Scanning dependencies of target srsran_scrambling
+[ 43%] Building C object lib/src/phy/scrambling/CMakeFiles/srsran_scrambling.dir/scrambling.c.o
+[ 43%] Building C object lib/src/phy/modem/CMakeFiles/srsran_modem.dir/modem_table.c.o
+[ 43%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/regs.c.o
+[ 43%] Built target srsran_scrambling
+Scanning dependencies of target srsran_ue
+[ 43%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_cell_search.c.o
+[ 43%] Built target srsran_modem
+Scanning dependencies of target srsran_enb
+[ 43%] Building C object lib/src/phy/enb/CMakeFiles/srsran_enb.dir/enb_dl.c.o
+[ 43%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_cell_search_nbiot.c.o
+[ 43%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_dl.c.o
+[ 43%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/sch.c.o
+[ 43%] Building C object lib/src/phy/enb/CMakeFiles/srsran_enb.dir/enb_ul.c.o
+[ 43%] Built target srsran_enb
+Scanning dependencies of target srsran_gnb
+[ 43%] Building C object lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_dl.c.o
+[ 43%] Building C object lib/src/phy/gnb/CMakeFiles/srsran_gnb.dir/gnb_ul.c.o
+[ 43%] Built target srsran_gnb
+[ 43%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_dl_nbiot.c.o
+Scanning dependencies of target srslog
+[ 45%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/backend_worker.cpp.o
+[ 45%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/sch_nr.c.o
+[ 45%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_dl_nr.c.o
+[ 45%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/sci.c.o
+[ 45%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/sequences.c.o
+[ 45%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_mib.c.o
+[ 45%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/uci.c.o
+[ 45%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_mib_nbiot.c.o
+[ 48%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_mib_sl.c.o
+[ 48%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_sync.c.o
+[ 48%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/srslog.cpp.o
+[ 51%] Building C object lib/src/phy/phch/CMakeFiles/srsran_phch.dir/uci_nr.c.o
+[ 51%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_sync_nbiot.c.o
+[ 51%] Built target srsran_phch
+Scanning dependencies of target system
+[ 51%] Building CXX object lib/src/system/CMakeFiles/system.dir/sys_metrics_processor.cc.o
+[ 51%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_sync_nr.c.o
+[ 51%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_ul.c.o
+[ 51%] Building C object lib/src/phy/ue/CMakeFiles/srsran_ue.dir/ue_ul_nr.c.o
+[ 51%] Built target srsran_ue
+Scanning dependencies of target srsue_phy
+[ 51%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/lte/cc_worker.cc.o
+[ 51%] Linking CXX static library libsystem.a
+[ 51%] Built target system
+Scanning dependencies of target srsue_nr_stack
+[ 51%] Building CXX object srsue/src/stack/CMakeFiles/srsue_nr_stack.dir/ue_stack_nr.cc.o
+[ 51%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/srslog_c.cpp.o
+[ 51%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/event_trace.cpp.o
+[ 51%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/lte/sf_worker.cc.o
+[ 51%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/format.cc.o
+/work/srsRAN_4G_22_10/srsue/src/phy/lte/sf_worker.cc:52:17: note: #pragma message: Compiling without srsGUI support
+   52 | #pragma message "Compiling without srsGUI support"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 51%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/lte/worker_pool.cc.o
+[ 51%] Linking CXX static library libsrsue_nr_stack.a
+[ 51%] Built target srsue_nr_stack
+Scanning dependencies of target srsue_stack
+[ 51%] Building CXX object srsue/src/stack/CMakeFiles/srsue_stack.dir/ue_stack_lte.cc.o
+[ 51%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/nr/cc_worker.cc.o
+[ 51%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/bundled/fmt/os.cc.o
+[ 51%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/formatters/json_formatter.cpp.o
+[ 51%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/nr/cell_search.cc.o
+[ 51%] Building CXX object lib/src/srslog/CMakeFiles/srslog.dir/formatters/text_formatter.cpp.o
+[ 51%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/nr/sf_worker.cc.o
+/work/srsRAN_4G_22_10/srsue/src/phy/nr/sf_worker.cc:34:17: note: #pragma message: Compiling without srsGUI support
+   34 | #pragma message "Compiling without srsGUI support"
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/nr/slot_sync.cc.o
+[ 54%] Linking CXX static library libsrslog.a
+[ 54%] Linking CXX static library libsrsue_stack.a
+[ 54%] Built target srsue_stack
+[ 54%] Built target srslog
+Scanning dependencies of target srsue_mac_common
+[ 54%] Building CXX object srsue/src/stack/mac_common/CMakeFiles/srsue_mac_common.dir/mac_common.cc.o
+Scanning dependencies of target srsue_rrc
+[ 54%] Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/nr/worker_pool.cc.o
+[ 54%] Linking CXX static library libsrsue_mac_common.a
+[ 54%] Built target srsue_mac_common
+Scanning dependencies of target srsue_rrc_nr
+[ 54%] Building CXX object srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/phy.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/phy_common.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/phy_nr_sa.cc.o
+[ 54%] Building CXX object srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/rrc_nr_procedures.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/prach.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/scell/intra_measure_base.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/scell/intra_measure_lte.cc.o
+[ 54%] Building CXX object srsue/src/stack/rrc_nr/CMakeFiles/srsue_rrc_nr.dir/__/rrc/rrc_cell.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/scell/intra_measure_nr.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/scell/scell_recv.cc.o
+[ 54%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/search.cc.o
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/sfn_sync.cc.o
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/sync.cc.o
+[ 56%] Linking CXX static library libsrsue_rrc_nr.a
+[ 56%] Built target srsue_rrc_nr
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/sync_sa.cc.o
+[ 56%] Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_procedures.cc.o
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/test/nr_cell_search_rf.cc.o
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/test/nr_cell_search_test.cc.o
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/test/nr_sa_cell_search_test.cc.o
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/test/scell_search_test.cc.o
+[ 56%] Building CXX object srsue/src/phy/CMakeFiles/srsue_phy.dir/test/ue_phy_test.cc.o
+[ 59%] Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_meas.cc.o
+[ 59%] Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_cell.cc.o
+[ 59%] Linking CXX static library libsrsue_phy.a
+[ 59%] Built target srsue_phy
+Scanning dependencies of target srsran_phy
+[ 59%] Linking CXX static library libsrsran_phy.a
+[ 59%] Built target srsran_phy
+Scanning dependencies of target srsue_mac
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/demux.cc.o
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/dl_harq.cc.o
+[ 59%] Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/rrc_rlf_report.cc.o
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/mac.cc.o
+[ 59%] Building CXX object srsue/src/stack/rrc/CMakeFiles/srsue_rrc.dir/phy_controller.cc.o
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/mux.cc.o
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/proc_bsr.cc.o
+[ 59%] Linking CXX static library libsrsue_rrc.a
+[ 59%] Built target srsue_rrc
+Scanning dependencies of target srsran_common
+[ 59%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/arch_select.cc.o
+[ 59%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/enb_events.cc.o
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/proc_phr.cc.o
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/proc_ra.cc.o
+[ 59%] Building C object lib/src/common/CMakeFiles/srsran_common.dir/backtrace.c.o
+[ 59%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/byte_buffer.cc.o
+[ 59%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/proc_sr.cc.o
+[ 59%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/band_helper.cc.o
+[ 59%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/bearer_manager.cc.o
+[ 62%] Building CXX object srsue/src/stack/mac/CMakeFiles/srsue_mac.dir/ul_harq.cc.o
+[ 62%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/buffer_pool.cc.o
+[ 62%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/crash_handler.cc.o
+[ 64%] Building C object lib/src/common/CMakeFiles/srsran_common.dir/gen_mch_tables.c.o
+[ 64%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/liblte_security.cc.o
+[ 64%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/mac_pcap.cc.o
+[ 64%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/mac_pcap_base.cc.o
+[ 64%] Linking CXX static library libsrsue_mac.a
+[ 64%] Built target srsue_mac
+[ 64%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/nas_pcap.cc.o
+Scanning dependencies of target srsran_rf_utils
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_utils.dir/rf_utils.c.o
+[ 67%] Linking CXX static library libsrsran_rf_utils.a
+[ 67%] Built target srsran_rf_utils
+Scanning dependencies of target srsran_rf_zmq
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_zmq.dir/rf_zmq_imp.c.o
+[ 67%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/network_utils.cc.o
+[ 67%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/mac_pcap_net.cc.o
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_zmq.dir/rf_zmq_imp_tx.c.o
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_zmq.dir/rf_zmq_imp_rx.c.o
+[ 67%] Linking CXX shared library libsrsran_rf_zmq.so
+[ 67%] Built target srsran_rf_zmq
+Scanning dependencies of target srsran_rf_object
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_object.dir/rf_imp.c.o
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_object.dir/rf_file_imp.c.o
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_object.dir/rf_file_imp_tx.c.o
+[ 67%] Building C object lib/src/phy/rf/CMakeFiles/srsran_rf_object.dir/rf_file_imp_rx.c.o
+[ 67%] Building C object lib/src/common/CMakeFiles/srsran_common.dir/pcap.c.o
+[ 67%] Built target srsran_rf_object
+Scanning dependencies of target srsran_rf
+[ 67%] Linking CXX shared library libsrsran_rf.so
+[ 67%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/phy_cfg_nr.cc.o
+[ 67%] Built target srsran_rf
+[ 67%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/phy_cfg_nr_default.cc.o
+[ 67%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/rrc_common.cc.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/rlc_pcap.cc.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/s1ap_pcap.cc.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/ngap_pcap.cc.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/security.cc.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/standard_streams.cc.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/thread_pool.cc.o
+[ 70%] Building C object lib/src/common/CMakeFiles/srsran_common.dir/threads.c.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/tti_sync_cv.cc.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/time_prof.cc.o
+[ 70%] Building C object lib/src/common/CMakeFiles/srsran_common.dir/version.c.o
+[ 70%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/zuc.cc.o
+[ 72%] Building CXX object lib/src/common/CMakeFiles/srsran_common.dir/s3g.cc.o
+[ 72%] Linking CXX static library libsrsran_common.a
+[ 72%] Built target srsran_common
+Scanning dependencies of target asn1_utils
+Scanning dependencies of target srsran_mac
+Scanning dependencies of target srsran_radio
+[ 72%] Building CXX object lib/src/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cc.o
+[ 72%] Building CXX object lib/src/mac/CMakeFiles/srsran_mac.dir/pdu.cc.o
+[ 72%] Building CXX object lib/src/radio/CMakeFiles/srsran_radio.dir/radio.cc.o
+[ 72%] Building CXX object lib/src/mac/CMakeFiles/srsran_mac.dir/pdu_queue.cc.o
+[ 72%] Building CXX object lib/src/mac/CMakeFiles/srsran_mac.dir/mac_sch_pdu_nr.cc.o
+[ 75%] Building CXX object lib/src/radio/CMakeFiles/srsran_radio.dir/channel_mapping.cc.o
+[ 75%] Linking CXX static library libasn1_utils.a
+[ 75%] Built target asn1_utils
+Scanning dependencies of target srsran_rlc
+[ 75%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc.cc.o
+[ 75%] Linking CXX static library libsrsran_radio.a
+[ 75%] Built target srsran_radio
+Scanning dependencies of target srsran_pdcp
+[ 75%] Building CXX object lib/src/pdcp/CMakeFiles/srsran_pdcp.dir/pdcp.cc.o
+[ 75%] Building CXX object lib/src/mac/CMakeFiles/srsran_mac.dir/mac_rar_pdu_nr.cc.o
+[ 75%] Linking CXX static library libsrsran_mac.a
+[ 75%] Built target srsran_mac
+Scanning dependencies of target srsran_gtpu
+[ 75%] Building CXX object lib/src/gtpu/CMakeFiles/srsran_gtpu.dir/gtpu.cc.o
+[ 75%] Linking CXX static library libsrsran_gtpu.a
+[ 75%] Built target srsran_gtpu
+Scanning dependencies of target srsue_mac_nr
+[ 75%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/mac_nr.cc.o
+[ 75%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_tm.cc.o
+[ 75%] Building CXX object lib/src/pdcp/CMakeFiles/srsran_pdcp.dir/pdcp_entity_base.cc.o
+[ 75%] Building CXX object lib/src/pdcp/CMakeFiles/srsran_pdcp.dir/pdcp_entity_lte.cc.o
+[ 75%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_um_base.cc.o
+[ 75%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/proc_ra_nr.cc.o
+[ 75%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_um_lte.cc.o
+[ 75%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/proc_bsr_nr.cc.o
+[ 75%] Building CXX object lib/src/pdcp/CMakeFiles/srsran_pdcp.dir/pdcp_entity_nr.cc.o
+[ 75%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/proc_sr_nr.cc.o
+[ 75%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_um_nr.cc.o
+[ 75%] Linking CXX static library libsrsran_pdcp.a
+[ 75%] Built target srsran_pdcp
+Scanning dependencies of target nas_5g_msg
+[ 75%] Building CXX object lib/src/asn1/CMakeFiles/nas_5g_msg.dir/nas_5g_msg.cc.o
+[ 75%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/mux_nr.cc.o
+[ 75%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/demux_nr.cc.o
+[ 78%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_am_base.cc.o
+[ 78%] Building CXX object lib/src/asn1/CMakeFiles/nas_5g_msg.dir/nas_5g_ies.cc.o
+[ 81%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/dl_harq_nr.cc.o
+[ 81%] Building CXX object srsue/src/stack/mac_nr/CMakeFiles/srsue_mac_nr.dir/ul_harq_nr.cc.o
+[ 81%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_am_lte.cc.o
+[ 81%] Building CXX object lib/src/asn1/CMakeFiles/nas_5g_msg.dir/nas_5g_utils.cc.o
+[ 83%] Linking CXX static library libnas_5g_msg.a
+[ 83%] Built target nas_5g_msg
+Scanning dependencies of target rrc_asn1
+[ 83%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc.cc.o
+[ 83%] Linking CXX static library libsrsue_mac_nr.a
+[ 83%] Built target srsue_mac_nr
+Scanning dependencies of target rrc_nr_asn1
+[ 83%] Building CXX object lib/src/asn1/CMakeFiles/rrc_nr_asn1.dir/rrc_nr.cc.o
+[ 83%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_am_nr.cc.o
+[ 86%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/bcch_msg.cc.o
+[ 86%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_am_lte_packing.cc.o
+[ 86%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/rlc_am_nr_packing.cc.o
+[ 86%] Building CXX object lib/src/rlc/CMakeFiles/srsran_rlc.dir/bearer_mem_pool.cc.o
+[ 86%] Linking CXX static library libsrsran_rlc.a
+[ 86%] Built target srsran_rlc
+Scanning dependencies of target ngap_nr_asn1
+[ 86%] Building CXX object lib/src/asn1/CMakeFiles/ngap_nr_asn1.dir/ngap.cc.o
+[ 86%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/common.cc.o
+[ 86%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/common_ext.cc.o
+[ 86%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/dl_ccch_msg.cc.o
+[ 86%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/dl_dcch_msg.cc.o
+[ 86%] Building CXX object lib/src/asn1/CMakeFiles/rrc_nr_asn1.dir/rrc_nr_utils.cc.o
+[ 89%] Linking CXX static library librrc_nr_asn1.a
+[ 89%] Built target rrc_nr_asn1
+Scanning dependencies of target srsue_upper
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/nas.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/nas_emm_state.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/nas_idle_procedures.cc.o
+[ 91%] Linking CXX static library libngap_nr_asn1.a
+[ 91%] Built target ngap_nr_asn1
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/gw.cc.o
+[ 91%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/ho_cmd.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/usim_base.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/usim.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/tft_packet_filter.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/nas_base.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/nas_5g_procedures.cc.o
+[ 91%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/meascfg.cc.o
+[ 91%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/nas_5g.cc.o
+[ 94%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/nas_5gmm_state.cc.o
+[ 94%] Building CXX object srsue/src/stack/upper/CMakeFiles/srsue_upper.dir/sdap.cc.o
+[ 94%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/paging.cc.o
+[ 94%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/phy_ded.cc.o
+[ 94%] Linking CXX static library libsrsue_upper.a
+[ 94%] Built target srsue_upper
+[ 94%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/rr_common.cc.o
+[ 94%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/rr_ded.cc.o
+[ 97%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/security.cc.o
+[ 97%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/si.cc.o
+[ 97%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/uecap.cc.o
+[ 97%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/ul_ccch_msg.cc.o
+[ 97%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc/ul_dcch_msg.cc.o
+[ 97%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc_nbiot.cc.o
+[ 97%] Building CXX object lib/src/asn1/CMakeFiles/rrc_asn1.dir/rrc_utils.cc.o
+[ 97%] Linking CXX static library librrc_asn1.a
+[ 97%] Built target rrc_asn1
+Scanning dependencies of target srsue
+[ 97%] Building CXX object srsue/src/CMakeFiles/srsue.dir/main.cc.o
+[ 97%] Building CXX object srsue/src/CMakeFiles/srsue.dir/metrics_stdout.cc.o
+[ 97%] Building CXX object srsue/src/CMakeFiles/srsue.dir/ue.cc.o
+[100%] Building CXX object srsue/src/CMakeFiles/srsue.dir/metrics_csv.cc.o
+[100%] Building CXX object srsue/src/CMakeFiles/srsue.dir/metrics_json.cc.o
+[100%] Linking CXX executable srsue
+[100%] Built target srsue

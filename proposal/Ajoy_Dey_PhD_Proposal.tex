@@ -1,0 +1,114 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{5pt}{2pt}
+\setlist{nosep,leftmargin=*}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Closing the Loop Between Specification and Implementation:\\[2pt]
+Trustworthy LLM Agents for Noncompliance Discovery in 5G NAS}\\[6pt]
+{\normalsize Ph.D. Research Proposal --- Ajoy Dey}\\
+{\small B.Sc. CSE, BUET \;|\; \href{mailto:ajoydey00001@gmail.com}{ajoydey00001@gmail.com} \;|\; \href{https://ajoydey00001.github.io/}{ajoydey00001.github.io}}\\
+{\small Prepared for Dr.\ Imtiaz Karim, SysNetS Lab, The University of Texas at Dallas (Fall 2027)}
+\end{center}
+
+\section{Motivation and Problem}
+
+5G NAS is defined by hundreds of pages of natural-language 3GPP text and implemented in closed-source basebands by many vendors. Security flaws enter at two layers: \emph{the specification} (ambiguous or inconsistent requirements) and \emph{the implementation} (a device that deviates from the standard). Your lab has studied both, largely with separate pipelines: SPEC5G~[1], CellularLint~[2] and PSMBench~[3] read the specification with NLP and LLMs, while DIKEUE~[4], BLEDiff~[5] and ProChecker~[6] test real devices.
+
+Two gaps sit between these lines of work:
+\begin{enumerate}
+  \item \textbf{Spec-extracted models are unverified.} PSMBench~[3] shows a persistent \emph{state--transition gap}: LLMs find protocol states well (up to 0.82 F1) but assemble transition graphs poorly ($\le$0.38 F1). On 3GPP text, Hermes reports 81--87\% transition accuracy on NAS and RRC~[8], a different metric on a different corpus, but still far from complete. These extractors, including~[9,10], are judged only against costly human labels that go stale with each 3GPP release.
+  \item \textbf{Implementation deviations are hard to explain.} DIKEUE notes that when two learned FSMs disagree, ``at least one of the implementations is noncompliant even though it is not clear which one''~[4]. 5GBaseChecker~[11] scales this to 17 commercial basebands and 2{,}044 deviations, but an expert must still write an LTL property for each unresolved deviation, and a flaw shared by all devices stays invisible~[4,11]. BLEDiff~[5] adds that behavior the standard allows can produce \emph{spurious} deviations.
+\end{enumerate}
+
+\textbf{Key insight.} Each layer can check the other. Real implementations give an \emph{oracle for the extracted model}: if every tested device rejects a transition the LLM extracted, the extraction deserves a second look. The extracted model gives an \emph{oracle for the implementations}: a deviation that contradicts a well-supported spec transition is probably a real noncompliance, and a spec reference can catch a flaw that \emph{every} vendor shares~[4,11]. When the two disagree, a tie-break rule applies: device consensus may lower a transition's confidence but never deletes it; only the cited clause, confirmed by a model checker or a replayed trace, decides. The nearest work does not close this loop: ProtocolGuard~[14] and RFCAudit~[15] need \emph{source code}, which commercial basebands do not provide, and the closest loop idea, refining an LLM-derived RFC oracle with validation results, exists only for message \emph{parsers}~[17]. To my knowledge, no prior work in black-box cellular security uses spec-derived and implementation-learned models to \emph{iteratively repair each other} and classify discrepancies with traceable evidence.
+
+\textbf{Research question.} \emph{Can an LLM agent jointly refine a specification-derived protocol model and implementation-learned models so that every discrepancy is automatically classified, with evidence, as (a) a model-extraction error, (b) a benign learning artifact or allowed nondeterminism, (c) a specification ambiguity, or (d) an implementation noncompliance that may be exploitable?}
+
+\section{Proposed Research}
+
+\textbf{Scope.} To keep the thesis tractable I will work on one protocol and four procedures: 5G NAS (TS~24.501) registration, authentication (5G-AKA), security mode control and identification. These are the procedures where mishandled plaintext and replayed messages produced most of the flaws DIKEUE and 5GBaseChecker report. Implementations under test will be, in order, the two open-source UEs (srsUE and OAI~UE) over a simulated radio, exactly as 5GBaseChecker did~[11], and then commercial phones over a USRP~B210. RRC, VoWiFi~[7] and BLE~[5] come only after the loop works end to end on NAS.
+
+\subsection*{Thrust 1: Implementation-grounded specification model}
+\begin{enumerate}
+  \item \textbf{Extraction.} Retrieve the relevant clauses of TS~24.501 v17.8.0, indexed by clause number so that every passage is citable (SPEC5G~[1] as a secondary source), and prompt an LLM to emit states and transitions in the PSMBench schema~[3], so that its F1 metrics apply unchanged. Every transition carries a \emph{confidence record}: source clause, retrieved text, an implementation-support count and a contradiction count.
+  \item \textbf{Test bed.} Open5GS core and srsRAN gNB, with the core's NAS handler instrumented to send any message at any point in a procedure; DIKEUE modified the srsLTE core in the same way~[4]. Message traces are captured in Wireshark.
+  \item \textbf{Learning.} Black-box active automata learning with LearnLib (TTT algorithm, Wp-method equivalence testing), with majority voting and query caching for over-the-air nondeterminism, the setup shared by DIKEUE and BLEDiff~[4,5].
+  \item \textbf{The loop.} Spec transitions become candidate counterexamples for the learner's equivalence queries, replacing part of the Wp-method's blind search, in the spirit of 5GBaseChecker's counterexample reuse~[11] and Proteus's property-guided tests~[16]. Transitions no implementation shows go back to the LLM, which re-reads the cited clause and repairs or annotates them, subject to the tie-break rule above. Deviations between the models are found by composing them in nuXmv with a safety property, as in DIKEUE.
+\end{enumerate}
+\textbf{Metrics.} PSMBench F1 before and after grounding; equivalence queries to convergence, guided versus unguided. This complements the lab's ongoing LLM-assisted extraction of formal models from 3GPP: that work produces a spec model, and this thrust checks it against real devices.
+
+\subsection*{Thrust 2: Agentic discrepancy triage and exploit synthesis}
+For each discrepancy between the spec model and a learned model, an LLM agent replaces the manual step that 5GBaseChecker leaves to an expert~[11].
+\begin{enumerate}
+  \item \textbf{Evidence collection.} The agent receives the deviating input sequence and the two output sequences, and calls three tools: clause retrieval over the same TS~24.501 clause index, the behavior of every other learned device on the same input, and the confidence record of the spec transition involved.
+  \item \textbf{Label proposal.} The agent \emph{proposes} one of the four labels and writes the claim in checkable form: an LTL property for (a) and (d), a replay script for (b), and a pair of conflicting clauses for (c).
+  \item \textbf{Independent confirmation.} A label is final only after a tool confirms the claim. For (a) and (d), nuXmv checks the property against a per-trace model, as 5GBaseChecker's DevLyzer builds~[11]; for (b), repeated replay plus a check for spec-allowed alternatives, as in BLEDiff~[5]; for (c), a CellularLint-style inconsistency report~[2]. Since the LLM also drafts the property, each property is re-derived by a second model, compared with 5GBaseChecker's where they overlap, and sampled for a hand audit.
+  \item \textbf{Exploit synthesis.} For confirmed (d) cases the agent assembles a concrete attack sequence from the deviating trace, replays it over the air against the device, and records impact, using 5GReasoner-style security properties~[12] and ProChecker's implementation testing~[6]. Findings go through responsible disclosure to the vendor and GSMA, as the lab did for DIKEUE.
+\end{enumerate}
+\textbf{Metrics.} Ground truth for the first evaluation already exists: 5GBaseChecker reports 45 properties from 36 deviations analyzed by hand~[11], and DIKEUE published 17 issues with root causes~[4]. I will report triage precision and recall per label on that set, then new confirmed noncompliance cases and analyst time per deviation against the two minutes 5GBaseChecker reports.
+
+\subsection*{Thrust 3: Measuring the trustworthiness of the triage agent}
+If an LLM is part of the analysis loop, its errors become part of the attack surface, a concern the lab raises for agentic AI~[13]. I will release the confirmed Thrust~2 discrepancies as a labeled benchmark and measure several LLMs on it: accuracy per label, calibration (expected calibration error, Brier score), and bias, by swapping vendor names or 3GPP release numbers while holding the ground truth fixed and counting label flips.
+
+\textbf{Options considered.} I start with the tools the lab already uses, to reuse its artifacts, and switch only if needed.
+
+{\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.1cm} >{\raggedright\arraybackslash}p{3.6cm} >{\raggedright\arraybackslash}p{3.3cm} X@{}}
+\toprule
+\textbf{Step} & \textbf{Start with} & \textbf{Alternative} & \textbf{Why start here} \\
+\midrule
+FSM extraction & LLM over retrieved clauses, PSMBench schema~[3] & Hermes-style NLP pipeline~[8] & Reuses the lab's schema, prompts and metrics; Hermes needs its own parser and annotation effort \\
+UE under test & srsUE, OAI~UE, then COTS phones via USRP~B210 & UERANSIM as a third software UE & Matches 5GBaseChecker's setup; UERANSIM adds one more NAS implementation but is not a baseband \\
+Learner & LearnLib (TTT + Wp-method) & AALpy (Python) & Parity with the DIKEUE and BLEDiff artifacts; AALpy for quick prototyping \\
+Confirmation & nuXmv on per-trace models (DevLyzer style) & Checking the full learned FSM & 5GBaseChecker shows per-trace checking avoids the time and scalability cost of full-FSM verification \\
+Triage LLM & GPT-4o, DeepSeek-V3, Qwen3 & Fine-tuning a small model & No training data exists until Thrust~2 produces it; the open model keeps results reproducible \\
+\bottomrule
+\end{tabularx}
+}
+
+\section{Preparation and Fit}
+My LLM benchmarking and bias analysis with Prof.\ Lin Tan (Purdue) prepares me for Thrust~3, my transformer-based NLP thesis for Thrust~1, and my fraud-defense work at Pathao for the detection versus false-positive trade-off of Thrust~2. Before Fall 2027 I plan to set up an Open5GS/srsRAN test bed and reproduce the DIKEUE and PSMBench pipelines.
+
+\vspace{2pt}
+{\footnotesize
+\textbf{References}\\[1pt]
+\setlength{\parskip}{0pt}
+[1] I.~Karim et al. SPEC5G: A Dataset for 5G Cellular Network Protocol Analysis. IJCNLP-AACL 2023.\\
+{}[2] M.~M.~Rahman, I.~Karim, E.~Bertino. CellularLint: A Systematic Approach to Identify Inconsistent Behavior in Cellular Network Specifications. USENIX Security 2024.\\
+{}[3] Z.~Shen, X.~Luo, I.~Karim, E.~Bertino. PSMBench: A Benchmark and Dataset for Evaluating LLMs Extraction of Protocol State Machines from RFC Specifications. NeurIPS D\&B 2025.\\
+{}[4] I.~Karim et al. Noncompliance as Deviant Behavior: An Automated Black-box Noncompliance Checker for 4G LTE Cellular Devices (DIKEUE). ACM CCS 2021.\\
+{}[5] I.~Karim et al. BLEDiff: Scalable and Property-Agnostic Noncompliance Checking for BLE Implementations. IEEE S\&P 2023.\\
+{}[6] I.~Karim, S.~R.~Hussain, E.~Bertino. ProChecker: An Automated Security and Privacy Analysis Framework for 4G LTE Protocol Implementations. IEEE ICDCS 2021.\\
+{}[7] I.~Karim et al. VWAttacker: A Systematic Security Testing Framework for Voice over WiFi User Equipments. IEEE INFOCOM 2026.\\
+{}[8] A.~Al~Ishtiaq et al. Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing FSMs from Natural Language Specifications. USENIX Security 2024.\\
+{}[9] M.~Zhang et al. Automated Extraction of Protocol State Machines from 3GPP Specifications with Domain-Informed Prompts and LLM Ensembles. arXiv:2510.14348, 2025.\\
+{}[10] K.~Xie et al. CellSecInspector: Safeguarding Cellular Networks via Automated Security Analysis of Specifications. ACM MobiCom 2026 (arXiv:2512.24682).\\
+{}[11] K.~Tu et al. Logic Gone Astray: A Security Analysis Framework for the Control Plane Protocols of 5G Basebands (5GBaseChecker). USENIX Security 2024.\\
+{}[12] S.~R.~Hussain et al. 5GReasoner: A Property-Directed Security and Privacy Analysis Framework for 5G Cellular Network Protocol. ACM CCS 2019.\\
+{}[13] A.~Lotfi, S.~K.~Shanto, I.~Karim, E.~Bertino. Securing Agentic AI: From Per-Action Checks to Trajectory Assurance. ACM AI Leadership Summit 2026.\\
+{}[14] X.~Song et al. ProtocolGuard: Detecting Protocol Non-compliance Bugs via LLM-guided Static Analysis and Dynamic Verification. NDSS 2026.\\
+{}[15] M.~Zheng et al. RFCAudit: AI Agent for Auditing Protocol Implementations Against RFC Specifications. IEEE/ACM ASE 2025.\\
+{}[16] S.~M.~M.~Rashid et al. State Machine Mutation-based Testing Framework for Wireless Communication Protocols (Proteus). ACM CCS 2024.\\
+{}[17] M.~Zheng et al. Validating Network Protocol Parsers with Traceable RFC Document Interpretation. ACM FSE 2025.
+}
+
+\end{document}

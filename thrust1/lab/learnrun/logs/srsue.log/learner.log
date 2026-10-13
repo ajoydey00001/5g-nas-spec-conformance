@@ -1,0 +1,53 @@
+Oct 12, 2026 7:32:29 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using UE SUL
+Oct 12, 2026 7:32:49 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using learning algorithm TTTLearnerMealy
+Oct 12, 2026 7:32:49 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using equivalence algorithm MealyWpMethodEQOracle
+Oct 12, 2026 7:32:49 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting learning
+Oct 12, 2026 7:32:49 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 1
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: +++++++++++++++++++++++++++++++++++++++++++++++++++
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 1059003, (1059.003 s)
+
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 1
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 29
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to cache [queries]: 29
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 0
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to cache [queries]: 0
+Oct 12, 2026 7:50:28 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in this hypothesis: 1
+Oct 12, 2026 7:52:57 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[?|enable_s1 id_request_plain_text enable_s1 / registration_request id_response registration_request]
+Oct 12, 2026 7:52:57 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 2
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: +++++++++++++++++++++++++++++++++++++++++++++++++++
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Learning [ms]: 8280625, (8280.625 s)
+Searching for counter-example [ms]: 149099, (149.099 s)
+
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Rounds []: 2
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to SUL [queries]: 115
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: membership queries to cache [queries]: 115
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to SUL [queries]: 1
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: equivalence queries to cache [queries]: 1
+Oct 12, 2026 9:53:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: States in this hypothesis: 2
+Oct 12, 2026 10:00:50 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[?|enable_s1 auth_request_plain_text nas_sm_cmd rrc_sm_cmd enable_s1 / registration_request auth_response nas_sm_complete rrc_sm_complete registration_request]
+Oct 12, 2026 10:00:50 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 3

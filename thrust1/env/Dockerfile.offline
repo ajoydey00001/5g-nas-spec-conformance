@@ -1,0 +1,13 @@
+# Env A (offline part): DevScan + DevLyzer from 5GBaseChecker, as tested on Ubuntu 20.04
+FROM ubuntu:20.04
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      python2.7 python3 python3-pip graphviz curl ca-certificates make \
+    && rm -rf /var/lib/apt/lists/*
+RUN curl -fsSL https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2.7 \
+    && python2.7 -m pip install "pydot<2" "pyparsing<3" \
+    && python3 -m pip install pydot
+# NuSMV 2.6.0 (DevLyzer); the prebuilt binary lives at the top of distrib/
+RUN curl -fsSL https://nusmv.fbk.eu/distrib/NuSMV-2.6.0-linux64.tar.gz | tar xz -C /opt \
+    && ln -s /opt/NuSMV-2.6.0-Linux/bin/NuSMV /usr/local/bin/NuSMV
+WORKDIR /work

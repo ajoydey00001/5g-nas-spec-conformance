@@ -1,0 +1,65 @@
+time="2026-10-13T00:15:48+06:00" level=warning msg="Docker Compose is configured to build using Bake, but buildx isn't installed"
+#0 building with "default" instance using docker driver
+
+#1 [5gc internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.17kB done
+#1 DONE 0.0s
+
+#2 [5gc internal] load metadata for docker.io/library/ubuntu:22.04
+#2 DONE 1.3s
+
+#3 [5gc internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [5gc internal] load build context
+#4 transferring context: 8.08kB done
+#4 DONE 0.0s
+
+#5 [5gc base 1/8] FROM docker.io/library/ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401
+#5 resolve docker.io/library/ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401 0.0s done
+#5 DONE 0.0s
+
+#6 [5gc base 7/8] RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -     && apt-get install -y nodejs     && cd open5gs/webui     && npm ci --no-optional
+#6 CACHED
+
+#7 [5gc base 3/8] RUN DEBIAN_FRONTEND=noninteractive apt-get update     && apt-get install -y     python3-pip     python3-setuptools     python3-wheel     ninja-build     build-essential     flex     bison     git     libsctp-dev     libgnutls28-dev     libgcrypt-dev     libssl-dev     libidn11-dev     libmongoc-dev     libbson-dev     libyaml-dev     libnghttp2-dev     libmicrohttpd-dev     libcurl4-gnutls-dev     libnghttp2-dev     libtins-dev     meson     curl     gettext     gdb     iproute2     nftables     iputils-ping     netcat-openbsd     iperf     iperf3     libtalloc-dev     cmake     && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [5gc base 5/8] RUN echo v2.7.6 > ./open5gsversion
+#8 CACHED
+
+#9 [5gc base 8/8] RUN python3 -m pip install pymongo click pyroute2 ipaddress
+#9 CACHED
+
+#10 [5gc base 2/8] RUN DEBIAN_FRONTEND=noninteractive apt-get update     && apt install -y software-properties-common     && rm -rf /var/lib/apt/lists/*
+#10 CACHED
+
+#11 [5gc base 6/8] RUN if [ -z "" ]; then NUM_JOBS=$(nproc); fi &&     git clone --depth 1 --branch $(cat ./open5gsversion) https://github.com/open5gs/open5gs open5gs    && cd open5gs     && meson build --prefix=`pwd`/install     && ninja -j  -C build     && cd build     && ninja install
+#11 CACHED
+
+#12 [5gc base 4/8] RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends wget gnupg     && wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | apt-key add     && . /etc/os-release     && echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $UBUNTU_CODENAME/mongodb-org/6.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-6.0.list     && DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --no-install-recommends mongodb-org     && apt-get autoremove && apt-get clean
+#12 CACHED
+
+#13 [5gc open5gs 1/3] WORKDIR /open5gs
+#13 CACHED
+
+#14 [5gc open5gs 2/3] COPY open5gs-5gc.yml open5gs-5gc.yml.in
+#14 DONE 0.0s
+
+#15 [5gc open5gs 3/3] COPY open5gs_entrypoint.sh add_users.py setup_tun.py subscriber_db.cs[v] ./
+#15 DONE 0.0s
+
+#16 [5gc] exporting to image
+#16 exporting layers 0.1s done
+#16 exporting manifest sha256:c106b1ebd8d2cf9e7caa058c6ca459f422e76e8d16a1f70f11da27009e9d4771 done
+#16 exporting config sha256:c43fcf5f288ec5788fb2a4fd11148feca83da35e17e5ad5d94e6a87c530644ac done
+#16 exporting attestation manifest sha256:c810874d51dc04924086a75b0e5ce3472803e1d4942df4811f68842dd2cdf502 0.0s done
+#16 exporting manifest list sha256:8cb0597de36d6583563273a79f7501f681ef2bee1114c76106a4d04e9f7c84c0 done
+#16 naming to docker.io/library/docker-5gc:latest done
+#16 unpacking to docker.io/library/docker-5gc:latest 0.0s done
+#16 DONE 0.2s
+
+#17 [5gc] resolving provenance for metadata file
+#17 DONE 0.0s
+ 5gc  Built

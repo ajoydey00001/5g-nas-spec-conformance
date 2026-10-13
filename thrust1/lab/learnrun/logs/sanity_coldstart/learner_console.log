@@ -1,0 +1,461 @@
+command to run: echo "root" | sudo -S rm -rf learning_queries.log
+command to run: echo "root" | sudo -S rm -rf equivalence_queries.log
+command to run: echo "root" | sudo -S rm -rf query_statistics.log
+Loaded Learning Config correctly
+false
+srsue
+java.io.FileNotFoundException: ./CEStore/input (Is a directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at org.example.uelearner.Learner.loadCE(Learner.java:130)
+	at org.example.uelearner.Learner.<init>(Learner.java:106)
+	at org.example.uelearner.Learner.main(Learner.java:231)
+All CE loaded!
+Oct 12, 2026 7:25:04 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using UE SUL
+Oct 12, 2026 7:25:04 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using UE SUL
+Starting Core & gNodeB
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Finished starting up Core & gNodeB
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Connecting to UE Controller...
+UE controller IP Address: 127.0.0.1
+command to run: python3 ./UEController/UEController.py
+Initializing Buffers for UE...
+Initialized Buffers for UE
+Connected to UE Controller
+Done with initializing the connection with UE, gNodeB, and Core.
+srsue start!
+srsue initialized!
+Inconsistent.log file has been created.
+Loading Learning Resumer
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+resume.log file has been created.
+plain_replay.log file has been created.
+Initializing Cache
+Loading Learning Resumer
+resume.log file already exists.
+Reading learning log: resume.log
+plain_replay.log file already exists.
+Reading learning log: plain_replay.log
+Initializing Cache
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using learning algorithm TTTLearnerMealy
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using learning algorithm TTTLearnerMealy
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using equivalence algorithm MealyWpMethodEQOracle
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Using equivalence algorithm MealyWpMethodEQOracle
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting learning
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting learning
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 1
+Oct 12, 2026 7:25:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 1
+Query processing: 
+[? | enable_s1]
+In query resumer, looking for: ?|enable_s1
+***** Search Command = ? enable_s1 *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+QUERY # 1 / 3
+[? | enable_s1 / ? | registration_request]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: enable_s1 Context check passed
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+Log executor: sending enable_s1.
+Log executor: received(raw) DONE for RACH_Reset from amf.
+Log executor: received(raw) DONE for RACH_Reset from gnb.
+command to run: echo "root" | sudo -S ./start_ue.sh
+Reading from amf
+Log executor: received(raw) registration_request from amf.
+Getting closest of registration_request
+####enable_s1/registration_request####
+***** Search Command = enable_s1 *****
+QUERY # 2 / 3
+[? | enable_s1 / ? | registration_request]
+---- Starting post ----
+Oct 12, 2026 7:27:01 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | enable_s1 / ? | registration_request]
+Oct 12, 2026 7:27:01 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | enable_s1 / ? | registration_request]
+learning_queries.log file has been created.
+[? | enable_s1 / ? | registration_request]
+[? | enable_s1 / ? | registration_request]
+In add!
+OUTPUT: ? enable_s1 ? registration_request
+Added to DB! in Resumer
+Query processing: 
+[? | id_request_plain_text]
+In query resumer, looking for: ?|id_request_plain_text
+***** Search Command = ? id_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: id_request_plain_textcontext(radio) check failed.
+Log executor: id_request_plain_textContext check failed
+***** Search Command = id_request_plain_text *****
+QUERY # 1 / 3
+[? | id_request_plain_text / ? | null_action]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: id_request_plain_textcontext(radio) check failed.
+Log executor: id_request_plain_textContext check failed
+***** Search Command = id_request_plain_text *****
+QUERY # 2 / 3
+[? | id_request_plain_text / ? | null_action]
+---- Starting post ----
+Oct 12, 2026 7:27:47 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | id_request_plain_text / ? | null_action]
+Oct 12, 2026 7:27:47 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | id_request_plain_text / ? | null_action]
+[? | id_request_plain_text / ? | null_action]
+[? | id_request_plain_text / ? | null_action]
+In add!
+OUTPUT: ? id_request_plain_text ? null_action
+Added to DB! in Resumer
+Query processing: 
+[? | auth_request_plain_text]
+In query resumer, looking for: ?|auth_request_plain_text
+***** Search Command = ? auth_request_plain_text *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: auth_request_plain_textcontext(radio) check failed.
+Log executor: auth_request_plain_textContext check failed
+***** Search Command = auth_request_plain_text *****
+QUERY # 1 / 3
+[? | auth_request_plain_text / ? | null_action]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: auth_request_plain_textcontext(radio) check failed.
+Log executor: auth_request_plain_textContext check failed
+***** Search Command = auth_request_plain_text *****
+QUERY # 2 / 3
+[? | auth_request_plain_text / ? | null_action]
+---- Starting post ----
+Oct 12, 2026 7:28:33 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | auth_request_plain_text / ? | null_action]
+Oct 12, 2026 7:28:33 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | auth_request_plain_text / ? | null_action]
+[? | auth_request_plain_text / ? | null_action]
+[? | auth_request_plain_text / ? | null_action]
+In add!
+OUTPUT: ? auth_request_plain_text ? null_action
+Added to DB! in Resumer
+Query processing: 
+[? | nas_sm_cmd]
+In query resumer, looking for: ?|nas_sm_cmd
+***** Search Command = ? nas_sm_cmd *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: nas_sm_cmdcontext(radio) check failed.
+Log executor: nas_sm_cmdContext check failed
+***** Search Command = nas_sm_cmd *****
+QUERY # 1 / 3
+[? | nas_sm_cmd / ? | null_action]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: nas_sm_cmdcontext(radio) check failed.
+Log executor: nas_sm_cmdContext check failed
+***** Search Command = nas_sm_cmd *****
+QUERY # 2 / 3
+[? | nas_sm_cmd / ? | null_action]
+---- Starting post ----
+Oct 12, 2026 7:29:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | nas_sm_cmd / ? | null_action]
+Oct 12, 2026 7:29:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | nas_sm_cmd / ? | null_action]
+[? | nas_sm_cmd / ? | null_action]
+[? | nas_sm_cmd / ? | null_action]
+In add!
+OUTPUT: ? nas_sm_cmd ? null_action
+Added to DB! in Resumer
+Query processing: 
+[? | nas_sm_cmd_protected]
+In query resumer, looking for: ?|nas_sm_cmd_protected
+***** Search Command = ? nas_sm_cmd_protected *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: nas_sm_cmd_protectedcontext(radio) check failed.
+Log executor: nas_sm_cmd_protectedContext check failed
+***** Search Command = nas_sm_cmd_protected *****
+QUERY # 1 / 3
+[? | nas_sm_cmd_protected / ? | null_action]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: nas_sm_cmd_protectedcontext(radio) check failed.
+Log executor: nas_sm_cmd_protectedContext check failed
+***** Search Command = nas_sm_cmd_protected *****
+QUERY # 2 / 3
+[? | nas_sm_cmd_protected / ? | null_action]
+---- Starting post ----
+Oct 12, 2026 7:30:05 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | nas_sm_cmd_protected / ? | null_action]
+Oct 12, 2026 7:30:05 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | nas_sm_cmd_protected / ? | null_action]
+[? | nas_sm_cmd_protected / ? | null_action]
+[? | nas_sm_cmd_protected / ? | null_action]
+In add!
+OUTPUT: ? nas_sm_cmd_protected ? null_action
+Added to DB! in Resumer
+Query processing: 
+[? | nas_sm_cmd_replay]
+In query resumer, looking for: ?|nas_sm_cmd_replay
+***** Search Command = ? nas_sm_cmd_replay *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: nas_sm_cmd_replaycontext(radio) check failed.
+Log executor: nas_sm_cmd_replayContext check failed
+***** Search Command = nas_sm_cmd_replay *****
+QUERY # 1 / 3
+[? | nas_sm_cmd_replay / ? | null_action]
+---- Starting post ----
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh
+password1: root
+Command: echo "root" | sudo -S ./start_core.sh
+command to run: echo "root" | sudo -S ./start_core.sh
+password1: root
+Command: echo "root" | sudo -S ./start_gnb.sh
+command to run: echo "root" | sudo -S ./start_gnb.sh
+Connecting to core..
+Connected with core.
+Connecting to srsgNB...
+Connected with srsgNB.
+Received = ACK from core
+Received = ACK from gnb
+Connected to gNB and Core.
+logexecutor: nas_sm_cmd_replaycontext(radio) check failed.
+Log executor: nas_sm_cmd_replayContext check failed
+***** Search Command = nas_sm_cmd_replay *****
+QUERY # 2 / 3
+[? | nas_sm_cmd_replay / ? | null_action]
+---- Starting post ----
+Oct 12, 2026 7:30:51 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | nas_sm_cmd_replay / ? | null_action]
+Oct 12, 2026 7:30:51 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [? | nas_sm_cmd_replay / ? | null_action]
+[? | nas_sm_cmd_replay / ? | null_action]
+[? | nas_sm_cmd_replay / ? | null_action]
+In add!
+OUTPUT: ? nas_sm_cmd_replay ? null_action
+Added to DB! in Resumer
+Query processing: 
+[? | nas_sm_cmd_ns]
+In query resumer, looking for: ?|nas_sm_cmd_ns
+***** Search Command = ? nas_sm_cmd_ns *****
+Not found in previous log
+pre!
+command to run: echo "root" | sudo -S ./kill_evt.sh

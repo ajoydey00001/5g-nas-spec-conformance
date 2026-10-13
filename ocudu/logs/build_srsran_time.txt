@@ -1,0 +1,2 @@
+srsran start Mon Oct 12 11:55:11 PM +06 2026
+SRSRAN_EXIT=0 Tue Oct 13 12:05:37 AM +06 2026

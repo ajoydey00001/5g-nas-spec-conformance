@@ -1,0 +1,1197 @@
+{
+ "s0": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "NO_CONNECTION",
+   "clause": null,
+   "note": "no NAS signalling connection"
+  }
+ },
+ "s1": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "auth_response"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "core sends a fresh AV each time, so no SQN/RAND reuse"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "INFERRED",
+   "clause": "5.4.2.3",
+   "note": "no KAMF yet, so the integrity check cannot pass"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  }
+ },
+ "s2": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "id_response"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "core requests SUCI (gmm_build_identity_request)"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "auth_response"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "core sends a fresh AV each time, so no SQN/RAND reuse"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "nas_sm_complete"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": ""
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "I10: 5G-IA0 and no valid MAC"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  }
+ },
+ "s4": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I3"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I4"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "nas_sm_complete"
+   ],
+   "kind": "INFERRED",
+   "clause": "5.4.2.2",
+   "note": "fresh SMC (new COUNT) on an active context: algorithm change"
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "nas_sm_reject",
+    "nas_sm_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.2.2",
+   "note": "I19 (paper U1): the AMF must send SMC unciphered with header type 3; the UE-side handling of a ciphered header-type-2 SMC is not specified"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.3.2",
+   "note": "I6 (right after SMC) / I7 (after registration)"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "I10: 5G-IA0 and no valid MAC"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "registration_complete"
+   ],
+   "kind": "INFERRED",
+   "clause": "5.5.1.2.4",
+   "note": "open5gs includes a new 5G-GUTI; the explicit UE rule \"return a REGISTRATION COMPLETE ... to acknowledge the received 5G-GUTI\" exists only in 5.5.1.3.4 (mobility registration), not in 5.5.1.2.4"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "header type 4 but no valid MAC"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (reg_accept_plain)"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "config_update_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.4.2",
+   "note": "I20 (paper U2): core sends NITZ only, no acknowledgement requested; the UE is told when to send COMPLETE but not forbidden to send it otherwise"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (conf_update_cmd_plain)"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.7",
+   "note": "repair R1: collision with initial registration"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": ""
+  }
+ },
+ "s6": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I3"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I4"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "nas_sm_complete"
+   ],
+   "kind": "INFERRED",
+   "clause": "5.4.2.2",
+   "note": "fresh SMC (new COUNT) on an active context: algorithm change"
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "nas_sm_reject",
+    "nas_sm_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.2.2",
+   "note": "I19 (paper U1): the AMF must send SMC unciphered with header type 3; the UE-side handling of a ciphered header-type-2 SMC is not specified"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.3.2",
+   "note": "I6 (right after SMC) / I7 (after registration)"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "I10: 5G-IA0 and no valid MAC"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "registration_complete"
+   ],
+   "kind": "INFERRED",
+   "clause": "5.5.1.2.4",
+   "note": "open5gs includes a new 5G-GUTI; the explicit UE rule \"return a REGISTRATION COMPLETE ... to acknowledge the received 5G-GUTI\" exists only in 5.5.1.3.4 (mobility registration), not in 5.5.1.2.4"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "header type 4 but no valid MAC"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (reg_accept_plain)"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "config_update_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.4.2",
+   "note": "I20 (paper U2): core sends NITZ only, no acknowledgement requested; the UE is told when to send COMPLETE but not forbidden to send it otherwise"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (conf_update_cmd_plain)"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.3.2",
+   "note": ""
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.7",
+   "note": "repair R1: collision with initial registration"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": ""
+  }
+ },
+ "s8": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I3"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I4"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "nas_sm_complete"
+   ],
+   "kind": "INFERRED",
+   "clause": "5.4.2.2",
+   "note": "fresh SMC (new COUNT) on an active context: algorithm change"
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "nas_sm_reject",
+    "nas_sm_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.2.2",
+   "note": "I19 (paper U1): the AMF must send SMC unciphered with header type 3; the UE-side handling of a ciphered header-type-2 SMC is not specified"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.3.2",
+   "note": "I6 (right after SMC) / I7 (after registration)"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "I10: 5G-IA0 and no valid MAC"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "INFERRED",
+   "clause": "7.4",
+   "note": "repair R2: 5GMM STATUS #98 is not in the output alphabet, observed as null_action"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "header type 4 but no valid MAC"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (reg_accept_plain)"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "config_update_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.4.2",
+   "note": "I20 (paper U2): core sends NITZ only, no acknowledgement requested; the UE is told when to send COMPLETE but not forbidden to send it otherwise"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (conf_update_cmd_plain)"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.3.2",
+   "note": ""
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "deregistration_accept"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.2.3.2",
+   "note": "core: re-registration not required, 3GPP access"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": ""
+  }
+ },
+ "s7": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I3"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I4"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "nas_sm_complete"
+   ],
+   "kind": "INFERRED",
+   "clause": "5.4.2.2",
+   "note": "fresh SMC (new COUNT) on an active context: algorithm change"
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "nas_sm_reject",
+    "nas_sm_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.2.2",
+   "note": "I19 (paper U1): the AMF must send SMC unciphered with header type 3; the UE-side handling of a ciphered header-type-2 SMC is not specified"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.3.2",
+   "note": "I6 (right after SMC) / I7 (after registration)"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "I10: 5G-IA0 and no valid MAC"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "INFERRED",
+   "clause": "7.4",
+   "note": "repair R2: 5GMM STATUS #98 is not in the output alphabet, observed as null_action"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "header type 4 but no valid MAC"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (reg_accept_plain)"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action",
+    "config_update_complete"
+   ],
+   "kind": "UNDERSPECIFIED",
+   "clause": "5.4.4.2",
+   "note": "I20 (paper U2): core sends NITZ only, no acknowledgement requested; the UE is told when to send COMPLETE but not forbidden to send it otherwise"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "I9 (conf_update_cmd_plain)"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "deregistration_accept"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.2.3.2",
+   "note": "core: re-registration not required, 3GPP access"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": ""
+  }
+ },
+ "s3": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "id_response"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "core requests SUCI (gmm_build_identity_request)"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "auth_response"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "core sends a fresh AV each time, so no SQN/RAND reuse"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "nas_sm_complete"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": ""
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "nas_sm_reject",
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "5.4.2.3",
+   "note": "I10: 5G-IA0 and no valid MAC"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "SPEC",
+   "clause": "4.4.4.2",
+   "note": "not in the 4.4.4.2 list of messages processed before security"
+  }
+ },
+ "s5": {
+  "enable_s1": {
+   "allowed": [
+    "registration_request"
+   ],
+   "kind": "SPEC",
+   "clause": "5.5.1.2.2",
+   "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+  },
+  "id_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "auth_request_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_ns": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "nas_sm_cmd_ns_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "registration_accept_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "registration_accept_h4_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "registration_accept_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "config_update_cmd_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "config_update_cmd_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "config_update_cmd_replay": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_protected": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  },
+  "deregistration_req_plain_text": {
+   "allowed": [
+    "null_action"
+   ],
+   "kind": "HARNESS",
+   "clause": null,
+   "note": "harness precondition"
+  }
+ }
+}

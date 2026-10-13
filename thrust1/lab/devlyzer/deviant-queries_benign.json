@@ -1,0 +1,125 @@
+{
+  "traces": [
+    {
+      "Id": 1,
+      "input_symbols": [
+        "enable_s1",
+        "config_update_cmd_plain_text"
+      ],
+      "outputs": [
+        {
+          "output_symbols": [
+            "registration_request",
+            "null_action"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "input_symbols": [
+        "enable_s1",
+        "registration_accept_plain_text"
+      ],
+      "outputs": [
+        {
+          "output_symbols": [
+            "registration_request",
+            "null_action"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "input_symbols": [
+        "enable_s1",
+        "auth_request_plain_text",
+        "config_update_cmd_plain_text"
+      ],
+      "outputs": [
+        {
+          "output_symbols": [
+            "registration_request",
+            "auth_response",
+            "null_action"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "input_symbols": [
+        "enable_s1",
+        "auth_request_plain_text",
+        "registration_accept_plain_text"
+      ],
+      "outputs": [
+        {
+          "output_symbols": [
+            "registration_request",
+            "auth_response",
+            "null_action"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 9,
+      "input_symbols": [
+        "enable_s1",
+        "auth_request_plain_text",
+        "nas_sm_cmd",
+        "config_update_cmd_plain_text"
+      ],
+      "outputs": [
+        {
+          "output_symbols": [
+            "registration_request",
+            "auth_response",
+            "nas_sm_complete",
+            "null_action"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 14,
+      "input_symbols": [
+        "enable_s1",
+        "auth_request_plain_text",
+        "nas_sm_cmd",
+        "registration_accept_plain_text"
+      ],
+      "outputs": [
+        {
+          "output_symbols": [
+            "registration_request",
+            "auth_response",
+            "nas_sm_complete",
+            "null_action"
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 15,
+      "input_symbols": [
+        "enable_s1",
+        "auth_request_plain_text",
+        "nas_sm_cmd",
+        "registration_accept_protected"
+      ],
+      "outputs": [
+        {
+          "output_symbols": [
+            "registration_request",
+            "auth_response",
+            "nas_sm_complete",
+            "registration_complete"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,8 @@ echo "time            $(date '+%F %H:%M')"
 echo "charger         $(cat /sys/class/power_supply/A*/online 2>/dev/null | sed 's/1/plugged in/;s/0/ON BATTERY/')"
 if docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then echo "learner         RUNNING"; else echo "learner         NOT RUNNING"; fi
 echo "queries         $(grep -c '^INFO: \[' $Q 2>/dev/null)   (last finished: $(grep -h '^Oct' $Q 2>/dev/null | tail -1 | cut -c1-24) UTC = +6h local)"
+E=$L/logs/srsue.log/equivalence_queries.log
+echo "check queries   $(grep -c '^INFO: \[' $E 2>/dev/null)   (last: $(grep -h '^Oct' $E 2>/dev/null | tail -1 | cut -c1-24) UTC)  <- grows while a hypothesis is being checked"
 echo "round           $(grep 'Starting round' $L/logs/srsue.log/learner.log 2>/dev/null | tail -1 | sed 's/INFO: //')"
 echo "hypotheses      $(ls $L/logs/srsue.log 2>/dev/null | grep -E 'hypothesis_[0-9]+\.dot$|learnedModel\.dot' | tr '\n' ' ')"
 echo "/dev/shm        $(docker exec t1-learn df -h /dev/shm 2>/dev/null | tail -1 | awk '{print $5" used"}')"

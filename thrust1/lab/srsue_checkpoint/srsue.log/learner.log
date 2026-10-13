@@ -69,3 +69,7 @@ Oct 13, 2026 5:19:39 AM org.slf4j.helpers.SubstituteLogger info
 INFO: equivalence queries to cache [queries]: 4
 Oct 13, 2026 5:19:39 AM org.slf4j.helpers.SubstituteLogger info
 INFO: States in this hypothesis: 4
+Oct 13, 2026 5:47:56 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Counter-example found: Query[?|enable_s1 auth_request_plain_text nas_sm_cmd rrc_sm_cmd registration_accept_protected registration_accept_protected / registration_request auth_response nas_sm_complete rrc_sm_complete registration_complete null_action]
+Oct 13, 2026 5:47:56 AM org.slf4j.helpers.SubstituteLogger info
+INFO: Starting round 4

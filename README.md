@@ -19,6 +19,11 @@ devices share; the spec reference can.
 - srsUE learning run (Table 4 configuration) in progress; early queries already show I3, I4, I6/I7, I10, I19,
   I20, matching the paper's Table 8 ground truth. Final model and report v2 will be added when it finishes.
 
+## Reproduce and review
+
+`bash reproduce.sh` reruns the whole offline analysis in about a minute (Python standard library only).
+[`REVIEW.md`](REVIEW.md) is a guide for an independent review by a second model (e.g. Claude Fable) or a person.
+
 ## Next: Thrust 2 and Thrust 3 (planned)
 
 The plan comes from the PhD proposal (`proposal/Ajoy_Dey_PhD_Proposal.tex`). Step-by-step tasks, a worked

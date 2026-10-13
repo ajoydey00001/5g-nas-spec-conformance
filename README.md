@@ -91,6 +91,7 @@ The aim is to know how much of the agent's verdict can be trusted before an anal
 | `thrust1/results/` | Result tables and JSON |
 | `thrust1/env/` | Dockerfiles and run scripts for the 5GBaseChecker stack |
 | `thrust1/lab/` | Learning-run scripts, configs and logs (srsUE), DevLyzer inputs, build logs |
+| `thrust1/lab/srsue_checkpoint/RESUME.md` | **How to resume the srsUE learning run after the laptop was off** |
 | `ocudu/` | Earlier work: OCUDU gNB + Open5GS + srsUE over ZMQ, end-to-end ping, LaTeX report + PDF |
 | `screenshots/` | Screenshots of the runs |
 | `proposal/` | PhD proposal (LaTeX) and Thrust 1 output slide |

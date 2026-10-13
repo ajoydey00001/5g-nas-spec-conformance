@@ -12,7 +12,7 @@ import sqlite3, sys
 src = sqlite3.connect('file:$L/my_database.sqlite?mode=ro', uri=True)
 dst = sqlite3.connect('$D/my_database.sqlite')
 src.backup(dst); dst.close()
-print(src.execute('select count(*) from queryNew_srsue').fetchone()[0])" > $D/n_queries.txt
+print(sum(src.execute('select count(*) from ' + t).fetchone()[0] for t in ('query_srsue', 'queryNew_srsue')))" > $D/n_queries.txt
   cp $L/resume.log $L/fgue.properties $D/
   rsync -a $L/logs/srsue.log/ $D/srsue.log/ --exclude '*.lck'
   cp $L/logs/learner_console.log $L/logs/run_table4_time.txt $D/ 2>/dev/null

@@ -1,0 +1,1 @@
+thrust1/results/srsue_learnedModel.dot: 6 states, 21 transitions (non-self-loop)

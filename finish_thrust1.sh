@@ -10,7 +10,7 @@ R=$PWD; T=$R/thrust1; RES=$T/results
 LOGS=~/thrust1-lab/learnrun/logs/srsue.log
 DRY=0; [ "$1" = "--dry" ] && DRY=1
 
-[ "$1" = "--dry" ] || touch ~/thrust1-lab/learnrun/AUTO_RESUME_OFF   # the analysis stops the stack; auto_resume.sh must not restart it
+
 echo "== 1. is the learner finished?"
 if docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
   if [ $DRY = 0 ]; then echo "The learner is still running. Wait, or use: bash finish_thrust1.sh --dry"; exit 1; fi
@@ -18,6 +18,7 @@ if docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
 else
   tail -3 ~/thrust1-lab/learnrun/logs/run_table4_time.txt 2>/dev/null || true
   if [ $DRY = 0 ] && docker inspect t1-learn >/dev/null 2>&1; then
+    touch ~/thrust1-lab/learnrun/AUTO_RESUME_OFF
     echo "   stopping the 5G stack and the container"
     docker exec t1-learn bash -c 'cd /work/learnrun; ./kill_uecontroller.sh; ./kill_gnb.sh; ./kill_core.sh' >/dev/null 2>&1 || true
     docker stop t1-learn >/dev/null || true
@@ -26,13 +27,16 @@ fi
 
 echo "== 2. which model?"
 if [ -f $LOGS/learnedModel.dot ]; then M=$LOGS/learnedModel.dot
-else M=$(ls $LOGS/hypothesis_*.dot 2>/dev/null | sort -V | tail -1)
+elif [ -f $RES/srsue_model_provenance.json ] && [ -f $RES/srsue_learnedModel.dot ]; then
+  M=$RES/srsue_learnedModel.dot
+  echo "   using preserved model; see srsue_model_provenance.json for stopping condition"
+else M=$(find ~/thrust1-lab/learnrun/logs -name 'hypothesis_*.dot' -printf '%f %T@ %p\n' | sort -k1,1V -k2,2n | tail -1 | cut -d' ' -f3-)
      [ -z "$M" ] && { echo "No model found in $LOGS"; exit 1; }
      echo "   no learnedModel.dot -> using the last hypothesis (say so in the report)"
 fi
 echo "   model: $M"
 SUF=""; [ $DRY = 1 ] && SUF="_dry"
-cp $M $RES/srsue_learnedModel$SUF.dot
+[ "$M" = "$RES/srsue_learnedModel$SUF.dot" ] || cp "$M" "$RES/srsue_learnedModel$SUF.dot"
 cp ~/thrust1-lab/learnrun/logs/run_table4_time.txt $RES/srsue_run_times$SUF.txt 2>/dev/null || true
 MD=$RES/srsue_learnedModel$SUF.dot
 
@@ -63,7 +67,7 @@ SRC=~/thrust1-lab/5GBaseChecker/DevLyzer
 if [ -d $SRC ] && docker image inspect t1-offline >/dev/null 2>&1; then
   W=$(mktemp -d); cp -r $SRC/main.py $SRC/attack_trace_checker $W/
   python3 -I $T/compare/to_devlyzer.py $RES/T1.6_spec_vs_ABsrs$SUF.json $W/deviant-queries.json
-  docker run --rm --cpus=2 -u $(id -u):$(id -g) -v $W:/work -w /work t1-offline python3 main.py >/dev/null 2>&1 || true
+  docker run --rm --cpus=2 -u $(id -u):$(id -g) -v $W:/work -w /work t1-offline python3 main.py
   cp $W/deviant-queries*.json $D/; rm -rf $W
   for f in attack benign unresolved; do
     printf '   %-10s %s\n' $f "$(python3 -I -c "import json,sys;print(len(json.load(open(sys.argv[1]))['traces']))" $D/deviant-queries_$f.json 2>/dev/null || echo '?')"

@@ -150,3 +150,14 @@ Container for offline tools: `implementation/env/Dockerfile.offline` → image `
   `rm -f /dev/shm/mongoc-*` after killing the old core. For a new container, `--shm-size=256m` also helps.
 - Checkpointing: `my_database.sqlite` (resume_learning) + `checkpoint.sh` (30-min snapshot to GitHub) +
   `resume_after_reboot.sh`.
+
+## T1.2 finalized demonstration — 2026-10-14
+
+Preserved hypothesis 5 (SHA-256 recorded in results/srsue_model_provenance.json):
+6 states, 21 non-self-loop transitions versus paper 6/20. Table 8 probes recover
+7/7 expected NAS issues and additionally I6. Three-device comparison yields
+23 classes (6 invisible Case 2, 8 visible Case 2, 9 visible Case 3).
+The learner stops at LogOracle's 30-equivalence-call System.exit(0), before
+the normal final writer. Repeated cached resumes do not establish convergence.
+Auto-resume was paused; archived model copies have identical hashes.
+Independent extraction validation and guided-learning D4 experiments remain future work.

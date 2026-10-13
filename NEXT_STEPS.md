@@ -1,5 +1,13 @@
 # Next steps: finish Thrust 1, then Thrust 2, then Thrust 3
 
+> **Finalized 2026-10-14:** the demonstration uses preserved srsUE hypothesis 5
+> (6 states / 21 transitions, Table 8 recall 7/7). The learner reached its
+> 30-equivalence-call budget; convergence is not established. Auto-resume is paused.
+> Do not resume this completed budget run. See `thrust1/results/T1_RESULTS_v2.md`.
+> `bash check_thrust1.sh` now checks local reproducibility and provenance;
+> independent validation and guided-learning D4 experiments remain future work.
+> Older live-run estimates and restart advice below are historical.
+
 Written 2026-10-13 23:00. Every step is a command you can paste. Problems while the run is going: `RUNBOOK.md`.
 Background and design: `thrust1/PLAN.md` (§4 is Thrust 2, §5 is Thrust 3).
 

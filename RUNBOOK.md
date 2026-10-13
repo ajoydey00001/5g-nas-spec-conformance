@@ -1,5 +1,13 @@
 # Runbook: keep the srsUE run alive, fix known problems, finish Thrust 1 without help
 
+> **Finalized 2026-10-14:** the demonstration uses preserved srsUE hypothesis 5
+> (6 states / 21 transitions, Table 8 recall 7/7). The learner reached its
+> 30-equivalence-call budget; convergence is not established. Auto-resume is paused.
+> Do not resume this completed budget run. See `thrust1/results/T1_RESULTS_v2.md`.
+> `bash check_thrust1.sh` now checks local reproducibility and provenance;
+> independent validation and guided-learning D4 experiments remain future work.
+> Older live-run estimates and restart advice below are historical.
+
 Written 2026-10-13 so that every step can be done by hand, without Claude. Commands are for the
 laptop (Ubuntu, user `ajoy-dey`).
 

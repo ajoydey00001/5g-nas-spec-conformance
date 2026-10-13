@@ -16,8 +16,10 @@ devices share; the spec reference can.
 - **All 23 confirmed** independently by the authors' DevLyzer (45 LTL properties).
 - Two spec-model repairs (R1, R2) found by feeding device/property evidence back to the spec text, plus a
   candidate spec gap (5.5.1.2.4 vs 5.5.1.3.4).
-- srsUE learning run (Table 4 configuration) in progress; early queries already show I3, I4, I6/I7, I10, I19,
-  I20, matching the paper's Table 8 ground truth. Final model and report v2 will be added when it finishes.
+- Finalized srsUE hypothesis 5: **6 states / 21 transitions**, Table 8 recall **7/7**, plus I6.
+  Adding it preserves **23 classes and six invisible classes**; DevLyzer checks all 23 witness records.
+  This is a **budget-limited hypothesis**, not a converged model. See
+  [`results v2`](thrust1/results/T1_RESULTS_v2.md) and the updated report.
 
 ## If something breaks
 

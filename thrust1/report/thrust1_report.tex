@@ -48,7 +48,7 @@
   Technical Report --- Ajoy Dey\\
   \small B.Sc.\ CSE, BUET \;$|$\; \texttt{ajoydey00001@gmail.com} \;$|$\; \texttt{ajoydey00001.github.io}\\
   \small Prepared for Dr.\ Imtiaz Karim, SysNetS Lab, The University of Texas at Dallas}
-\date{\small 13 October 2026 \;---\; version 1 (srsUE learning run in progress)}
+\date{\small 14 October 2026 \;---\; version 2 (budget-limited srsUE hypothesis)}
 
 \begin{document}
 \maketitle
@@ -60,16 +60,17 @@ from several devices and reports where they disagree. Its known blind spot is a 
 device shares: the devices agree, so nothing is reported. Thrust~1 of my proposal adds a reference model
 extracted from the specification (TS~24.501) and compares every device against it, so that shared flaws
 appear as a separate case. This report gives the first end-to-end results. I built a 96-cell specification
-FSM for the 16 NAS inputs of 5GBaseChecker, in which every cell carries a TS~24.501 v17.8.0 clause ID and a
-verbatim quote (89/89 quotes verified mechanically against the spec text). Comparing it with the two learned
+FSM for the 16 NAS inputs of 5GBaseChecker, with clause evidence for protocol cells and explicit no-connection cells
+(30 cells without clause evidence) (89/89 quotes verified mechanically against the spec text). Comparing it with the two learned
 device FSMs released with 5GBaseChecker gives 23 deviation classes, of which \textbf{6 are invisible to
 device-vs-device comparison}; they correspond to the known issues I3, I4, I6 and I10 (I10 in three
 situations). All 23 are independently confirmed by the authors' own DevLyzer tool and its 45 expert LTL
 properties. The comparison also worked in the reverse direction: device and property evidence exposed two
 errors in my extracted model, which I repaired by re-reading the cited clauses. Along the way I reproduced
 the 5GBaseChecker offline pipeline exactly and brought up its live learning stack for srsUE on a laptop with
-a simulated radio; the srsUE FSM (Table~4 reproduction) is still being learned and will be added as a
-third device in version~2.
+a simulated radio. The round-5 srsUE hypothesis has 6 states and 21 non-self-loop transitions,
+recovers all seven expected Table~8 issues, and preserves the six invisible classes when added as a
+third device. It stopped at the learner's query budget; convergence is not established.
 \end{abstract}
 
 \tableofcontents
@@ -132,7 +133,7 @@ Environment & Ubuntu 24.04 laptop (4-core i5, 11~GB RAM); Ubuntu 20.04 Docker co
 \node[data] (spec) {TS 24.501 v17.8.0\\1,181 clauses};
 \node[box, fill=blue!6, right=of spec] (ext) {Cell-wise extraction\\clause ID + quote};
 \node[box, fill=blue!6, right=of ext] (sfsm) {Spec FSM\\6 states $\times$ 16 inputs};
-\node[data, below=1.4cm of spec] (dev) {Learned device FSMs\\FSM\_A, FSM\_B, (srsUE)};
+\node[data, below=1.4cm of spec] (dev) {Learned device FSMs\\FSM\_A, FSM\_B, srsUE};
 \node[box, fill=green!8, right=of dev] (cmp) {Spec vs each device\\first-point deviations};
 \node[box, fill=green!8, right=of cmp] (cls) {Four cases\\Case 2 = shared flaws};
 \node[box, fill=orange!10, below=1.1cm of cls] (dl) {DevLyzer (45 props)\\independent check};
@@ -377,7 +378,7 @@ NAS-only properties & 21 of 45 mention no RRC symbol (1--15, 29--32, 43, 44) \\
 Live stack (modified Open5GS 2.4.9, srsRAN gNB 22.04.1, srsUE \sym{release_22_10}) & built and running
   over ZeroMQ in an Ubuntu 20.04 container; manual probe shows srsUE accepting a replayed SMC (I7) and a plain
   IDENTITY REQUEST after security (I3), as in the paper's Table~8 \\
-srsUE learning (Table 4 configuration, 29 shipped counterexamples) & \textbf{running}; result in version 2 \\
+srsUE learning (Table 4 configuration, 29 shipped counterexamples) & \textbf{budget-limited}: 6 states, 21 non-self-loop transitions; Table~8 recall 7/7 \\
 \bottomrule
 \end{tabularx}
 \caption{Reproduction status.}
@@ -392,19 +393,48 @@ learner stops after 30 equivalence queries, so Table~4's state and transition co
 not its query counts.
 
 % ---------------------------------------------------------------------------
+\section{Finalized srsUE Experiment}
+The analyzed artifact is \sym{hypothesis_5.dot}, preserved as
+\sym{srsue_learnedModel.dot} for compatibility with the analysis scripts.
+Its provenance records that it is a budget-limited hypothesis, not a converged model.
+The learner's \sym{LogOracle} invokes \sym{System.exit(0)} after 30 equivalence-query calls
+in counterexample-feeding mode, before the normal final-model writer can run.
+Repeated resumes reproduced the same model hash and then exited at the same budget.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Metric & Paper & This experiment \\
+\midrule
+States & 6 & 6 \\
+Non-self-loop transitions & 20 & 21 \\
+Expected Table~8 NAS issues recovered & 7 & 7 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Both I9 variants are present; I9 counts once in the seven-issue recall.
+I6 is also present, although the paper's Table~8 lists it only for OAI UE.
+The transition-count difference is retained as an experimental difference.
+With FSM\_A, FSM\_B and srsUE, the comparator returns 23 classes:
+6 invisible Case~2, 8 visible Case~2, and 9 visible Case~3.
+DevLyzer classifies all 23 witness records as attack traces, with seven benign records and zero unresolved records.
+The attack and benign sets overlap: a witness can include violating and benign device-output groups.
+This is property-level corroboration, not proof of exploit impact or of every spec-cell interpretation.
+Textual quote verification alone does not establish semantic correctness.
+
 \section{Limitations}
 
 \begin{itemize}[itemsep=3pt]
   \item \textbf{Extraction.} The spec FSM was extracted by Claude inside a Claude Code session (no API key
-        available), one sample per cell, no ensemble vote. Every cell is quote-checked, but a scripted, repeated
+        available), one sample per cell, no ensemble vote. All 89 evidence quotes are checked for textual presence, but a scripted, repeated
         extraction with an API model is needed before publication.
   \item \textbf{Ground truth for FSM\_A/FSM\_B.} Their device identities are not published, so their ground
-        truth here is DevLyzer, not the paper's Table~8. Table~8 applies to srsUE (pending) and OAI UE.
+        truth here is DevLyzer, not the paper's Table~8. Table~8 applies to srsUE (7/7 recovered here) and OAI UE (not run here).
   \item \textbf{Harness.} Where the core or learner may suppress a message, \sym{null_action} is always
         accepted, so a device that wrongly stays silent in exactly those situations is not flagged. Findings
         where a device answers when it must not (I3, I4, I6, I10) are unaffected.
   \item \textbf{Coverage of S4.} FSM\_A never completes registration (it ignores REGISTRATION ACCEPT, issue
-        I17), so classes in the registered state rest on FSM\_B alone until srsUE is added.
+        I17), so the two-device registered-state results rely on FSM\_B; the three-device analysis also includes srsUE.
   \item \textbf{Novelty claim.} The issues found are known issues; recovering them is the validation of the
         method. The contribution claimed is the method and its measured effect on the blind spot.
 \end{itemize}
@@ -413,8 +443,8 @@ not its query counts.
 \section{Next Steps}
 
 \begin{enumerate}[itemsep=3pt]
-  \item Add the learned srsUE FSM as a third device; compare with Table~4 (6 states, 20 transitions) and with
-        Table~8 (srsUE: I3, I4, I7, I9, I10, I19, I20) as ground truth; report recall.
+  \item Remove the learner's hard-coded query-budget exit and perform a separate convergence run if a
+        converged model is required. The finalized result here is hypothesis 5.
   \item Re-run the extraction as a script (several samples per cell, majority vote) and measure agreement with
         this version and PSMBench F1 against a hand-built reference for SMC and registration.
   \item Guided learning (D4): turn spec transitions into potential counterexamples for the learner and measure

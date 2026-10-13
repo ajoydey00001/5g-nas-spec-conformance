@@ -1,0 +1,10 @@
+I3   PRESENT  id_response              enable_s1 auth_request_plain_text nas_sm_cmd id_request_plain_text
+I4   PRESENT  auth_response            enable_s1 auth_request_plain_text nas_sm_cmd auth_request_plain_text
+I6   PRESENT  nas_sm_complete          enable_s1 auth_request_plain_text nas_sm_cmd nas_sm_cmd_replay
+I7   PRESENT  nas_sm_complete          enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected nas_sm_cmd_replay
+I9a  PRESENT  registration_complete    enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_plain_text
+I9b  PRESENT  config_update_complete   enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected config_update_cmd_plain_text
+I10  PRESENT  nas_sm_complete          enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text
+I17  -        registration_complete    enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected
+I19  PRESENT  nas_sm_complete          enable_s1 auth_request_plain_text nas_sm_cmd nas_sm_cmd_protected
+I20  PRESENT  config_update_complete   enable_s1 auth_request_plain_text nas_sm_cmd registration_accept_protected config_update_cmd_protected

@@ -1,51 +1,34 @@
 #!/bin/bash
-# Is Thrust 1 complete and correct? Prints PASS / FAIL / WAIT for each check.   bash check_thrust1.sh
+# Validate the finalized demonstration; research-wide D4/independent extraction remain separate.
+set -euo pipefail
 cd "$(dirname "$0")"
-T=thrust1; RES=$T/results; L=~/thrust1-lab/learnrun
-ok=0; bad=0
-pass() { echo "PASS  $*"; ok=$((ok+1)); }
-fail() { echo "FAIL  $*"; bad=$((bad+1)); }
-wait_() { echo "WAIT  $*"; bad=$((bad+1)); }
-
-echo "== A. offline analysis reproduces (spec FSM, 89 quotes, 23 classes on FSM_A/FSM_B)"
-out=$(bash reproduce.sh 2>&1)
-echo "$out" | grep -q "classes match committed results: True" && pass "reproduce.sh: classes match the committed results" \
-  || fail "reproduce.sh: classes differ or it crashed (run: bash reproduce.sh)"
-echo "$out" | grep -qi "identical to the committed" && pass "spec cells regenerate identically (quotes verified)" \
-  || fail "spec cells differ from the committed ones"
-
-echo "== B. srsUE learning run"
-if [ -f $RES/srsue_learnedModel.dot ]; then
-  pass "final srsUE model saved: $(python3 -I $T/symbols/fsm_tools.py stats $RES/srsue_learnedModel.dot | cut -d: -f2)  (paper: 6 states, 20 transitions)"
-elif docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
-  wait_ "learner still running ($(ls $L/logs/srsue.log 2>/dev/null | grep -c 'hypothesis_[0-9]*\.dot$') hypotheses so far) - run finish_thrust1.sh when it ends"
-else
-  fail "no final model and the learner is not running: bash ~/thrust1-lab/learnrun/resume_after_reboot.sh, or finish_thrust1.sh to use the last hypothesis"
-fi
-
-echo "== C. srsUE vs paper (Table 8) and spec vs devices"
-I=$RES/srsue_issues.txt; [ -f $I ] || I=$RES/srsue_issues_dry.txt
-if [ -f $I ]; then
-  r=$(grep -cE '^(I3|I4|I7|I10|I19|I20) +PRESENT' $I); grep -qE '^I9[ab] +PRESENT' $I && r=$((r+1))
-  [ $r -ge 6 ] && pass "Table 8 recall $r/7 ($(basename $I))" || fail "Table 8 recall only $r/7 ($(basename $I)) - check symbols (PLAN.md §7)"
-else wait_ "no srsUE issue file yet (finish_thrust1.sh)"; fi
-S=$RES/T1.6_summary_ABsrs.txt; [ -f $S ] || S=$RES/T1.6_summary_ABsrs_dry.txt
-if [ -f $S ]; then
-  inv=$(grep -o 'INVISIBLE to diff: [0-9]*' $S | grep -o '[0-9]*$')
-  [ "${inv:-0}" -gt 0 ] && pass "Case 2 classes invisible to differential testing: $inv ($(basename $S)) <- the novelty claim" \
-    || fail "no invisible Case 2 class in $(basename $S)"
-else wait_ "no spec-vs-devices summary with srsUE yet (finish_thrust1.sh)"; fi
-U=$(ls $T/lab/devlyzer_srs/deviant-queries_unresolved.json $T/lab/devlyzer_srs_dry/deviant-queries_unresolved.json 2>/dev/null | head -1)
-if [ -n "$U" ]; then
-  u=$(python3 -I -c "import json,sys;print(len(json.load(open(sys.argv[1]))['traces']))" $U)
-  [ "$u" = 0 ] && pass "DevLyzer: 0 unresolved ($U)" || fail "DevLyzer: $u unresolved traces ($U)"
-else wait_ "no DevLyzer result with srsUE yet"; fi
-
-echo "== D. write-up and backup"
-[ -f $RES/T1_RESULTS_v2.md ] && pass "results v2 written" || wait_ "results/T1_RESULTS_v2.md not written yet (NEXT_STEPS A4)"
-grep -q "srsUE learning run in progress" $T/report/thrust1_report.tex && wait_ "report still says srsUE in progress (NEXT_STEPS A4)" || pass "report updated"
-git fetch -q 2>/dev/null
-[ -z "$(git status --porcelain)" ] && [ "$(git rev-parse HEAD)" = "$(git rev-parse @{u} 2>/dev/null)" ] \
-  && pass "everything committed and pushed to GitHub" || wait_ "uncommitted or unpushed changes: git add -A && git commit -m ... && git push"
-
-echo; echo "$ok passed, $bad not yet / failed. Thrust 1 is complete when every line is PASS."
+python3 -I - <<'PY'
+import collections, hashlib, json, pathlib, subprocess, sys, tempfile
+root=pathlib.Path.cwd(); r=root/'thrust1/results'; failures=[]
+def check(ok,msg):
+    print(('PASS  ' if ok else 'FAIL  ')+msg)
+    if not ok: failures.append(msg)
+with tempfile.TemporaryDirectory() as tmp:
+    cells=pathlib.Path(tmp)/'cells.json'
+    subprocess.run([sys.executable,'-I','thrust1/extract/author_spec_cells.py',str(cells)],check=True,stdout=subprocess.DEVNULL)
+    check(cells.read_bytes()==pathlib.Path('thrust1/spec_fsm/spec_cells_v1.json').read_bytes(),'spec cells regenerate identically')
+    build=subprocess.run([sys.executable,'-I','thrust1/extract/build_spec_fsm.py',str(cells),'repro/clauses.jsonl',tmp],check=True,capture_output=True,text=True)
+    check('89 checked, 0 not found verbatim' in build.stdout,'89 evidence quotes found in cached specification')
+    out=pathlib.Path(tmp)/'comparison.json'
+    subprocess.run([sys.executable,'-I','thrust1/compare/spec_vs_devices.py',str(cells),str(out),'A=repro/dl/FSM_A.dot','B=repro/dl/FSM_B.dot','srsue=thrust1/results/srsue_learnedModel.dot'],check=True,stdout=subprocess.DEVNULL)
+    check(json.loads(out.read_text())==json.loads((r/'T1.6_spec_vs_ABsrs.json').read_text()),'three-device comparison reproduces exactly')
+model=r/'srsue_learnedModel.dot'; meta=json.loads((r/'srsue_model_provenance.json').read_text())
+check(hashlib.sha256(model.read_bytes()).hexdigest()==meta['sha256'],'model matches recorded source hash')
+check(meta['status']=='budget_limited_hypothesis' and meta['converged'] is False,'budget-limited stopping condition explicitly recorded')
+issues=subprocess.check_output([sys.executable,'-I','thrust1/symbols/fsm_tools.py','issues',str(model)],text=True)
+present={line.split()[0] for line in issues.splitlines() if line.split()[1]=='PRESENT'}
+check({'I3','I4','I7','I10','I19','I20'}<=present and bool({'I9a','I9b'}&present),'Table 8 recall 7/7')
+d=json.loads((r/'T1.6_spec_vs_ABsrs.json').read_text()); invisible=[c for c in d['classes'] if c['case']==2 and not c['visible_to_diff']]
+check(len(d['classes'])==23 and len(invisible)==6,'23 classes, six invisible witnesses')
+check(all(len({tuple(v) for v in c['device_outputs'].values()})==1 and c['n']==3 and c['k']==0 for c in invisible),'all three devices agree along every invisible witness and violate its final cell')
+base=pathlib.Path('thrust1/lab/devlyzer_srs'); counts={k:len(json.loads((base/('deviant-queries_'+k+'.json')).read_text())['traces']) for k in ('attack','benign','unresolved')}
+check(counts=={'attack':23,'benign':7,'unresolved':0},'DevLyzer: 23 attack / 7 benign / 0 unresolved records')
+check((r/'T1_RESULTS_v2.md').exists() and 'budget-limited' in pathlib.Path('thrust1/report/thrust1_report.tex').read_text(),'results v2 and report disclose model limitation')
+print('Scope: finalized Thrust 1 demonstration; independent validation and D4 experiments remain future work.')
+sys.exit(bool(failures))
+PY

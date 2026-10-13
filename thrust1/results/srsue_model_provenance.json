@@ -1,0 +1,12 @@
+{
+  "source": "logs/srsue.log.before_resume_20261014_0045/hypothesis_5.dot",
+  "sha256": "6b4175f2dc7d8cb8e76f3e96c45ec3a82a193e8475ac195d968144774d5b186c",
+  "status": "budget_limited_hypothesis",
+  "converged": false,
+  "round": 5,
+  "states": 6,
+  "non_self_loop_transitions": 21,
+  "stop_reason": "LogOracle System.exit(0) at 30 equivalence-query calls in CE reverse feeding mode",
+  "checkpoint_saved_answers": 1484,
+  "finalized_date": "2026-10-14"
+}

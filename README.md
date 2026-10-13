@@ -19,6 +19,11 @@ devices share; the spec reference can.
 - srsUE learning run (Table 4 configuration) in progress; early queries already show I3, I4, I6/I7, I10, I19,
   I20, matching the paper's Table 8 ground truth. Final model and report v2 will be added when it finishes.
 
+## If something breaks
+
+[`RUNBOOK.md`](RUNBOOK.md) covers every problem met so far (symptom, cause, fix), a one-screen health check
+(`bash ~/thrust1-lab/learnrun/status.sh`), and the exact steps to finish the analysis when the srsUE run ends.
+
 ## Reproduce and review
 
 `bash reproduce.sh` reruns the whole offline analysis in about a minute (Python standard library only).

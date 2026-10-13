@@ -70,7 +70,8 @@ class Spec:
             allowed = allowed + [NULL]
         if observed == NULL and blockable and c['output'] != NULL:
             return allowed, (s, advance(a, NULL, h)), c     # treat as not delivered
-        return allowed, (c['next'], advance(a, observed if observed in allowed else c['output'], h)), c
+        next_state = c.get('next_by_output', {}).get(observed, c['next'])
+        return allowed, (next_state, advance(a, observed if observed in allowed else c['output'], h)), c
 
 
 def first_deviations(spec, dev, silent=None):

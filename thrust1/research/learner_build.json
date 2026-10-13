@@ -1,0 +1,8 @@
+{
+  "original_jar_sha256": "1640ce41522d3349155a2eb584f7e5dedffdb6f8c915afe1edc1813dfc607d8d",
+  "research_jar_sha256": "455f8e853abf35b15f1b46366e85361bcc78896010619fa7b9e3e10f9505fdbf",
+  "patch_sha256": "d45a9647b729ba2293fa81b876149e478f151a3da6f8e9a3acd359fa85d11f9d",
+  "java": "openjdk version \"11.0.27\" 2025-04-15\nOpenJDK Runtime Environment (build 11.0.27+6-post-Ubuntu-0ubuntu120.04)\nOpenJDK 64-Bit Server VM (build 11.0.27+6-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)\n",
+  "budget": "EQCount=0 unlimited; positive limit raises exception and exits nonzero",
+  "completion": "Wp suite completed at configured depth, not proof of arbitrary-system equivalence"
+}

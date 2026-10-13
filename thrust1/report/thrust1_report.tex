@@ -383,7 +383,7 @@ NAS-only properties & 21 of 45 mention no RRC symbol (1--15, 29--32, 43, 44) \\
 Live stack (modified Open5GS 2.4.9, srsRAN gNB 22.04.1, srsUE \sym{release_22_10}) & built and running
   over ZeroMQ in an Ubuntu 20.04 container; manual probe shows srsUE accepting a replayed SMC (I7) and a plain
   IDENTITY REQUEST after security (I3), as in the paper's Table~8 \\
-srsUE learning (Table 4 configuration, 29 shipped counterexamples) & \textbf{budget-limited}: 6 states, 21 non-self-loop transitions; Table~8 recall 7/7 \\
+srsUE learning (Table 4 configuration, 30 shipped counterexamples) & \textbf{budget-limited}: 6 states, 21 non-self-loop transitions; Table~8 recall 7/7 \\
 \bottomrule
 \end{tabularx}
 \caption{Reproduction status.}
@@ -426,6 +426,26 @@ DevLyzer classifies all 23 witness records as attack traces, with seven benign r
 The attack and benign sets overlap: a witness can include violating and benign device-output groups.
 This is property-level corroboration, not proof of exploit impact or of every spec-cell interpretation.
 Textual quote verification alone does not establish semantic correctness.
+
+\section{Supplementary Review and Teacher-Review Milestone}
+The current deliverable is the finalized demonstration for teacher feedback;
+the full research plan remains open. The user will compile this source in Overleaf.
+A clause-based review of 30 selected cells is saved in
+\sym{results/T1_SEMANTIC_REVIEW.json}. It saw the existing model and is not a
+blind extraction ensemble or an independent human reference evaluation.
+Sensitivity testing retains six invisible witnesses after either correcting
+optional SMC next-state handling or allowing R2's disputed COMPLETE alternative.
+Suppressing judgments on INFERRED cells leaves five invisible witnesses.
+
+Supplemental D4 experiments used actual LearnLib TTT and Wp (lookahead 1, 29
+inputs) against fixed saved FSM oracles. Exact equivalence checks passed in all
+12 runs. SPEC guidance reduced EQ calls by 5.65--12.47\% versus Wp alone;
+shipped guidance performed better. These results do not measure live UE query
+savings or radio runtime. See \sym{results/D4_OFFLINE.md} for counts.
+The isolated live baseline was stopped for this review milestone and its partial
+logs preserved. OAI reproduction, live D4 and independent extraction/reference
+validation are deferred until teacher feedback. The original budget-limited
+srsUE model and main comparison remain unchanged.
 
 \section{Limitations}
 

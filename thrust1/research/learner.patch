@@ -1,0 +1,47 @@
+--- a/LogOracle.java
++++ b/LogOracle.java
+@@ -435,15 +435,8 @@
+ 
+         if (logger.getName().equals("equivalence_queries")) {
+             count++;
+-            if (config.DIKEUE_compare == 0 && config.CE_revserse_feeding == 0 && count >= config.EQCount) {
+-                System.out.println("Log Oracle: learning finished");
+-                runProcess(false, "echo \"USENIX24\" | sudo -S ./kill_gnb.sh");
+-                System.exit(0);
+-            }
+-            if (config.DIKEUE_compare == 0 && config.CE_revserse_feeding == 1 && count >= 30) {
+-                System.out.println("Log Oracle: learning finished (CE reverse feeding mode)");
+-                runProcess(false, "echo \"USENIX24\" | sudo -S ./kill_gnb.sh");
+-                System.exit(0);
++            if (config.DIKEUE_compare == 0 && config.EQCount > 0 && count >= config.EQCount) {
++                throw new IllegalStateException("RESEARCH_QUERY_BUDGET_EXHAUSTED: " + count);
+             }
+ 
+         }
+--- a/Learner.java
++++ b/Learner.java
+@@ -233,6 +233,7 @@
+ 
+         } catch (Exception e) {
+             e.printStackTrace();
++            System.exit(1);
+         }
+     }
+ 
+@@ -344,7 +345,7 @@
+                 if(config.tgbot_enable == 1){
+                     sendToTelegram("Learning complete: " + config.final_symbol + " found in " + dot_filename);
+                 }
+-                System.out.println("\n\nLearning complete.");
++                System.out.println("\n\nHypothesis contains configured final symbol.");
+                 System.out.println(config.final_symbol + " found in " + dot_filename);
+                 if(config.DIKEUE_compare == 1){
+                     UESUL.kill_eNodeb();
+@@ -372,6 +373,7 @@
+ 
+                 // Write outputs
+                 writeDotModel(hypothesis, alphabet, config.output_dir + "/learnedModel.dot");
++                System.out.println("RESEARCH_WP_SUITE_COMPLETE");
+ 
+                 dot_filename = config.output_dir + "/learnedModel.dot";
+                 if(Learner.check_complete(dot_filename, config.final_symbol)){

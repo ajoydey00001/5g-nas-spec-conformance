@@ -60,10 +60,18 @@ be read as finalization of this demonstration only.
 5. Run D4 guided-learning experiments with controlled baselines, MQ/EQ/time
    measurement and final-model equivalence. Manual R1/R2 repairs demonstrate
    feedback, not reduced learning cost or an automated repair loop.
-6. Compile/review the updated report PDF; no LaTeX compiler is installed here.
+6. Compile/review the updated report PDF in Overleaf, as requested by the user.
 
 Safe claim now: “We finalized a reproducible specification-reference
 proof of concept: 23 model-derived deviation classes and six witnesses whose
 outputs agree across three UE models but disagree with the current reference.
 The srsUE model is budget-limited; full semantic validation and guided-learning
 experiments remain future work.”
+
+## Agreed teacher-review milestone
+
+The user has one day and chose to submit the finalized demonstration before
+pursuing the rest of the research. See TEACHER_REVIEW.md. The long live queue
+is stopped, with partial outcome preserved in D4_live_partial.json. Supplementary
+fixed-model D4 and clause/sensitivity reviews are included with explicit limits.
+The full-plan completion verdict is unchanged; its remaining work is deferred.

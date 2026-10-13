@@ -1,0 +1,37 @@
+A         42 first-point deviations from spec
+B        167 first-point deviations from spec
+srsue    163 first-point deviations from spec
+
+23 deviation classes (one per violated spec cell):
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           config_update_cmd_plain_text    @S1  spec null_action                  devices A=null_action,B=config_u not in the 4.4.4.2 list of messages processed befo
+  Case 2 (3/3 dev) diff-visible:NO   INFERRED       nas_sm_cmd_ns_plain_text        @S1  spec nas_sm_reject/null_action    devices A=nas_sm_complete,B=nas_ no KAMF yet, so the integrity check cannot pass
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           registration_accept_plain_text  @S1  spec null_action                  devices A=null_action,B=registra not in the 4.4.4.2 list of messages processed befo
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           config_update_cmd_plain_text    @S2  spec null_action                  devices A=null_action,B=config_u not in the 4.4.4.2 list of messages processed befo
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           nas_sm_cmd_ns                   @S2  spec nas_sm_reject/null_action    devices A=nas_sm_complete,B=nas_ 5G-IA0 only for emergency / W-AGF; DevLyzer props 
+  Case 2 (3/3 dev) diff-visible:NO   SPEC           nas_sm_cmd_ns_plain_text        @S2  spec nas_sm_reject/null_action    devices A=nas_sm_complete,B=nas_ I10: 5G-IA0 and no valid MAC
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           registration_accept_plain_text  @S2  spec null_action                  devices A=null_action,B=registra not in the 4.4.4.2 list of messages processed befo
+  Case 2 (3/3 dev) diff-visible:NO   SPEC           auth_request_plain_text         @S3  spec null_action                  devices A=auth_response,B=auth_r I4
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           config_update_cmd_plain_text    @S3  spec null_action                  devices A=null_action,B=config_u I9 (conf_update_cmd_plain)
+  Case 2 (3/3 dev) diff-visible:NO   SPEC           id_request_plain_text           @S3  spec null_action                  devices A=id_response,B=id_respo I3
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           nas_sm_cmd_ns                   @S3  spec nas_sm_reject/null_action    devices A=nas_sm_complete,B=nas_ 5G-IA0 only for emergency / W-AGF; DevLyzer props 
+  Case 2 (3/3 dev) diff-visible:NO   SPEC           nas_sm_cmd_ns_plain_text        @S3  spec nas_sm_reject/null_action    devices A=nas_sm_complete,B=nas_ I10: 5G-IA0 and no valid MAC
+  Case 2 (3/3 dev) diff-visible:NO   SPEC           nas_sm_cmd_replay               @S3  spec null_action                  devices A=nas_sm_complete,B=nas_ I6 (right after SMC) / I7 (after registration)
+  Case 3 (3/3 dev) diff-visible:yes  SPEC           registration_accept_plain_text  @S3  spec null_action                  devices A=null_action,B=registra I9 (reg_accept_plain)
+  Case 3 (3/3 dev) diff-visible:yes  INFERRED       registration_accept_protected   @S3  spec registration_complete        devices A=null_action,B=registra open5gs includes a new 5G-GUTI; the explicit UE ru
+  Case 2 (2/3 dev) diff-visible:yes  SPEC           auth_request_plain_text         @S4  spec null_action                  devices A=auth_response,B=auth_r I4
+  Case 2 (2/3 dev) diff-visible:yes  SPEC           config_update_cmd_plain_text    @S4  spec null_action                  devices A=null_action,B=config_u I9 (conf_update_cmd_plain)
+  Case 2 (2/3 dev) diff-visible:yes  SPEC           deregistration_req_protected    @S4  spec deregistration_accept        devices A=null_action,B=null_act core: re-registration not required, 3GPP access
+  Case 2 (2/3 dev) diff-visible:yes  SPEC           id_request_plain_text           @S4  spec null_action                  devices A=id_response,B=id_respo I3
+  Case 2 (2/3 dev) diff-visible:yes  SPEC           nas_sm_cmd_ns_plain_text        @S4  spec nas_sm_reject/null_action    devices A=nas_sm_complete,B=nas_ I10: 5G-IA0 and no valid MAC
+  Case 2 (2/3 dev) diff-visible:yes  SPEC           nas_sm_cmd_replay               @S4  spec null_action                  devices A=nas_sm_complete,B=nas_ I6 (right after SMC) / I7 (after registration)
+  Case 2 (2/3 dev) diff-visible:yes  SPEC           registration_accept_plain_text  @S4  spec null_action                  devices A=null_action,B=registra I9 (reg_accept_plain)
+  Case 2 (2/3 dev) diff-visible:yes  INFERRED       registration_accept_protected   @S4  spec null_action                  devices A=null_action,B=registra repair R2: 5GMM STATUS #98 is not in the output al
+
+(c) candidates - device behaviour where the spec is silent (UNDERSPECIFIED cells):
+  config_update_cmd_protected@S3               A=null_action, B=config_update_complete, srsue=config_update_complete I20 (paper U2): core sends NITZ only, no ackn
+  config_update_cmd_protected@S4               B=config_update_complete, srsue=config_update_complete I20 (paper U2): core sends NITZ only, no ackn
+  nas_sm_cmd_protected@S2                      A=null_action, B=null_action, srsue=null_action I19 (paper U1): the AMF must send SMC unciphe
+  nas_sm_cmd_protected@S3                      A=nas_sm_complete, B=nas_sm_complete, srsue=nas_sm_complete I19 (paper U1): the AMF must send SMC unciphe
+  nas_sm_cmd_protected@S4                      B=nas_sm_complete, srsue=nas_sm_complete I19 (paper U1): the AMF must send SMC unciphe
+
+summary: Case 2 INVISIBLE to diff: 6, Case 2 visible: 8, Case 3 visible: 9

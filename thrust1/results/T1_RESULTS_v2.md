@@ -95,3 +95,8 @@ not ground truth.
 - The srsUE result is budget-limited and uses NEA0; convergence and NEA2 behavior are not established.
 
 Completion verdict and remaining validity issues: see [T1_AUDIT.md](T1_AUDIT.md).
+
+Research continuation (2026-10-14): [research tools](../research/README.md),
+30-cell clause review, assumption sensitivity, and supplemental fixed-model D4
+measurements are available. Live srsUE D4 was started and stopped for teacher review; partial logs are
+preserved and no live savings are claimed. The original plan remains incomplete. Thrust 2/3 are not being run.

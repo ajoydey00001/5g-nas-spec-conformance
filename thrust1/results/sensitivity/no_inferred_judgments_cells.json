@@ -1,0 +1,1333 @@
+{
+ "spec": "TS 24.501 v17.8.0",
+ "extractor": "Claude Opus 5.5 (Claude Code session), 1 sample per cell",
+ "date": "2026-10-13",
+ "initial_state": "S0",
+ "states": {
+  "S0": "Before enable_s1: UE powered on in 5GMM-DEREGISTERED, no NAS signalling connection.",
+  "S1": "5GMM-REGISTERED-INITIATED: REGISTRATION REQUEST sent for initial registration; no 5G NAS security context; not authenticated on this connection.",
+  "S2": "5GMM-REGISTERED-INITIATED: 5G AKA completed (new KAMF in a partial native 5G NAS security context); secure exchange of NAS messages NOT yet established (no SECURITY MODE COMMAND accepted).",
+  "S3": "5GMM-REGISTERED-INITIATED: SECURITY MODE COMMAND accepted, secure exchange of NAS messages established; REGISTRATION ACCEPT not yet received.",
+  "S4": "5GMM-REGISTERED: REGISTRATION ACCEPT processed (REGISTRATION COMPLETE sent); secure exchange of NAS messages established.",
+  "S5": "5GMM-DEREGISTERED after a network-initiated de-registration completed; NAS signalling connection released."
+ },
+ "inputs": [
+  "enable_s1",
+  "id_request_plain_text",
+  "auth_request_plain_text",
+  "nas_sm_cmd",
+  "nas_sm_cmd_protected",
+  "nas_sm_cmd_replay",
+  "nas_sm_cmd_ns",
+  "nas_sm_cmd_ns_plain_text",
+  "registration_accept_protected",
+  "registration_accept_h4_plain_text",
+  "registration_accept_plain_text",
+  "config_update_cmd_protected",
+  "config_update_cmd_plain_text",
+  "config_update_cmd_replay",
+  "deregistration_req_protected",
+  "deregistration_req_plain_text"
+ ],
+ "cells": {
+  "S0": {
+   "enable_s1": {
+    "output": "registration_request",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.2",
+      "quote": "The UE in state 5GMM-DEREGISTERED shall initiate the registration procedure for initial registration by sending a REGISTRATION REQUEST message to the AMF,"
+     }
+    ],
+    "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+   },
+   "id_request_plain_text": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "auth_request_plain_text": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_protected": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_replay": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_ns": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_ns_plain_text": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "registration_accept_protected": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "registration_accept_h4_plain_text": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "registration_accept_plain_text": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "config_update_cmd_protected": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "config_update_cmd_plain_text": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "config_update_cmd_replay": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "deregistration_req_protected": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "deregistration_req_plain_text": {
+    "output": "null_action",
+    "next": "S0",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   }
+  },
+  "S1": {
+   "enable_s1": {
+    "output": "registration_request",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.2",
+      "quote": "The UE in state 5GMM-DEREGISTERED shall initiate the registration procedure for initial registration by sending a REGISTRATION REQUEST message to the AMF,"
+     }
+    ],
+    "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+   },
+   "id_request_plain_text": {
+    "output": "id_response",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "IDENTITY REQUEST (if requested identification parameter is SUCI);"
+     },
+     {
+      "clause_id": "5.4.3.3",
+      "quote": "if timer T3519 is not running, generate a fresh SUCI as specified in 3GPP TS 33.501 [24], send an IDENTITY RESPONSE message with the SUCI"
+     }
+    ],
+    "note": "core requests SUCI (gmm_build_identity_request)"
+   },
+   "auth_request_plain_text": {
+    "output": "auth_response",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "AUTHENTICATION REQUEST;"
+     },
+     {
+      "clause_id": "5.4.1.3.3",
+      "quote": "the UE shall process the 5G authentication challenge data and respond with an AUTHENTICATION RESPONSE message to the network."
+     }
+    ],
+    "note": "core sends a fresh AV each time, so no SQN/RAND reuse"
+   },
+   "nas_sm_cmd": {
+    "output": "nas_sm_reject",
+    "next": "S1",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_complete",
+     "registration_complete",
+     "deregistration_accept",
+     "config_update_complete",
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "no KAMF yet, so the integrity check cannot pass"
+   },
+   "nas_sm_cmd_protected": {
+    "output": "nas_sm_reject",
+    "next": "S1",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_complete",
+     "registration_complete",
+     "deregistration_accept",
+     "config_update_complete",
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "no KAMF yet, so the integrity check cannot pass"
+   },
+   "nas_sm_cmd_ns": {
+    "output": "nas_sm_reject",
+    "next": "S1",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_complete",
+     "registration_complete",
+     "deregistration_accept",
+     "config_update_complete",
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "no KAMF yet, so the integrity check cannot pass"
+   },
+   "nas_sm_cmd_ns_plain_text": {
+    "output": "nas_sm_reject",
+    "next": "S1",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_complete",
+     "registration_complete",
+     "deregistration_accept",
+     "config_update_complete",
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "no KAMF yet, so the integrity check cannot pass"
+   },
+   "nas_sm_cmd_replay": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.3.2",
+      "quote": "for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly."
+     }
+    ],
+    "note": "I6 (right after SMC) / I7 (after registration)"
+   },
+   "registration_accept_protected": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "registration_accept_h4_plain_text": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "registration_accept_plain_text": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "config_update_cmd_protected": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "config_update_cmd_plain_text": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "config_update_cmd_replay": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "deregistration_req_protected": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "deregistration_req_plain_text": {
+    "output": "null_action",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   }
+  },
+  "S2": {
+   "enable_s1": {
+    "output": "registration_request",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.2",
+      "quote": "The UE in state 5GMM-DEREGISTERED shall initiate the registration procedure for initial registration by sending a REGISTRATION REQUEST message to the AMF,"
+     }
+    ],
+    "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+   },
+   "id_request_plain_text": {
+    "output": "id_response",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "IDENTITY REQUEST (if requested identification parameter is SUCI);"
+     },
+     {
+      "clause_id": "5.4.3.3",
+      "quote": "if timer T3519 is not running, generate a fresh SUCI as specified in 3GPP TS 33.501 [24], send an IDENTITY RESPONSE message with the SUCI"
+     }
+    ],
+    "note": "core requests SUCI (gmm_build_identity_request)"
+   },
+   "auth_request_plain_text": {
+    "output": "auth_response",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "AUTHENTICATION REQUEST;"
+     },
+     {
+      "clause_id": "5.4.1.3.3",
+      "quote": "the UE shall process the 5G authentication challenge data and respond with an AUTHENTICATION RESPONSE message to the network."
+     }
+    ],
+    "note": "core sends a fresh AV each time, so no SQN/RAND reuse"
+   },
+   "nas_sm_cmd": {
+    "output": "nas_sm_complete",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     },
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "If the SECURITY MODE COMMAND message can be accepted, the UE shall send a SECURITY MODE COMPLETE message integrity protected with the selected 5GS integrity algorithm"
+     }
+    ],
+    "note": ""
+   },
+   "nas_sm_cmd_protected": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "nas_sm_reject",
+     "nas_sm_complete"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.2",
+      "quote": "The AMF shall send the SECURITY MODE COMMAND message unciphered"
+     },
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     }
+    ],
+    "note": "I19 (paper U1): the AMF must send SMC unciphered with header type 3; the UE-side handling of a ciphered header-type-2 SMC is not specified"
+   },
+   "nas_sm_cmd_ns": {
+    "output": "nas_sm_reject",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "The UE shall accept a SECURITY MODE COMMAND message indicating the \"null integrity protection algorithm\" 5G-IA0 as the selected 5G NAS integrity algorithm only if the message is received when"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+   },
+   "nas_sm_cmd_ns_plain_text": {
+    "output": "nas_sm_reject",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "The UE shall accept a SECURITY MODE COMMAND message indicating the \"null integrity protection algorithm\" 5G-IA0 as the selected 5G NAS integrity algorithm only if the message is received when"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "I10: 5G-IA0 and no valid MAC"
+   },
+   "nas_sm_cmd_replay": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.3.2",
+      "quote": "for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly."
+     }
+    ],
+    "note": "I6 (right after SMC) / I7 (after registration)"
+   },
+   "registration_accept_protected": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "registration_accept_h4_plain_text": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "registration_accept_plain_text": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "config_update_cmd_protected": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "config_update_cmd_plain_text": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "config_update_cmd_replay": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "deregistration_req_protected": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   },
+   "deregistration_req_plain_text": {
+    "output": "null_action",
+    "next": "S2",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "Except the messages listed below, no NAS signalling messages shall be processed by the receiving 5GMM entity in the UE or forwarded to the 5GSM entity, unless the network has established secure exchange of 5GS NAS messages for the NAS signalling connection"
+     }
+    ],
+    "note": "not in the 4.4.4.2 list of messages processed before security"
+   }
+  },
+  "S3": {
+   "enable_s1": {
+    "output": "registration_request",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.2",
+      "quote": "The UE in state 5GMM-DEREGISTERED shall initiate the registration procedure for initial registration by sending a REGISTRATION REQUEST message to the AMF,"
+     }
+    ],
+    "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+   },
+   "id_request_plain_text": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I3"
+   },
+   "auth_request_plain_text": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I4"
+   },
+   "nas_sm_cmd": {
+    "output": "nas_sm_complete",
+    "next": "S3",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_reject",
+     "registration_complete",
+     "deregistration_accept",
+     "config_update_complete",
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.2",
+      "quote": "The AMF may initiate a SECURITY MODE COMMAND in order to change the 5G security algorithms for a current 5G NAS security context already in use."
+     },
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "If the SECURITY MODE COMMAND message can be accepted, the UE shall send a SECURITY MODE COMPLETE message integrity protected with the selected 5GS integrity algorithm"
+     }
+    ],
+    "note": "fresh SMC (new COUNT) on an active context: algorithm change"
+   },
+   "nas_sm_cmd_protected": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "nas_sm_reject",
+     "nas_sm_complete"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.2",
+      "quote": "The AMF shall send the SECURITY MODE COMMAND message unciphered"
+     },
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     }
+    ],
+    "note": "I19 (paper U1): the AMF must send SMC unciphered with header type 3; the UE-side handling of a ciphered header-type-2 SMC is not specified"
+   },
+   "nas_sm_cmd_ns": {
+    "output": "nas_sm_reject",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "The UE shall accept a SECURITY MODE COMMAND message indicating the \"null integrity protection algorithm\" 5G-IA0 as the selected 5G NAS integrity algorithm only if the message is received when"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+   },
+   "nas_sm_cmd_ns_plain_text": {
+    "output": "nas_sm_reject",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "The UE shall accept a SECURITY MODE COMMAND message indicating the \"null integrity protection algorithm\" 5G-IA0 as the selected 5G NAS integrity algorithm only if the message is received when"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "I10: 5G-IA0 and no valid MAC"
+   },
+   "nas_sm_cmd_replay": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.3.2",
+      "quote": "for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly."
+     }
+    ],
+    "note": "I6 (right after SMC) / I7 (after registration)"
+   },
+   "registration_accept_protected": {
+    "output": "registration_complete",
+    "next": "S4",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_complete",
+     "nas_sm_reject",
+     "deregistration_accept",
+     "config_update_complete",
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.4",
+      "quote": "Upon receipt of the REGISTRATION ACCEPT message, the UE shall reset the registration attempt counter, enter state 5GMM-REGISTERED and set the 5GS update status to 5U1 UPDATED."
+     },
+     {
+      "clause_id": "5.5.1.2.4",
+      "quote": "If a 5G-GUTI or the SOR transparent container IE is included in the REGISTRATION ACCEPT message, the AMF shall start timer T3550 and enter state 5GMM-COMMON-PROCEDURE-INITIATED"
+     }
+    ],
+    "note": "open5gs includes a new 5G-GUTI; the explicit UE rule \"return a REGISTRATION COMPLETE ... to acknowledge the received 5G-GUTI\" exists only in 5.5.1.3.4 (mobility registration), not in 5.5.1.2.4"
+   },
+   "registration_accept_h4_plain_text": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If NAS signalling messages, having not successfully passed the integrity check, are received, then the NAS in the UE shall discard that message."
+     }
+    ],
+    "note": "header type 4 but no valid MAC"
+   },
+   "registration_accept_plain_text": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I9 (reg_accept_plain)"
+   },
+   "config_update_cmd_protected": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "config_update_complete"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.4.2",
+      "quote": "Acknowledgement shall be requested for all parameters except when only NITZ is included."
+     },
+     {
+      "clause_id": "5.4.4.3",
+      "quote": "If \"acknowledgement requested\" is indicated in the Acknowledgement bit of the Configuration update indication IE in the CONFIGURATION UPDATE COMMAND message, the UE shall send a CONFIGURATION UPDATE COMPLETE message."
+     }
+    ],
+    "note": "I20 (paper U2): core sends NITZ only, no acknowledgement requested; the UE is told when to send COMPLETE but not forbidden to send it otherwise"
+   },
+   "config_update_cmd_plain_text": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I9 (conf_update_cmd_plain)"
+   },
+   "config_update_cmd_replay": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.3.2",
+      "quote": "for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly."
+     }
+    ],
+    "note": ""
+   },
+   "deregistration_req_protected": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.7",
+      "quote": "If the UE receives a DEREGISTRATION REQUEST message from the network in state 5GMM-REGISTERED-INITIATED the de-registration procedure shall be aborted and the initial registration procedure shall be progressed."
+     }
+    ],
+    "note": "repair R1: collision with initial registration"
+   },
+   "deregistration_req_plain_text": {
+    "output": "null_action",
+    "next": "S3",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": ""
+   }
+  },
+  "S4": {
+   "enable_s1": {
+    "output": "registration_request",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.2",
+      "quote": "The UE in state 5GMM-DEREGISTERED shall initiate the registration procedure for initial registration by sending a REGISTRATION REQUEST message to the AMF,"
+     }
+    ],
+    "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+   },
+   "id_request_plain_text": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I3"
+   },
+   "auth_request_plain_text": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I4"
+   },
+   "nas_sm_cmd": {
+    "output": "nas_sm_complete",
+    "next": "S4",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_reject",
+     "registration_complete",
+     "deregistration_accept",
+     "config_update_complete",
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.2",
+      "quote": "The AMF may initiate a SECURITY MODE COMMAND in order to change the 5G security algorithms for a current 5G NAS security context already in use."
+     },
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "If the SECURITY MODE COMMAND message can be accepted, the UE shall send a SECURITY MODE COMPLETE message integrity protected with the selected 5GS integrity algorithm"
+     }
+    ],
+    "note": "fresh SMC (new COUNT) on an active context: algorithm change"
+   },
+   "nas_sm_cmd_protected": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "nas_sm_reject",
+     "nas_sm_complete"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.2",
+      "quote": "The AMF shall send the SECURITY MODE COMMAND message unciphered"
+     },
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "This is done by performing the integrity check of the message"
+     }
+    ],
+    "note": "I19 (paper U1): the AMF must send SMC unciphered with header type 3; the UE-side handling of a ciphered header-type-2 SMC is not specified"
+   },
+   "nas_sm_cmd_ns": {
+    "output": "nas_sm_reject",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "The UE shall accept a SECURITY MODE COMMAND message indicating the \"null integrity protection algorithm\" 5G-IA0 as the selected 5G NAS integrity algorithm only if the message is received when"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "5G-IA0 only for emergency / W-AGF; DevLyzer props 10/11 allow reject or ignore"
+   },
+   "nas_sm_cmd_ns_plain_text": {
+    "output": "nas_sm_reject",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [
+     "null_action"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.2.3",
+      "quote": "The UE shall accept a SECURITY MODE COMMAND message indicating the \"null integrity protection algorithm\" 5G-IA0 as the selected 5G NAS integrity algorithm only if the message is received when"
+     },
+     {
+      "clause_id": "5.4.2.5",
+      "quote": "If the security mode command cannot be accepted, the UE shall send a SECURITY MODE REJECT message."
+     }
+    ],
+    "note": "I10: 5G-IA0 and no valid MAC"
+   },
+   "nas_sm_cmd_replay": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.3.2",
+      "quote": "for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly."
+     }
+    ],
+    "note": "I6 (right after SMC) / I7 (after registration)"
+   },
+   "registration_accept_protected": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "registration_request",
+     "id_response",
+     "auth_response",
+     "nas_sm_complete",
+     "nas_sm_reject",
+     "registration_complete",
+     "deregistration_accept",
+     "config_update_complete"
+    ],
+    "evidence": [
+     {
+      "clause_id": "7.4",
+      "quote": "If the UE receives a message not compatible with the protocol state, the UE shall return a status message (5GMM STATUS or 5GSM STATUS depending on the EPD) with cause #98 \"message type not compatible with protocol state\"."
+     }
+    ],
+    "note": "repair R2: 5GMM STATUS #98 is not in the output alphabet, observed as null_action"
+   },
+   "registration_accept_h4_plain_text": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If NAS signalling messages, having not successfully passed the integrity check, are received, then the NAS in the UE shall discard that message."
+     }
+    ],
+    "note": "header type 4 but no valid MAC"
+   },
+   "registration_accept_plain_text": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I9 (reg_accept_plain)"
+   },
+   "config_update_cmd_protected": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "UNDERSPECIFIED",
+    "also_allowed": [
+     "config_update_complete"
+    ],
+    "evidence": [
+     {
+      "clause_id": "5.4.4.2",
+      "quote": "Acknowledgement shall be requested for all parameters except when only NITZ is included."
+     },
+     {
+      "clause_id": "5.4.4.3",
+      "quote": "If \"acknowledgement requested\" is indicated in the Acknowledgement bit of the Configuration update indication IE in the CONFIGURATION UPDATE COMMAND message, the UE shall send a CONFIGURATION UPDATE COMPLETE message."
+     }
+    ],
+    "note": "I20 (paper U2): core sends NITZ only, no acknowledgement requested; the UE is told when to send COMPLETE but not forbidden to send it otherwise"
+   },
+   "config_update_cmd_plain_text": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": "I9 (conf_update_cmd_plain)"
+   },
+   "config_update_cmd_replay": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.3.2",
+      "quote": "for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly."
+     }
+    ],
+    "note": ""
+   },
+   "deregistration_req_protected": {
+    "output": "deregistration_accept",
+    "next": "S5",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.2.3.2",
+      "quote": "The UE shall send a DEREGISTRATION ACCEPT message to the network and enter the state 5GMM-DEREGISTERED for 3GPP access."
+     }
+    ],
+    "note": "core: re-registration not required, 3GPP access"
+   },
+   "deregistration_req_plain_text": {
+    "output": "null_action",
+    "next": "S4",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "4.4.4.2",
+      "quote": "If any NAS signalling message is received as not integrity protected even though the secure exchange of NAS messages has been established by the network, then the NAS shall discard this message."
+     }
+    ],
+    "note": ""
+   }
+  },
+  "S5": {
+   "enable_s1": {
+    "output": "registration_request",
+    "next": "S1",
+    "kind": "SPEC",
+    "also_allowed": [],
+    "evidence": [
+     {
+      "clause_id": "5.5.1.2.2",
+      "quote": "The UE in state 5GMM-DEREGISTERED shall initiate the registration procedure for initial registration by sending a REGISTRATION REQUEST message to the AMF,"
+     }
+    ],
+    "note": "the learner restarts the whole stack, so the UE always starts deregistered"
+   },
+   "id_request_plain_text": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "auth_request_plain_text": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_protected": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_replay": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_ns": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "nas_sm_cmd_ns_plain_text": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "registration_accept_protected": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "registration_accept_h4_plain_text": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "registration_accept_plain_text": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "config_update_cmd_protected": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "config_update_cmd_plain_text": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "config_update_cmd_replay": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "deregistration_req_protected": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   },
+   "deregistration_req_plain_text": {
+    "output": "null_action",
+    "next": "S5",
+    "kind": "NO_CONNECTION",
+    "also_allowed": [],
+    "evidence": [],
+    "note": "no NAS signalling connection"
+   }
+  }
+ }
+}

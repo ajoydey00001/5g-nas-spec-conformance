@@ -1,0 +1,8 @@
+{
+  "arm": "01_wp",
+  "status": "stopped_for_teacher_review",
+  "complete": false,
+  "reason": "User limited scope to one-day demonstration and deferred broader research until teacher review.",
+  "learning_query_log_records": 23,
+  "live_savings_claim": false
+}

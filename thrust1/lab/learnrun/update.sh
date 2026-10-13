@@ -1,77 +1,58 @@
 #!/bin/bash
-# "What is the update?" in one command: health, progress, speed, model size, finish estimate, what to do.
-#   bash ~/thrust1-lab/learnrun/update.sh
-L=~/thrust1-lab/learnrun
+# Read-only status: live learning and preserved demonstration are distinct.
+L=${T1_LAB_DIR:-$HOME/thrust1-lab/learnrun}
+R=${T1_REPO_DIR:-$HOME/5g-nas-spec-conformance}
 D=$L/logs/srsue.log
-R=~/5g-nas-spec-conformance
-
-echo "================ srsUE learning run: update $(date '+%F %H:%M') ================"
-bash $L/status.sh 2>/dev/null | head -13
-
-python3 -I - $D/learning_queries.log $D/equivalence_queries.log <<'EOF'
-import sys, re, datetime as dt
-ts = []
-for p in sys.argv[1:]:
-    try:
-        for line in open(p, errors='replace'):
-            m = re.match(r'(\w{3} \d+, \d{4} \d+:\d+:\d+ [AP]M)', line)
-            if m:
-                ts.append(dt.datetime.strptime(m.group(1), '%b %d, %Y %I:%M:%S %p') + dt.timedelta(hours=6))
-    except OSError:
-        pass
-if not ts:
-    print('speed           no queries logged yet'); sys.exit()
-ts.sort()
-now = dt.datetime.now()
-last3h = [t for t in ts if t > now - dt.timedelta(hours=3)]
-print('speed           %d queries in the last 3 h  (~%d per hour)' % (len(last3h), len(last3h) / 3))
-idle = (now - ts[-1]).total_seconds() / 60
-print('last query      %s local  (%d min ago)%s' % (ts[-1].strftime('%H:%M'), idle,
-      '   <- over 90 min: auto_resume.sh will restart it' if idle > 90 else ''))
-EOF
-
-H=$(ls $D/hypothesis_*.dot 2>/dev/null | sort -V | tail -1)
-[ -n "$H" ] && echo "newest model    $(basename $H): $(python3 -I $R/thrust1/symbols/fsm_tools.py stats $H | cut -d: -f2)   (paper Table 4: 6 states, 20 transitions)"
-echo "auto-resume     $([ -f $L/AUTO_RESUME_OFF ] && echo PAUSED || echo on), restarts so far: $(grep -c RESTART $L/logs/auto_resume.log 2>/dev/null || echo 0)"
-
-echo "------------------------------------------------------------------------------------"
-python3 -I - "$D" "$R" "$(cat $D/learning_queries.log $D/equivalence_queries.log 2>/dev/null | grep -c '^INFO: \[')" <<'EOF2'
-import sys, os
-D, R, q = sys.argv[1], sys.argv[2], int(sys.argv[3] or 0)
-res = R + '/thrust1/results/'
-EST_TOTAL = 1100   # estimated total queries for the srsUE run (from the speed so far); the real end is learnedModel.dot
-finished = os.path.exists(D + '/learnedModel.dot') or os.path.exists(res + 'srsue_learnedModel.dot')
-learn = 1.0 if finished else min(q / EST_TOTAL, 0.97)
-def ex(f): return os.path.exists(res + f)
-report = R + '/thrust1/report/thrust1_report.tex'
-report_done = os.path.exists(report) and 'srsUE learning run in progress' not in open(report).read()
-steps = [  # (weight, done fraction, name)
-    (10, 1, 'T1.0  environment, 5GBaseChecker build, symbol alignment'),
-    (10, 1, 'T1.1  OCUDU / srsUE 5G stack working end to end'),
-    (20, 1, 'T1.5  spec FSM v1 from TS 24.501 (89 verbatim quotes)'),
-    (15, 1, 'T1.6  spec vs FSM_A/FSM_B: 23 classes, 6 invisible to diff'),
-    (5,  1, '      DevLyzer check on FSM_A/FSM_B (23/23 attack)'),
-    (25, learn, 'T1.2  srsUE learning run (Table 4)%s' % ('' if finished else '   ~%d/%d queries, estimate' % (q, EST_TOTAL))),
-    (5,  1 if ex('srsue_learnedModel.dot') else 0, '      srsUE analysis: finish_thrust1.sh (Table 8, spec vs 3 devices, DevLyzer)'),
-    (7,  (ex('T1_RESULTS_v2.md') + report_done) / 2, '      write-up: T1_RESULTS_v2.md + report v2'),
-    (3,  0, '      final check_thrust1.sh all PASS + git push'),
-]
-total = sum(w * f for w, f, _ in steps)
-bar = '#' * int(total / 5) + '.' * (20 - int(total / 5))
-print('THRUST 1 COMPLETION  [%s] %d%%' % (bar, total))
-for w, f, n in steps:
-    print('   %-4s %3d%% of %2d   %s' % ('done' if f >= 1 else ('...' if f > 0 else 'todo'), f * 100, w, n))
-EOF2
-
-echo "------------------------------------------------------------------------------------"
-if [ -f $D/learnedModel.dot ]; then
-  echo "FINISHED: learnedModel.dot exists. Now run:"
-  echo "   cd ~/5g-nas-spec-conformance && git pull && bash finish_thrust1.sh && bash check_thrust1.sh"
-elif docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
-  echo "RUNNING normally. Expected finish: 2026-10-14 (about midday; later if another round starts)."
-  echo "Nothing to do. Keep the charger plugged in."
+printf '================ Thrust 1 status: %s ================\n' "$(date '+%F %H:%M')"
+if docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
+  RUNNING=1; echo 'learner         RUNNING'
 else
-  echo "LEARNER NOT RUNNING and no learnedModel.dot."
-  echo "   auto-resume restarts it within 15 min, or by hand: bash ~/thrust1-lab/learnrun/resume_after_reboot.sh"
-  echo "   (if you stopped it on purpose: cd ~/5g-nas-spec-conformance && bash finish_thrust1.sh)"
+  RUNNING=0; echo 'learner         NOT RUNNING'
+fi
+if [ -f "$L/AUTO_RESUME_OFF" ]; then
+  echo 'auto-resume     PAUSED'
+else
+  echo 'auto-resume     enabled (restart limits may apply)'
+fi
+if [ -d "$D" ]; then
+  echo "live logs       $D"
+else
+  echo 'live logs       absent; earlier logs may be archived'
+fi
+python3 -I - "$R" <<'PY'
+import json, pathlib, subprocess, sys
+r = pathlib.Path(sys.argv[1]); results = r/'thrust1/results'
+provenance = results/'srsue_model_provenance.json'
+if provenance.exists():
+    d = json.loads(provenance.read_text())
+    print('saved model     %s: %s states / %s non-self-loop transitions' % (d['status'], d['states'], d['non_self_loop_transitions']))
+    print('convergence     %s (recorded provenance)' % ('established' if d.get('converged') else 'NOT established'))
+    print('stop reason     '+d['stop_reason'])
+else:
+    print('saved model     no finalized provenance record')
+comparison = results/'T1.6_spec_vs_ABsrs.json'
+if comparison.exists():
+    classes = json.loads(comparison.read_text())['classes']
+    invisible = sum(c['case']==2 and not c['visible_to_diff'] for c in classes)
+    print('saved analysis  %d classes / %d invisible witnesses (run check_thrust1.sh to validate)' % (len(classes), invisible))
+print('review milestone finalized demonstration; broader experiments deferred until teacher feedback')
+print('research plan   INCOMPLETE: independent semantic/extraction validation, OAI reproduction or scope revision, and D4 experiments remain')
+print('audit           '+str(results/'T1_AUDIT.md'))
+status = subprocess.run(['git','-C',str(r),'status','--porcelain'], capture_output=True,text=True)
+head = subprocess.run(['git','-C',str(r),'rev-parse','HEAD'],capture_output=True,text=True)
+upstream = subprocess.run(['git','-C',str(r),'rev-parse','@{u}'],capture_output=True,text=True)
+if status.returncode == 0:
+    print('working tree    '+('has uncommitted changes' if status.stdout else 'clean'))
+if head.returncode == upstream.returncode == 0:
+    print('backup          '+('matches locally known upstream' if head.stdout == upstream.stdout else 'differs from locally known upstream')+' (no remote fetch performed)')
+PY
+if [ "$RUNNING" = 1 ]; then
+  echo 'Next: monitor the live run; no completion time is inferred from query counts.'
+elif [ -f "$R/thrust1/results/srsue_model_provenance.json" ]; then
+  echo 'The demonstration model is preserved. Run: bash ~/5g-nas-spec-conformance/check_thrust1.sh'
+  echo 'Do not resume the unchanged budget-limited run; cached replay reaches the same exit limit.'
+elif [ -f "$L/AUTO_RESUME_OFF" ]; then
+  echo 'Automatic restart is paused. Inspect logs and archived hypotheses before deciding to resume.'
+else
+  echo 'Inspect learner logs and model artifacts before restarting; process exit alone does not establish convergence.'
 fi

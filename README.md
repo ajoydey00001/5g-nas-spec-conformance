@@ -22,6 +22,12 @@ devices share; the spec reference can.
   This is a **budget-limited hypothesis**, not a converged model. See
   [`results v2`](thrust1/results/T1_RESULTS_v2.md) and the updated report.
 
+## Teacher-review milestone
+
+The demonstration is finalized for teacher review. See
+[`TEACHER_REVIEW.md`](thrust1/results/TEACHER_REVIEW.md) for results, limitations,
+and the review package. Broader research experiments are deferred until feedback.
+
 ## Completion status
 
 The proof-of-concept artifacts are finalized. **The full Thrust 1 plan is not complete:**
@@ -129,3 +135,8 @@ The aim is to know how much of the agent's verdict can be trusted before an anal
 - 3GPP TS 24.501 v17.8.0: https://www.3gpp.org/ftp/Specs/archive/24_series/24.501/24501-h80.zip
   (regenerate the clause index with `thrust1/extract/spec_clauses.py`)
 - SPEC5G dataset, srsRAN, OCUDU source trees, Docker images.
+
+Research continuation (2026-10-14): [research tools](thrust1/research/README.md),
+30-cell clause review, assumption sensitivity, and supplemental fixed-model D4
+measurements are available. Live srsUE D4 was started and stopped for teacher review; partial logs are
+preserved and no live savings are claimed. The original plan remains incomplete. Thrust 2/3 are not being run.

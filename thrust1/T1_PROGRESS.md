@@ -171,3 +171,24 @@ claims about independence, final-cell corroboration, and Case 2 invisibility.
 Actual preserved model alphabet is 29 symbols (174 edges), not the 31-symbol
 description in earlier setup notes. Security and registration prefixes were
 checked explicitly. Independent semantics, OAI reproduction and D4 remain open.
+
+## Research continuation — 2026-10-14
+
+Built an isolated research learner with no hard-coded 30-call exit and explicit
+finite-Wp completion. Prepared four fresh live srsUE D4 arms (48 h each),
+managed sequentially by t1-research-queue.service; baseline started 02:12 local.
+Thirty shipped CE records exist; earlier 29 counts missed the last line's
+missing newline (the CE source is 5GBaseChecker, not the SPEC5G corpus).
+Supplemental TTT/Wp fixed-FSM D4: all 12 learned models exactly match their
+oracles. SPEC-only guidance cuts EQ by 5.65–12.47%; shipped guidance does better.
+Thirty-cell clause review and four-model sensitivity results saved. This is not
+a blind extraction ensemble. OAI build/learning and live D4 completion remain.
+User requests no Thrust 2/API use and will compile LaTeX in Overleaf.
+
+## One-day teacher-review milestone — 2026-10-14
+
+User explicitly chose the existing demonstration as sufficient for teacher review
+and deferred broader research until feedback. Stopped t1-research-queue.service
+and the isolated live learner; preserved partial logs and outcome. No live D4
+completion or convergence claim. Added TEACHER_REVIEW.md. LaTeX compilation
+is left to the user in Overleaf. Original demonstration/checkpoint unchanged.

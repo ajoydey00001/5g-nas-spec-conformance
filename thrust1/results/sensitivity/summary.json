@@ -1,0 +1,118 @@
+{
+  "baseline": {
+    "classes": 23,
+    "invisible": 6,
+    "invisible_cells": [
+      [
+        "S1",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S2",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "auth_request_plain_text"
+      ],
+      [
+        "S3",
+        "id_request_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_replay"
+      ]
+    ]
+  },
+  "optional_smc_state": {
+    "classes": 23,
+    "invisible": 6,
+    "invisible_cells": [
+      [
+        "S1",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S2",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "auth_request_plain_text"
+      ],
+      [
+        "S3",
+        "id_request_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_replay"
+      ]
+    ]
+  },
+  "r2_open": {
+    "classes": 22,
+    "invisible": 6,
+    "invisible_cells": [
+      [
+        "S1",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S2",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "auth_request_plain_text"
+      ],
+      [
+        "S3",
+        "id_request_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_replay"
+      ]
+    ]
+  },
+  "no_inferred_judgments": {
+    "classes": 23,
+    "invisible": 5,
+    "invisible_cells": [
+      [
+        "S2",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "auth_request_plain_text"
+      ],
+      [
+        "S3",
+        "id_request_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_ns_plain_text"
+      ],
+      [
+        "S3",
+        "nas_sm_cmd_replay"
+      ]
+    ]
+  }
+}

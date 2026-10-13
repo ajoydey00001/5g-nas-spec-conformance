@@ -8,6 +8,47 @@ Paste it the files named in each step, plus `REVIEW.md` if it needs context.
 
 ---
 
+## How do I know Thrust 1 is done and correct?
+
+```bash
+cd ~/5g-nas-spec-conformance && bash check_thrust1.sh
+```
+Thrust 1 is complete when **every line says PASS**. It checks:
+- the offline analysis reproduces from scratch (89 verbatim quotes, 23 classes);
+- the final srsUE model exists;
+- Table 8 recall is at least 6/7;
+- invisible Case 2 classes exist;
+- DevLyzer has 0 unresolved;
+- results v2 and the report are written;
+- everything is pushed.
+
+On 2026-10-13 23:05: 5 PASS. The 4 WAITs are the run still going, results v2, the report, and the push.
+
+## If the run crashes or hangs while you are away (automatic)
+
+`auto_resume.sh` runs from cron every 15 minutes and after every boot (installed 2026-10-13). It restarts the
+run from the checkpoint database when either of these happens:
+- the learner is not running and there is no `learnedModel.dot` (crash, power cut, reboot);
+- no query has finished for 90 minutes (stall, like the /dev/shm one).
+
+Restarting means:
+- answers already saved are replayed from `my_database.sqlite` ("Found in previous log");
+- nothing is lost except the query that was running.
+
+It stops after 6 automatic restarts, so a real fault does not loop forever.
+```bash
+cat ~/thrust1-lab/learnrun/logs/auto_resume.log             # what it did (empty = never needed)
+touch ~/thrust1-lab/learnrun/AUTO_RESUME_OFF                 # pause it (do this before stopping the learner yourself)
+rm ~/thrust1-lab/learnrun/AUTO_RESUME_OFF                    # enable again
+crontab -r                                                   # remove it completely (after Thrust 1)
+```
+- **Manual recovery,** same thing by hand: `bash ~/thrust1-lab/learnrun/resume_after_reboot.sh`.
+- **The local database is lost or damaged:** the resume script copies the GitHub checkpoint
+  (`thrust1/lab/srsue_checkpoint/my_database.sqlite`, saved every 30 min) back first. Do `git pull` before that.
+- `finish_thrust1.sh` turns auto-resume off by itself, because it stops the stack.
+
+---
+
 ## Part A: finish Thrust 1 (about 1 day)
 
 ### A1. Check the run (any time)
@@ -22,7 +63,7 @@ bash ~/thrust1-lab/learnrun/status.sh
 Expected: finished on 2026-10-14. If it is not finished by **2026-10-16**, stop it and use the last hypothesis.
 That is allowed; the report then says "last hypothesis after N rounds":
 ```bash
-docker exec t1-learn pkill -f uelearner.Learner     # then continue with A2
+touch ~/thrust1-lab/learnrun/AUTO_RESUME_OFF; docker exec t1-learn pkill -f uelearner.Learner     # then A2
 ```
 
 ### A2. Run the whole analysis (one command, about 2 minutes)
@@ -187,6 +228,8 @@ cd ~/5g-nas-spec-conformance && git add -A && git commit -m "thrust2/3: <what yo
 
 | File | What |
 |---|---|
+| `check_thrust1.sh` | PASS/FAIL check of all of Thrust 1 |
+| `thrust1/lab/learnrun/auto_resume.sh` | Cron job: restarts a crashed or stalled run from the checkpoint |
 | `finish_thrust1.sh` | Part A2. Tested with `--dry` on hypothesis 4. |
 | `thrust1/results/*_dry.*`, `thrust1/lab/devlyzer_srs_dry/` | Interim srsUE result (hypothesis 4) |
 | `thrust2/triage.py` | Part B/C: agent or alone, with Ollama, any OpenAI-compatible API, or a dummy model. Tools: retrieve, confidence, replay. Resumable. |

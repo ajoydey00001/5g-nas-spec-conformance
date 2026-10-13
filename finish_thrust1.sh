@@ -10,6 +10,7 @@ R=$PWD; T=$R/thrust1; RES=$T/results
 LOGS=~/thrust1-lab/learnrun/logs/srsue.log
 DRY=0; [ "$1" = "--dry" ] && DRY=1
 
+[ "$1" = "--dry" ] || touch ~/thrust1-lab/learnrun/AUTO_RESUME_OFF   # the analysis stops the stack; auto_resume.sh must not restart it
 echo "== 1. is the learner finished?"
 if docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
   if [ $DRY = 0 ]; then echo "The learner is still running. Wait, or use: bash finish_thrust1.sh --dry"; exit 1; fi

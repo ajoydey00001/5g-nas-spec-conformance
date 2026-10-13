@@ -119,6 +119,10 @@ If git says `rejected (fetch first)`, run: `git pull --rebase origin main && git
 **Cause:** out of memory (11 GB laptop). **Fix:** don't build or run other heavy jobs while the learner
 runs. The container is capped at 6 GB of memory and 5 CPUs.
 
+**Automatic recovery (since 2026-10-13 23:10):** cron runs `~/thrust1-lab/learnrun/auto_resume.sh` every
+15 min and at boot. It handles P1, P2, P3 and P5 by itself. See NEXT_STEPS.md, "If the run crashes", and its log
+`~/thrust1-lab/learnrun/logs/auto_resume.log`.
+
 ## 3. When learning has finished: analysis, step by step
 
 ### 3.1 Confirm the end and stop the stack

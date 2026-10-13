@@ -20,7 +20,12 @@ if docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
   # running: is it stuck? newest change to any query log
   last=$(stat -c %Y $D/learning_queries.log $D/equivalence_queries.log $L/my_database.sqlite 2>/dev/null | sort -n | tail -1)
   age=$(( ($(date +%s) - ${last:-0}) / 60 ))
-  [ $age -lt 90 ] && exit 0
+  if [ $age -lt 90 ]; then
+    # healthy: make sure the sleep blocker and the GitHub backup loop are alive too
+    pgrep -f keep_awake.sh >/dev/null || setsid nohup bash $L/keep_awake.sh >/dev/null 2>&1 < /dev/null &
+    pgrep -f checkpoint.sh >/dev/null || setsid nohup bash $L/checkpoint.sh >> $L/logs/checkpoint_cron.out 2>&1 < /dev/null &
+    exit 0
+  fi
   log "RESTART #$((n+1)): no new query for $age min -> killing the learner"
   docker exec t1-learn pkill -f uelearner.Learner; sleep 20
 else

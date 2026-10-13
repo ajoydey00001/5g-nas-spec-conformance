@@ -1372,3 +1372,39 @@ Oct 13, 2026 5:23:58 PM org.slf4j.helpers.SubstituteLogger info
 INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns | rrc_sm_cmd / registration_request auth_response nas_sm_reject | null_action]
 Oct 13, 2026 5:25:40 PM org.slf4j.helpers.SubstituteLogger info
 INFO: [enable_s1 auth_request_plain_text registration_accept_protected | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:27:24 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text registration_accept_h4_plain_text | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:29:06 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text registration_accept_plain_text | rrc_sm_cmd / registration_request auth_response registration_complete | null_action]
+Oct 13, 2026 5:30:47 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text config_update_cmd_protected | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:32:29 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text config_update_cmd_plain_text | rrc_sm_cmd / registration_request auth_response config_update_complete | null_action]
+Oct 13, 2026 5:34:10 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text config_update_cmd_replay | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:35:52 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_sm_cmd | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:37:33 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_sm_cmd_replay | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:39:14 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_sm_cmd_ns | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:40:56 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_sm_cmd_ns_plain_text | rrc_sm_cmd / registration_request auth_response rrc_sm_complete | null_action]
+Oct 13, 2026 5:42:38 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text ue_cap_enquiry_protected | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:44:20 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text ue_cap_enquiry_plain_text | rrc_sm_cmd / registration_request auth_response rrc_ue_cap_info | null_action]
+Oct 13, 2026 5:46:02 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_reconf_protected | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:47:44 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_reconf_replay | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:49:25 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_reconf_plain_text | rrc_sm_cmd / registration_request auth_response rrc_reconf_complete | null_action]
+Oct 13, 2026 5:51:07 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_countercheck_protected | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:52:51 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_countercheck_plain_text | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:54:33 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_ueinfo_req_protected | rrc_sm_cmd / registration_request auth_response null_action | null_action]
+Oct 13, 2026 5:56:15 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text rrc_ueinfo_req_plain_text | rrc_sm_cmd / registration_request auth_response null_action | null_action]

@@ -1096,3 +1096,37 @@ Oct 13, 2026 1:24:36 PM org.slf4j.helpers.SubstituteLogger info
 INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | registration_accept_protected / registration_request auth_response nas_sm_complete | null_action]
 Oct 13, 2026 1:26:19 PM org.slf4j.helpers.SubstituteLogger info
 INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | registration_accept_h4_plain_text / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:28:01 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | registration_accept_plain_text / registration_request auth_response nas_sm_complete | registration_complete]
+Oct 13, 2026 1:29:45 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | config_update_cmd_protected / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:31:27 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | config_update_cmd_plain_text / registration_request auth_response nas_sm_complete | config_update_complete]
+Oct 13, 2026 1:33:08 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | config_update_cmd_replay / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:34:50 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_sm_cmd / registration_request auth_response nas_sm_complete | rrc_sm_complete]
+Oct 13, 2026 1:36:31 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_sm_cmd_replay / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:38:13 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_sm_cmd_ns / registration_request auth_response nas_sm_complete | rrc_sm_complete]
+Oct 13, 2026 1:39:55 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_sm_cmd_ns_plain_text / registration_request auth_response nas_sm_complete | rrc_sm_complete]
+Oct 13, 2026 1:41:37 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | ue_cap_enquiry_protected / registration_request auth_response nas_sm_complete | rrc_ue_cap_info]
+Oct 13, 2026 1:43:19 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | ue_cap_enquiry_plain_text / registration_request auth_response nas_sm_complete | rrc_ue_cap_info]
+Oct 13, 2026 1:45:01 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_reconf_protected / registration_request auth_response nas_sm_complete | rrc_reconf_complete]
+Oct 13, 2026 1:46:43 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_reconf_replay / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:48:25 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_reconf_plain_text / registration_request auth_response nas_sm_complete | rrc_reconf_complete]
+Oct 13, 2026 1:50:09 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_countercheck_protected / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:51:52 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_countercheck_plain_text / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:53:34 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_ueinfo_req_protected / registration_request auth_response nas_sm_complete | null_action]
+Oct 13, 2026 1:55:16 PM org.slf4j.helpers.SubstituteLogger info
+INFO: [enable_s1 auth_request_plain_text nas_sm_cmd_ns_plain_text | rrc_ueinfo_req_plain_text / registration_request auth_response nas_sm_complete | null_action]

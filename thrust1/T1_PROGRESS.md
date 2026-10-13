@@ -140,3 +140,13 @@ Container for offline tools: `implementation/env/Dockerfile.offline` → image `
 - Results in `results/T1_RESULTS_v1.md` and `results/T1.6_spec_vs_AB.json`: 6 Case 2 classes invisible to
   differential testing (I3, I4, I6, I10 ×3); I19/I20 as (c) candidates; all 23 classes confirmed by the
   authors' DevLyzer (`~/thrust1-lab/devlyzer_ours`).
+
+## T1.2 srsUE Table 4 run — incidents (2026-10-13)
+- 15:23–17:01: power cut. On battery, GNOME suspended the laptop after 15 min idle (despite the systemd-inhibit
+  block). The learner froze and continued after wake; no queries lost.
+- 17:19–18:20: stall. Container `/dev/shm` (64 MB Docker default) filled with `mongoc-<pid>` files, one leaked
+  by every core run (8,490 files). After that the core crashed silently on start, and the learner retried
+  ~300 times ("Connection refused"). Fix: removed the files of dead processes; `start_core.sh` now runs
+  `rm -f /dev/shm/mongoc-*` after killing the old core. For a new container, `--shm-size=256m` also helps.
+- Checkpointing: `my_database.sqlite` (resume_learning) + `checkpoint.sh` (30-min snapshot to GitHub) +
+  `resume_after_reboot.sh`.

@@ -21,6 +21,8 @@ devices share; the spec reference can.
 
 ## If something breaks
 
+**What to do next, with every command: [`NEXT_STEPS.md`](NEXT_STEPS.md)** (finish Thrust 1 with `finish_thrust1.sh`, then Thrust 2 and 3 with `thrust2/triage.py` and `thrust3/score.py`).
+
 [`RUNBOOK.md`](RUNBOOK.md) covers every problem met so far (symptom, cause, fix), a one-screen health check
 (`bash ~/thrust1-lab/learnrun/status.sh`), and the exact steps to finish the analysis when the srsUE run ends.
 

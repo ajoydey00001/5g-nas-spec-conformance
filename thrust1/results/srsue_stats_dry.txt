@@ -1,0 +1,1 @@
+/home/ajoy-dey/5g-nas-spec-conformance/thrust1/results/srsue_learnedModel_dry.dot: 5 states, 17 transitions (non-self-loop)

@@ -22,7 +22,7 @@ if docker exec t1-learn pgrep -f uelearner.Learner >/dev/null 2>&1; then
   age=$(( ($(date +%s) - ${last:-0}) / 60 ))
   if [ $age -lt 90 ]; then
     # healthy: make sure the sleep blocker and the GitHub backup loop are alive too
-    pgrep -f keep_awake.sh >/dev/null || setsid nohup bash $L/keep_awake.sh >/dev/null 2>&1 < /dev/null &
+    systemd-inhibit --list 2>/dev/null | grep -q "srsUE learning run" || setsid nohup bash $L/keep_awake.sh >/dev/null 2>&1 < /dev/null &
     pgrep -f checkpoint.sh >/dev/null || setsid nohup bash $L/checkpoint.sh >> $L/logs/checkpoint_cron.out 2>&1 < /dev/null &
     exit 0
   fi

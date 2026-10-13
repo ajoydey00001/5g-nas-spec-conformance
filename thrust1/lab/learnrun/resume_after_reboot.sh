@@ -16,7 +16,7 @@ echo "[1/6] Starting the container"
 if docker inspect t1-learn >/dev/null 2>&1; then
   docker start t1-learn >/dev/null
 else
-  docker run -d --init --name t1-learn --privileged --memory=6g --memory-swap=7g --cpus=5 \
+  docker run -d --init --name t1-learn --privileged --memory=6g --memory-swap=7g --cpus=5 --shm-size=256m \
     -v ~/thrust1-lab:/work -w /work/learnrun t1-enva sleep infinity >/dev/null
 fi
 
